@@ -1,0 +1,15 @@
+L7: nhận biết các dipole, intermolecule
+
+L8: PV=nRT --> Tính toán, các định luật, cách đo áp suất khí
+
+L9: Học khái niệm, độ tan là gì, không bão hòa, bão hòa, quá bão hòa, nồng độ
+
+L10: Crytal, morphous, các cấu trúc tinh thể cơ bản,Simple cubic, body-centered cubic, face-centered cubic,... Không cấu trúc phức tạp, unit cell và cubic khác nhau --> Nhiều cell thành crystal 
+
+L11: Net ion equation H+ + OH- --> H2O.... Các loại phản ứng, focus vào 3 phản ứng redox, precipitation, acid-base neutralization
+
+L12 ĐỘNG HỌC: Khái niệm cơ bản --> tốc độ, phản ứng đo như nào, tìm bậc phản ứng ra sao, cách viết rate law K[A]^x[B]^y, phương trình tốc độ...
+
+L13: học khái niệm --> yếu tố ảnh hươởg đến cân bằng Keq, Kc, Kp, heterogeneous 
+
+L14: tính pH, học khái niệm
