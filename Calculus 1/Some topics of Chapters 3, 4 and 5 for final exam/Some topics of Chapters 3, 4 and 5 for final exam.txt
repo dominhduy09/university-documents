@@ -1,0 +1,31 @@
+Chapter 3 (Applications of differentiation): 
+Related rates, 
+Maxima and minima, 
+Optimization problems, 
+Mean value theorem, 
+First and second derivative tests, 
+Concavity, 
+Shape of curves,
+L’Hospital Rule, 
+Newton’s methods, 
+Antiderivative/Indefinite Integral.
+
+ 
+
+Chapter 4 (Integration): 
+Riemann sums, 
+Definition of Definite Integral, 
+Properties of Definite Integral, 
+Fundamental Theorem of Calculus, 
+Techniques of integration (Substitution, integration by parts, trigonometric integrals, trigonometric substitution, partial fractions), 
+Numerical (approximate) integrals (Midpoint, Trapezoidal rule, perhaps can omit Simpson's rule), 
+Improper integrals.
+
+ 
+
+Chapter 5 (Applications of Integration): 
+Areas between curves, 
+Volumes of Solid by revolution (Disk/washer/cylindrical shell methods), 
+Arc length, 
+Average value of a function, 
+Applications of Integration to Engineering, Economics, and Science.
