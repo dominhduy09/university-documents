@@ -15,6 +15,10 @@ Fact: you do not need to do all of these, choose the one best fit for you must b
 - https://www.studocu.com/en-us/document/truong-dai-hoc-quoc-te-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/calculus-1/calculus-1-midterm-semester-1-2016-2017/6787232?origin=viewer-exit-popup
 - https://www.studocu.com/en-us/document/truong-dai-hoc-quoc-te-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/calculus-1/cal1-mid-s22021-22-with-answer-key-short/32631259?origin=viewer-exit-popup
 
+* Note Calculus 1:
+
 > Physics 1:
 - https://mphcmiuedu-my.sharepoint.com/personal/bebeiu21284_student_hcmiu_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbebeiu21284%5Fstudent%5Fhcmiu%5Fedu%5Fvn%2FDocuments%2FTA%20Physic%201&ga=1
 - https://drive.google.com/drive/folders/1thSG-tBHCiX4uKGMuw9OV6JaBMURUY1u?fbclid=IwAR2j3YQDJ87hyGLufKrxao9bEXvf37eeFRW0i4QNLWYPotX7N-ZqMXTX3WA
+
+> COMING SOON...
