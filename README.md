@@ -1,5 +1,5 @@
 # university-documents
-University documents that i have collected from IU 
+University documents that I have collected from IU 
 
 Fact: you do not need to do all of these, choose the one best fit for you must be ideal! ☠️
 
