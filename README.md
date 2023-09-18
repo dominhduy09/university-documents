@@ -19,8 +19,18 @@ Fact: you do not need to do all of these, choose the one best fit for you must b
 - COMING SOON...
 - COMING SOON...
 
+> Calculus 2:
+- https://mphcmiuedu-my.sharepoint.com/personal/ititwe22145_student_hcmiu_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fititwe22145%5Fstudent%5Fhcmiu%5Fedu%5Fvn%2FDocuments%2FIUVNU%2DHCM%2FSubjects%2FCalculus%2FCalculus%202%2FDr%2E%20Qu%C3%A2n&ga=1
+
+> Introduction to computing:
+- https://mphcmiuedu-my.sharepoint.com/personal/ititwe22145_student_hcmiu_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fititwe22145%5Fstudent%5Fhcmiu%5Fedu%5Fvn%2FDocuments%2FIUVNU%2DHCM%2FSubjects%2FINTRODUCTION%20TO%20COMPUTING&ga=1
+
 > Physics 1:
 - https://mphcmiuedu-my.sharepoint.com/personal/bebeiu21284_student_hcmiu_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbebeiu21284%5Fstudent%5Fhcmiu%5Fedu%5Fvn%2FDocuments%2FTA%20Physic%201&ga=1
 - https://drive.google.com/drive/folders/1thSG-tBHCiX4uKGMuw9OV6JaBMURUY1u?fbclid=IwAR2j3YQDJ87hyGLufKrxao9bEXvf37eeFRW0i4QNLWYPotX7N-ZqMXTX3WA
 
+> Physics 2:
+- https://mphcmiuedu-my.sharepoint.com/personal/ititwe22145_student_hcmiu_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fititwe22145%5Fstudent%5Fhcmiu%5Fedu%5Fvn%2FDocuments%2FIUVNU%2DHCM%2FSubjects%2FPhysics%2FPhysics%202&ga=1
+
+  
 > COMING SOON...
