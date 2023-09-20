@@ -30,7 +30,7 @@ Fact: you do not need to do all of these, choose the one best fit for you must b
 - https://drive.google.com/drive/folders/1thSG-tBHCiX4uKGMuw9OV6JaBMURUY1u?fbclid=IwAR2j3YQDJ87hyGLufKrxao9bEXvf37eeFRW0i4QNLWYPotX7N-ZqMXTX3WA
 
 > Physics 2:
-- https://mphcmiuedu-my.sharepoint.com/personal/ititwe22145_student_hcmiu_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fititwe22145%5Fstudent%5Fhcmiu%5Fedu%5Fvn%2FDocuments%2FIUVNU%2DHCM%2FSubjects%2FPhysics%2FPhysics%202&ga=1
+- https://mphcmiuedu-my.sharepoint.com/:f:/g/personal/ititwe22145_student_hcmiu_edu_vn/EuMo25QVE8pKuD0ZzDo0m1QBTmL04-lPn_XOvHj26io5cA?e=0pedyV
 
   
 > COMING SOON...
