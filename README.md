@@ -5,7 +5,7 @@ Fact: you do not need to do all of these, choose the one best fit for you must b
 
 > Calculus 1:
 
-- https://mphcmiuedu-my.sharepoint.com/personal/ititwe22145_student_hcmiu_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fititwe22145%5Fstudent%5Fhcmiu%5Fedu%5Fvn%2FDocuments%2FIUVNU%2DHCM%2FSubjects%2FCalculus%2FCalculus%201%2FIU%20%2D%20Calculus%201%2FSample%20Test%2FMidterm&ga=1
+- https://mphcmiuedu-my.sharepoint.com/:f:/r/personal/ititwe22145_student_hcmiu_edu_vn/Documents/IUVNU-HCM/Subjects/Calculus/Calculus%201/IU%20-%20Calculus%201/Sample%20Test/Midterm?csf=1&web=1&e=mdD1ud
 - https://mphcmiuedu-my.sharepoint.com/personal/ititwe22145_student_hcmiu_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fititwe22145%5Fstudent%5Fhcmiu%5Fedu%5Fvn%2FDocuments%2FIUVNU%2DHCM%2FSubjects%2FCalculus%2FCalculus%201%2FCalculus%201%2FMid%20term%20cal%201&ga=1
 
 - https://mphcmiuedu.sharepoint.com/:b:/s/ALADIN-HK22023G064/EZ8ahHw4N2FLuQMT_RO_o1EBD1xLHU-__RstzgbxLsu3Ww?e=RMPHQM
