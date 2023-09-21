@@ -36,6 +36,6 @@ Fact: you do not need to do all of these, choose the one best fit for you must b
 
 > Physics 2:
 - https://mphcmiuedu-my.sharepoint.com/:f:/g/personal/ititwe22145_student_hcmiu_edu_vn/EuMo25QVE8pKuD0ZzDo0m1QBTmL04-lPn_XOvHj26io5cA?e=0pedyV
-
+- https://drive.google.com/file/d/0Bw0TVUnRzgaUUjA4cGhqb29LcEE/view?usp=drivesdk&resourcekey=0-X9W2JibGV4ej3rGIrTXvvA
   
 > COMING SOON...
