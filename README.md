@@ -3,6 +3,11 @@ University documents that I have collected from IU
 
 Fact: you do not need to do all of these, choose the one best fit for you must be ideal! ☠️
 
+> Chemistry for engineers:
+- Darrell Ebbing, Steven D. Gammon - General Chemistry, 9th Edition   (2007, Houghton Mifflin) - libgen.lc
+- Raymond Chang, Jason Scott Overby - General Chemistry_ The Essential Concepts, 6th Edition  -McGraw-Hill Companies, The (2011)
+- Theodore E. Brown, H. Eugene H LeMay, Bruce E. Bursten, Catherine Murphy, Patrick Woodward, Matthew E Stoltzfus - Chemistry_ The Central Science-P
+
 > Calculus 1:
 
 - https://mphcmiuedu-my.sharepoint.com/:f:/r/personal/ititwe22145_student_hcmiu_edu_vn/Documents/IUVNU-HCM/Subjects/Calculus/Calculus%201/IU%20-%20Calculus%201/Sample%20Test/Midterm?csf=1&web=1&e=mdD1ud
