@@ -2,6 +2,9 @@
 University documents that I have collected from IU 
 
 Fact: you do not need to do all of these, choose the one best fit for you must be ideal! ☠️
+
+More information at: http://webdirectory.hcmiu.edu.vn
+
 Link: 
 - Scribd: https://www.scribd.com/user/662428313/Duy-Do-Minh
 - Studocu: https://www.studocu.com/vn/user/20773621
