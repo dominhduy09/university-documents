@@ -5,7 +5,7 @@ Fact: you do not need to do all of these, choose the one best fit for you must b
 
 More information at: http://webdirectory.hcmiu.edu.vn
 
-Link: 
+Links: 
 - Scribd: https://www.scribd.com/user/662428313/Duy-Do-Minh
 - Studocu: https://www.studocu.com/vn/user/20773621
 
