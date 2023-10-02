@@ -9,6 +9,12 @@ Link:
 - Scribd: https://www.scribd.com/user/662428313/Duy-Do-Minh
 - Studocu: https://www.studocu.com/vn/user/20773621
 
+Tools:
+- https://www.mathway.com
+- https://wolfreealpha.gitlab.io/input/index.html
+- https://www.symbolab.com
+- https://quizlet.com
+
 > Chemistry for engineers:
 - Darrell Ebbing, Steven D. Gammon - General Chemistry, 9th Edition   (2007, Houghton Mifflin) - libgen.lc
 - Raymond Chang, Jason Scott Overby - General Chemistry_ The Essential Concepts, 6th Edition  -McGraw-Hill Companies, The (2011)
