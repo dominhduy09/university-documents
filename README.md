@@ -38,8 +38,8 @@ Link:
 - CalcPlot3D plotter
 - Vector Field Plotter
 - More Resources from Paul Seeburger
-
-Alternative OpenStax Textbook with Dynamic Figures (by Paul Seeburger)
+- Alternative OpenStax Textbook with Dynamic Figures (by Paul Seeburger)
+- 
 - https://mphcmiuedu-my.sharepoint.com/:f:/r/personal/ititwe22145_student_hcmiu_edu_vn/Documents/IUVNU-HCM/Subjects/Calculus/Calculus%202/Dr.%20Qu%C3%A2n?csf=1&web=1&e=lESKxe
 - https://drive.google.com/drive/folders/11r737ToOtPHabQXoD7AYVkDeeAGo87Ba
 
