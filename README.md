@@ -15,6 +15,37 @@ Tools:
 - https://www.symbolab.com
 - https://quizlet.com
 
+Documents:
+- https://libgen.is
+
+🟢 Free Books Sites 🟢
+
+➡️ archive.org/details/texts
+➡️ libgen.fun
+➡️ libgen.rs
+➡️ z-lib.org
+➡️ pdfdrive.com
+➡️ the-eye.eu/public/Books
+➡️ forcoder.su
+➡️ mobilism.org
+➡️ freebookspot.es
+➡️ ebookee.org
+➡️ Mobilism
+➡️ ebook-hunter.org
+➡️ ebookchasseur.com
+➡️ ebook3000.co
+➡️ Books.cat
+➡️ www.readanybook.com
+➡️ openlibrary.org
+➡️ standardebooks.org
+➡️ manybooks.net
+➡️ booksvooks.com
+➡️ 16chan.xyz/library
+➡️ dpgroup.org
+➡️ ebookbb.com
+➡️ 2020ok.com
+🔻Support to Share Our Channel 🔻:  https://t.me/+ASncLehWlEk3NjY1
+
 #
 
 > Chemistry for engineers:
