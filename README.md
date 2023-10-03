@@ -10,10 +10,10 @@ Links:
 - Studocu: https://www.studocu.com/vn/user/20773621
 
 Tools:
-- https://www.mathway.com
-- https://wolfreealpha.gitlab.io/input/index.html
-- https://www.symbolab.com
-- https://quizlet.com
+- Mathway: https://www.mathway.com
+- Wolfreealpha: https://wolfreealpha.gitlab.io/input/index.html
+- Symbolab: https://www.symbolab.com
+- Quizlet: https://quizlet.com
 
 Documents:
 - https://libgen.is
