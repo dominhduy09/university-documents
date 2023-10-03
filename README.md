@@ -16,7 +16,7 @@ Tools:
 - Quizlet: https://quizlet.com
 
 Documents:
-- https://libgen.is
+- Libgen: https://libgen.is
 
 🟢 Free Books Sites 🟢
 
