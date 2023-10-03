@@ -65,7 +65,7 @@ Documents:
 - https://www.studocu.com/en-us/document/truong-dai-hoc-quoc-te-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/calculus-1/calculus-1-midterm-semester-1-2016-2017/6787232?origin=viewer-exit-popup
 - https://www.studocu.com/en-us/document/truong-dai-hoc-quoc-te-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/calculus-1/cal1-mid-s22021-22-with-answer-key-short/32631259?origin=viewer-exit-popup
 
-// Note Calculus1:
+> Note Calculus 1:
 - COMING SOON...
 - COMING SOON...
 
