@@ -20,31 +20,31 @@ Documents:
 
 🟢 Free Books Sites 🟢
 
-➡️ archive.org/details/texts
-➡️ libgen.fun
-➡️ libgen.rs
-➡️ z-lib.org
-➡️ pdfdrive.com
-➡️ the-eye.eu/public/Books
-➡️ forcoder.su
-➡️ mobilism.org
-➡️ freebookspot.es
-➡️ ebookee.org
-➡️ Mobilism
-➡️ ebook-hunter.org
-➡️ ebookchasseur.com
-➡️ ebook3000.co
-➡️ Books.cat
-➡️ www.readanybook.com
-➡️ openlibrary.org
-➡️ standardebooks.org
-➡️ manybooks.net
-➡️ booksvooks.com
-➡️ 16chan.xyz/library
-➡️ dpgroup.org
-➡️ ebookbb.com
-➡️ 2020ok.com
-🔻Support to Share Our Channel 🔻:  https://t.me/+ASncLehWlEk3NjY1
+➡️ archive.org/details/texts <br>
+➡️ libgen.fun <br>
+➡️ libgen.rs <br>
+➡️ z-lib.org <br>
+➡️ pdfdrive.com <br>
+➡️ the-eye.eu/public/Books <br>
+➡️ forcoder.su <br>
+➡️ mobilism.org <br>
+➡️ freebookspot.es <br>
+➡️ ebookee.org <br>
+➡️ Mobilism <br>
+➡️ ebook-hunter.org <br>
+➡️ ebookchasseur.com <br>
+➡️ ebook3000.co <br>
+➡️ Books.cat <br>
+➡️ readanybook.com <br>
+➡️ openlibrary.org <br>
+➡️ standardebooks.org <br>
+➡️ manybooks.net <br>
+➡️ booksvooks.com <br>
+➡️ 16chan.xyz/library <br>
+➡️ dpgroup.org <br>
+➡️ ebookbb.com <br>
+➡️ 2020ok.com <br>
+🔻Support to Share Our Channel 🔻:  https://t.me/+ASncLehWlEk3NjY1 <br>
 
 #
 
