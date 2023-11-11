@@ -1,4 +1,4 @@
-# university-documents
+![image](https://github.com/dominhduy09/university-documents/assets/64354042/73256a8b-3220-4fe1-91de-a2642cdb12f6)# university-documents
 University documents that I have collected from HCM-IU VNU
 
 Fact: you do not need to do all of these, choose the one best fit for you must be ideal! ☠️
@@ -79,6 +79,8 @@ Documents:
 - Vector Field Plotter
 - More Resources from Paul Seeburger
 - Alternative OpenStax Textbook with Dynamic Figures (by Paul Seeburger)
+
+- https://mphcmiuedu.sharepoint.com/sites/CAL2826/_layouts/15/stream.aspx?id=%2Fsites%2FCAL2826%2FShared%20Documents%2FGeneral%2FRecordings%2FMeeting%20in%20%5FGeneral%5F%2D20231109%5F081609%2DMeeting%20Recording%2Emp4&referrer=StreamWebApp%2EWeb&referrerScenario=AddressBarCopied%2Eview
 
 - https://mphcmiuedu-my.sharepoint.com/:f:/r/personal/ititwe22145_student_hcmiu_edu_vn/Documents/IUVNU-HCM/Subjects/Calculus/Calculus%202/Dr.%20Qu%C3%A2n?csf=1&web=1&e=lESKxe
 - https://drive.google.com/drive/folders/11r737ToOtPHabQXoD7AYVkDeeAGo87Ba
