@@ -1,4 +1,4 @@
-![image](https://github.com/dominhduy09/university-documents/assets/64354042/73256a8b-3220-4fe1-91de-a2642cdb12f6)# university-documents
+# university-documents
 University documents that I have collected from HCM-IU VNU
 
 Fact: you do not need to do all of these, choose the one best fit for you must be ideal! ☠️
