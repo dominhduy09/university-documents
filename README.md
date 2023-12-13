@@ -96,6 +96,9 @@ Documents:
 - https://mphcmiuedu-my.sharepoint.com/:f:/g/personal/ititwe22145_student_hcmiu_edu_vn/EuMo25QVE8pKuD0ZzDo0m1QBTmL04-lPn_XOvHj26io5cA?e=0pedyV
 - https://drive.google.com/file/d/0Bw0TVUnRzgaUUjA4cGhqb29LcEE/view?usp=drivesdk&resourcekey=0-X9W2JibGV4ej3rGIrTXvvA
 
+> Physics 3 laboratory:
+- https://drive.google.com/drive/folders/14_Yttdo_HpXDzymVXTprfRO1Fs1tZ5gs
+
 > TA STEAMS:
 - https://mphcmiuedu-my.sharepoint.com/personal/ititwe22145_student_hcmiu_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fititwe22145%5Fstudent%5Fhcmiu%5Fedu%5Fvn%2FDocuments%2FIUVNU%2DHCM%2FSubjects%2FCalculus%2FCalculus%202%2FTA%20%2D%20Di%E1%BB%87p%20Phi&ga=1
   
