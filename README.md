@@ -112,3 +112,7 @@ Documents:
 
 ➡️ Penbook <br>
 ➡️ Goodnotes 6 <br>
+
+**CREDITS**
+Special thanks to: Nguyeen, Quang, Bao
+
