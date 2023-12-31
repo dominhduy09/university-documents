@@ -1,0 +1,22 @@
+% sunflower.dat 
+%
+% source: H. S. Reed and R. H. Holland, "The Growth Rate of an Annual Plant Helianthus,"
+%         Proc. Nat. Acad. Sci, vol.5, no.4, p.125, (1919)
+%
+%	 
+%  time    height   
+%  days    (cm)   
+%   ti      yi
+% ---------------
+    7	  17.93
+   14	  36.36
+   21	  67.76
+   28     98.10
+   35	 131.00
+   42	 169.50
+   49	 205.50
+   56	 228.30
+   63	 247.10
+   70	 250.50
+   77	 253.80
+   84	 254.50

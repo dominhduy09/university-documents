@@ -1,0 +1,32 @@
+% sprint.dat - 100-meter sprinter data
+% -----------------------------------------------------------------------------------------------------------------------
+% References:
+% ----------- 
+% 5. J. B. Keller, "Theory of Competitive Running", Phys. Today,  vol.26, no.9, p.43 (1973), see also,
+%    J. B. Keller, "Optimal Velocity in a Race", Am. Math. Monthly, vol.81, 474 (1974).
+% 3. R. Tibshirani, "Who is the Fastest Man in the World?", Amer. Statistician, 51, 106 (1997).
+% 2. G. Wagner, "The 100-Meter Dash: Theory and Experiment", Phys. Teacher, 36, 144 (1998).
+% 1. O. Helene and M. T. Yamashita, "The Force, Power, and Energy of the 100 Meter Sprint", Am. J. Phys., 78, 307 (2010).
+% 4. J. R. Mureika,  http://myweb.lmu.edu/jmureika/track/,  contains additional data
+% -----------------------------------------------------------------------------------------------------------------------
+%
+%        Ref.1     Ref.1    Ref.2+4    Ref.2+4      
+%        U.Bolt    U.Bolt   C.Lewis   B.Johnson
+%  x    Beijing    Berlin   Rome        Rome   
+% (m)    (sec)     (sec)    (sec)       (sec)  
+% ---------------------------------------------
+   0     0.165     0.142    0.193       0.129     % reaction times
+  10     1.85      1.89     1.94        1.84   
+  20     2.87      2.88     2.96        2.86   
+  30     3.78      3.78     3.91        3.80   
+  40     4.65      4.64     4.78        4.67   
+  50     5.50      5.47     5.64        5.53   
+  60     6.32      6.29     6.50        6.38   
+  70     7.14      7.10     7.36        7.23   
+  80     7.96      7.92     8.22        8.10   
+  90     8.79      8.75     9.07        8.96   
+ 100     9.69      9.58     9.93        9.83   
+
+
+
+

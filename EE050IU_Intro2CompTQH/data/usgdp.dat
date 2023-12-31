@@ -1,0 +1,93 @@
+% usgdp.dat - US GDP
+%
+% http://research.stlouisfed.org/fred2/series/GDP/downloaddata
+% 
+% Title:               Gross Domestic Product
+% Series ID:           GDP
+% Source:              U.S. Department of Commerce: Bureau of Economic Analysis
+% Release:             Gross Domestic Product
+% Seasonal Adjustment: Seasonally Adjusted Annual Rate
+% Frequency:           Annual
+% Aggregation Method:  Average
+% Units:               Billions of Dollars
+% Date Range:          1947-01-01 to 2013-10-01
+% Last Updated:        2014-03-27 8:01 AM CDT
+% Notes:               BEA Account Code: A191RC1
+%                      
+%                      Gross domestic product (GDP), the featured measure of U.S. output, is
+%                      the market value of the goods and services produced by labor and
+%                      property located in the United States. 
+%                       
+%                      For more information, see the Guide to the National Income and Product
+%                      Accounts of the United States (NIPA) -
+%                      (http://www.bea.gov/national/pdf/nipaguid.pdf)"
+% 
+%    year     trillions (US dollars)
+% ------------------------------------
+     1947      0.2500
+     1948      0.2748
+     1949      0.2729
+     1950      0.3002
+     1951      0.3473
+     1952      0.3677
+     1953      0.3898
+     1954      0.3911
+     1955      0.4262
+     1956      0.4502
+     1957      0.4749
+     1958      0.4821
+     1959      0.5225
+     1960      0.5433
+     1961      0.5633
+     1962      0.6051
+     1963      0.6386
+     1964      0.6858
+     1965      0.7437
+     1966      0.8151
+     1967      0.8617
+     1968      0.9425
+     1969      1.0199
+     1970      1.0759
+     1971      1.1678
+     1972      1.2824
+     1973      1.4286
+     1974      1.5488
+     1975      1.6889
+     1976      1.8776
+     1977      2.0860
+     1978      2.3566
+     1979      2.6322
+     1980      2.8625
+     1981      3.2109
+     1982      3.3450
+     1983      3.6381
+     1984      4.0407
+     1985      4.3468
+     1986      4.5901
+     1987      4.8702
+     1988      5.2526
+     1989      5.6577
+     1990      5.9796
+     1991      6.1740
+     1992      6.5393
+     1993      6.8787
+     1994      7.3087
+     1995      7.6641
+     1996      8.1002
+     1997      8.6085
+     1998      9.0891
+     1999      9.6657
+     2000     10.2897
+     2001     10.6253
+     2002     10.9802
+     2003     11.5123
+     2004     12.2770
+     2005     13.0954
+     2006     13.8579
+     2007     14.4804
+     2008     14.7203
+     2009     14.4180
+     2010     14.9583
+     2011     15.5338
+     2012     16.2446
+     2013     16.7997

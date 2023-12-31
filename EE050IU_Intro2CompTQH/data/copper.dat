@@ -1,0 +1,31 @@
+% source: www.nist.gov/data/nsrds/NSRDS-NBS-8.pdf
+%
+%  thermal conductivity of copper near absolute zero
+%
+%  [K]  [Watt/m/K]
+%   T       k
+% -----------------
+    1      28.7
+    2      57.3	
+    3      85.5
+    4     113
+    5     138
+    6     159
+    7     177
+    8     189
+    9     195
+   10     196
+   11     193
+   12     185
+   13     176
+   14     166
+   15     156
+   16     145
+   18     124
+   20     105
+   25      68
+   30      43
+   35      29
+   40      20.5
+   45      15.3
+

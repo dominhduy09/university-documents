@@ -1,0 +1,27 @@
+% viscosity of water
+% ------------------
+%
+% Reference: B. R. Munson, T. H. Okiishi, W. W. Huebsch, A. P. Rothmayer,
+%            Fundamentals of Fluid Mechanics, 7/e, Wiley, New York, 2013,
+%            (data from Table B.2, Appendix B).
+%
+% Celcius   viscosity in 10^5 * N*s/m^2
+%  T_C           v
+% -------------------------------------
+    0    	1.7870 
+    5    	1.5190 
+   10    	1.3070 
+   20    	1.0020 
+   30    	0.7975 
+   40    	0.6529
+   50    	0.5468
+   60    	0.4665
+   70    	0.4042
+   80    	0.3547
+   90    	0.3147
+  100    	0.2818
+
+     
+     
+     
+              

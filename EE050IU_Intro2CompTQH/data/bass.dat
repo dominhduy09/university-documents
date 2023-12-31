@@ -1,0 +1,40 @@
+% bass.dat - data for testing Bass model
+%
+% data source:
+% ------------
+% V. Mahajan, C.H. Mason, and V. Srinivasan, "An Evaluation of Estimation
+% Procedures for New Product Diffusion Models", in V. Mahajan, Y. Wind
+% (eds.), Innovation Diffusion Models of New Product Acceptance, Ballinger
+% Publishing Company, Cambridge, 1986, pp. 203.
+%
+% https://gsbapps.stanford.edu/researchpapers/library/RP851.pdf
+%
+% Bass model:
+% -----------
+% F. M. Bass, "A New Product Growth for Model Consumer Durables", 
+% Management Science, Vol. 15, No. 5, Theory Series (Jan., 1969) pp. 215-227.
+% Stable URL: http://www.jstor.org/stable/2628128
+%
+% -----------------------------------------------------------------------------------------------------------------
+%  room air          color             clothes                                         foreign          accelerated  
+%  conditioners      televisions       dryers            ultrasound    mammography     language         program
+% -----------------------------------------------------------------------------------------------------------------
+%  year  N(10^6)     year  N(10^6)     year  N(10^6)     year    N      year    N      year    N        year    N  
+% -----------------------------------------------------------------------------------------------------------------
+%  1948   0          1962   0          1948   0          1964    0      1964    0      1951   0         1951   0      
+   1949   0.096      1963   0.747      1949   0.106      1965    5      1965    2      1952   1.25      1952   0.67
+   1950   0.291      1964   2.227      1950   0.425      1966    8      1966    4      1953   2.02      1953   1.15
+   1951   0.529      1965   4.873      1951   0.917      1967   10      1967    6      1954   2.88      1954   3.26
+   1952   0.909      1966   9.991      1952   1.552      1968   15      1968    9      1955   3.36      1955   3.55
+   1953   1.954      1967  15.768      1953   2.289      1969   22      1969   13      1956   4.70      1956   6.14
+   1954   3.184      1968  21.750      1954   3.179      1970   34      1970   22      1957   8.26      1957   8.35
+   1955   4.451      1969  27.712      1955   4.576      1971   40      1971   29      1958  11.62      1958  25.15
+   1956   6.279      1970  32.343      1956   6.099      1972   56      1972   45      1959  17.86      1959  36.19
+   1957   7.865       nan     nan      1957   7.393      1973   72      1973   68      1960  23.81      1960  50.59
+   1958   9.538       nan     nan      1958   8.633      1974  100      1974   92      1961  30.05      1961  57.02
+   1959  11.338       nan     nan      1959  10.058      1975  128      1975  107      1962  34.94      1962  63.17
+   1960  12.918       nan     nan      1960  11.318      1976  149      1976  113      1963  36.19      1963  64.32
+   1961  14.418       nan     nan      1961  12.554      1977  162      1977  118       nan    nan       nan    nan
+    nan    nan        nan     nan       nan     nan      1978  168      1978  119       nan    nan       nan    nan
+
+

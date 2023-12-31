@@ -1,0 +1,34 @@
+% squash.dat - squash (cucurbita pepo) growth 
+%
+% source: R. Pearl and L. J. Reed, "Skew-Growth Curves", Proc. Natl. Acad. Sci., vol.11, p.16 (1925).
+%
+%   days  grams
+%    ti    yi
+%  ------------
+     5     267     
+     6     443
+     7     658     
+     8     961
+     9    1498
+    10    2200
+    11    2920
+    12    3360
+    13    3758
+    14    4092
+    15    4488
+    16    4720
+    17    4864
+    18    4980
+    19    5114
+    20    5176
+    21    5242
+    22    5298
+    23    5352
+    24    5360
+    25    5366
+
+    
+    
+    
+
+

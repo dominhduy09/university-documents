@@ -1,0 +1,33 @@
+% C = percent completions,   T = percent touchdowns
+% I = percent interceptions, Y = average yards gained per pass attempt
+%
+% Rating = (50 + 24*C + 80*T - 100*I + 100*Y)/24
+%
+% Reference: R. W. Johnson, "How Does the NFL Rate the Passing Ability of Quarterbacks?" 
+%            College Math. J., Vol. 24, No. 5 (Nov., 1993), pp. 451-453.
+%
+% ----------------------------------------------------------------
+%    C         T         I         Y     Rating      Player
+% ----------------------------------------------------------------
+  63.8827   5.32151   2.63612   7.65065   94.0     % Joe Montana
+  59.5616   6.02740   3.42466   7.63096   89.3     % Dan Marino
+  56.7177   5.51422   3.32604   8.03063   87.3     % Boomer Esiason
+  57.8466   5.94652   4.08163   7.33920   83.7     % Dave Krieg
+  56.9642   5.17241   3.68492   7.67410   83.416   % Roger Staubach
+  58.4536   3.86598   2.42268   7.15876   83.415   % Bernie Kosar
+  59.6271   3.89137   2.75638   7.12971   83.0     % Ken O'Brien
+  59.2422   4.64983   3.61653   7.40586   82.74    % Jim Kelly
+  57.6277   4.31335   2.85442   7.22201   82.68    % Neil Lomax
+  57.0859   5.98311   4.43454   7.56077   82.6     % Sonny Jurgensen
+  57.0970   6.38867   4.89174   7.67469   82.6     % Len Dawson
+  59.3073   4.40223   3.57542   7.33810   81.9     % Ken Anderson
+  59.6949   5.25424   4.47458   7.44373   81.7     % Danny White
+  57.4151   4.82693   4.38234   7.84948   80.5     % Bart Starr
+  56.9971   5.28839   4.11319   7.26813   80.4     % Fran Tarkenton
+  58.4635   3.97135   3.25521   7.15299   80.3     % Tony Eason
+  58.8330   4.53248   4.31834   7.68023   80.2     % Dan Fouts
+  57.3457   4.20535   3.60459   7.28291   79.2     % Jim McMahon
+  56.0564   4.86084   3.95923   7.13054   78.2     % Bert Jones
+  54.5700   5.59198   4.87852   7.75916   78.2     % Johnny Unitas
+
+%   x1        x2        x3        x4       y

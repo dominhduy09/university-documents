@@ -1,0 +1,15 @@
+% data for class examples
+% basis function method Examples 2 & 4
+% week-11 and week-12 powerpoints
+%
+% S. J. Orfanidis - 440:127 - Spring 2013
+
+% Example 2
+
+xi = [1.0    1.4    1.9    2.1    2.7    3.0    3.3    3.9    4.2]';
+yi = [5.7    4.8    4.7    4.9    5.0    5.3    5.6    6.3    6.4]';
+
+% Example 4
+
+xi = [1.0    1.4    1.9    2.1    2.7    3.0    3.3    3.9    4.2 ]';
+yi = [0.18   0.21   0.21   0.20   0.20   0.19   0.18   0.16   0.16]';

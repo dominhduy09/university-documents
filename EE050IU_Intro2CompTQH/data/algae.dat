@@ -1,0 +1,21 @@
+% algae.dat - growth of algae
+%
+% source: F. Cavallini, "Fitting a Logistic Curve to Data", 
+%                        College Math. J., vol.24, no.3,p.247 (1993).
+%
+%    days   biomass (mm^2)
+%     ti      yi
+%   ----------------
+      11    0.00476
+      15    0.0105
+      18    0.0207
+      23    0.0619
+      26    0.3370
+      31    0.7400
+      39    1.7000
+      44    2.4500
+      54    3.5000
+      64    4.5000
+      74    5.0900 
+
+
