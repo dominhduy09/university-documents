@@ -1,0 +1,19 @@
+Phylab 3
+
+4 tren mach, lấybtreen 
+3 5 6 tren may
+7 magnetic fields
+
+5 RC Circuit
+6 LRC Circuit
+
+voltage 1 coid and 2 coid = 1V
+voltage solenoid = 0.1V
+
+2 pi f L
+
+Cong thuc two coil:
+((uo*N*I*(R^2))/2)*(1/(((((d/2)-x)^2)+R^2)^3/2)+1/(((((d/2)+x)^2)+R^2)^3/2))
+
+Cong thuc single coil:
+(uO*N*I*(R^2))/(2*((x^2)+(R^2))^1.5)
