@@ -97,6 +97,42 @@ Documents:
 
 > Physics 3:
 - https://mphcmiuedu-my.sharepoint.com/personal/ititwe22145_student_hcmiu_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fititwe22145%5Fstudent%5Fhcmiu%5Fedu%5Fvn%2FDocuments%2FIUVNU%2DHCM%2FSubjects%2FPhysics%2FPhysics%203%2FFinal&ga=1
+Test bank: https://drive.google.com/drive/folders/1SvbAolIFqTm2xgOycvb37owsN2Tum9xS?fbclid=IwAR0d_ClTBL7sByp3ubG4Vra3geRWBxhcSyaqMza3p_6oggvf_OjvjPX1G2g
+
+Tổng hợp lý thuyết: https://www.youtube.com/playlist?list=PLSQl0a2vh4HAhCmMmeQSMoMDgAml6vuot
+(học phần nào xem phần đó, không cần xem hết)
+
+Electric field:
+
+•	Electric field of a dipole theory: https://www.youtube.com/watch?v=RZxyjv8YF3k&ab_channel=BozemanScience
+
+•	Electric dipole potential, torque, work, electric field: https://www.youtube.com/watch?v=Mt9Rn2Ek0SU&ab_channel=TheOrganicChemistryTutor
+
+•	Integrals to find Electric field: https://www.youtube.com/watch?v=mACpLjE_XKk&t=1076s&ab_channel=WeAreShowboat
+
+•	Some exercises: https://www.youtube.com/watch?v=5hhga1L_Hrc&ab_channel=TheOrganicChemistryTutor
+
+•	More exercises: https://www.youtube.com/watch?v=B5UyXkFCg5s&ab_channel=TheOrganicChemistryTutor
+
+Gauss's law: https://www.youtube.com/watch?v=kpQLcRtUWtc
+(phần này rất quan trọng nè)
+
+Electric Potential Energy: https://www.youtube.com/watch?v=KoZ61FujkRk&ab_channel=TheOrganicChemistryTutor
+
+Kirchhoff's Rule: https://www.youtube.com/watch?v=Z2QDXjG2ynU
+(dễ, nhưng mà là dễ sai :v nhưng quan trọng lắm phải học nha)
+
+Capacitor:
+
+•	https://www.youtube.com/watch?v=u-jigaMJT10&ab_channel=khanacademymedicine
+
+•	https://www.youtube.com/watch?v=rkntp3_cZl4&ab_channel=khanacademymedicine
+
+Drift Speed: https://www.youtube.com/watch?v=v-En7qY5vzY&ab_channel=KhanAcademyIndia-English
+
+RC Circuit:
+
+https://www.youtube.com/watch?v=PLQrPqYlPmI&t=659s&ab_channel=TheOrganicChemistryTutor
 
 > Physics 3 laboratory:
 - https://drive.google.com/drive/folders/14_Yttdo_HpXDzymVXTprfRO1Fs1tZ5gs
