@@ -155,3 +155,35 @@ Test bank: https://drive.google.com/drive/folders/1SvbAolIFqTm2xgOycvb37owsN2Tum
 **CREDITS**
 Special thanks to: Nguyeen, Quang, Bao...
 
+#STT	Mã môn học	Tên môn học	Số TC	Số TCHP	Năm	Học kỳ	BB tự chọn	Đã học
+1	ENTP03	Intensive English 3- Twinning Program	10	10	2022	1		ENTP03
+2	MA001SB	Calculus 1	4	4	2022	1		X
+3	MA003SB	Calculus 2	4	4	2022	2		X
+4	CH011SB	Chemistry for Engineers	3	3	2022	2		X
+5	PH013SB	Physics 1	2	2	2022	2		X
+6	EN007SB	Writing AE1	2	2	2022	2		X
+7	CH012SB	Chemistry Laboratory	1	1	2022	2		X
+8	EN008SB	Listening AE1	2	2	2022	2		X
+9	IT064SB	Introduction to Computing	3	3	2023	1		X
+10	PT002SB	Physical Training 2	3	3	2023	1		X
+11	EN011SB	Writing AE2	2	2	2023	1		X
+12	EN012SB	Speaking AE2	2	2	2023	1		X
+13	PT001SB	Physical Training 1	3	3	2023	1		X
+14	PH014SB	Physics 2	2	2	2023	1		X
+15	IT069SB	Object-Oriented Programming	4	4	2023	2		X
+16	PE008SB	Critical Thinking	3	3	2023	2		X
+17	PH016SB	Physics 3 Laboratory	1	1	2023	2		X
+18	PH015SB	Physics 3	3	3	2023	2		X
+19	MA026SB	Probability, Statistic & Random Process	3	3	2023	2		X
+20	IT067SB	Digital Logic Design	3	3	2024	1		X
+21	PH012SB	Physics 4	2	2	2024	1		X
+22	IT099SB	Digital Logic Design Laboratory	1	1	2024	1		X
+23	IT098SB	Principles of EE1 Laboratory	1	1	2024	1		X
+24	IT068SB	Principles of EE1	3	3	2024	1		X
+25	MA024SB	Differential Equations	4	4	2024	2		X
+26	EE050SB	Introduction to Computer for Engineers	3	3	2024	2		X
+27	IT013SB	Algorithms & Data Structures	4	4	2024	2		X
+28	MA027SB	Applied Linear Algebra	2	2	2024	2		X
+29	EE084SB	Micro-processing Systems Laboratory	1	1	2024	2		X
+30	EE083SB	Micro-processing Systems	3	3	2024	2		X
+
