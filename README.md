@@ -18,6 +18,11 @@ Tools:
 Documents:
 - Libgen: https://libgen.is
 
+🟢 Notebooks / Notes 🟢
+
+➡️ Penbook <br>
+➡️ Goodnotes 6 <br>
+
 🟢 Free Books Sites 🟢
 
 ➡️ archive.org/details/texts <br>
@@ -45,9 +50,9 @@ Documents:
 ➡️ ebookbb.com <br>
 ➡️ 2020ok.com <br>
 <br>
-🔻Support to Share Our Channel 🔻:  https://t.me/+ASncLehWlEk3NjY1 
+🔻Support to Share Our Channel 🔻:  https://t.me/+ASncLehWlEk3NjY1 or https://t.me/+pnJRMTcZEwxlZWQ1
 
-#
+# Useful Linking for research
 
 > Chemistry for engineers:
 - Darrell Ebbing, Steven D. Gammon - General Chemistry, 9th Edition   (2007, Houghton Mifflin) - libgen.lc
@@ -67,7 +72,7 @@ Documents:
 - https://www.studocu.com/en-us/document/truong-dai-hoc-quoc-te-dai-hoc-quoc-gia-thanh-pho-ho-chi-minh/calculus-1/cal1-mid-s22021-22-with-answer-key-short/32631259?origin=viewer-exit-popup
 
 > Note Calculus 1:
-- COMING SOON...
+- inthefolder...
 
 > Calculus 2:
 - Calculus - Early Transcendentals (Stewart)
@@ -104,17 +109,17 @@ Test bank: https://drive.google.com/drive/folders/1SvbAolIFqTm2xgOycvb37owsN2Tum
 
 - Tổng hợp lý thuyết: https://www.youtube.com/playlist?list=PLSQl0a2vh4HAhCmMmeQSMoMDgAml6vuot (học phần nào xem phần đó, không cần xem hết)
 
-- Electric field:
++ Electric field:
 
-•	Electric field of a dipole theory: https://www.youtube.com/watch?v=RZxyjv8YF3k&ab_channel=BozemanScience
+-	Electric field of a dipole theory: https://www.youtube.com/watch?v=RZxyjv8YF3k&ab_channel=BozemanScience
 
-•	Electric dipole potential, torque, work, electric field: https://www.youtube.com/watch?v=Mt9Rn2Ek0SU&ab_channel=TheOrganicChemistryTutor
+-	Electric dipole potential, torque, work, electric field: https://www.youtube.com/watch?v=Mt9Rn2Ek0SU&ab_channel=TheOrganicChemistryTutor
 
-•	Integrals to find Electric field: https://www.youtube.com/watch?v=mACpLjE_XKk&t=1076s&ab_channel=WeAreShowboat
+-	Integrals to find Electric field: https://www.youtube.com/watch?v=mACpLjE_XKk&t=1076s&ab_channel=WeAreShowboat
 
-•	Some exercises: https://www.youtube.com/watch?v=5hhga1L_Hrc&ab_channel=TheOrganicChemistryTutor
+-	Some exercises: https://www.youtube.com/watch?v=5hhga1L_Hrc&ab_channel=TheOrganicChemistryTutor
 
-•	More exercises: https://www.youtube.com/watch?v=B5UyXkFCg5s&ab_channel=TheOrganicChemistryTutor
+-	More exercises: https://www.youtube.com/watch?v=B5UyXkFCg5s&ab_channel=TheOrganicChemistryTutor
 
 - Gauss's law: https://www.youtube.com/watch?v=kpQLcRtUWtc (phần này rất quan trọng nè)
 
@@ -122,15 +127,15 @@ Test bank: https://drive.google.com/drive/folders/1SvbAolIFqTm2xgOycvb37owsN2Tum
 
 - Kirchhoff's Rule: https://www.youtube.com/watch?v=Z2QDXjG2ynU (dễ, nhưng mà là dễ sai :v nhưng quan trọng lắm phải học nha)
 
-- Capacitor:
++ Capacitor:
 
-•	https://www.youtube.com/watch?v=u-jigaMJT10&ab_channel=khanacademymedicine
+-	https://www.youtube.com/watch?v=u-jigaMJT10&ab_channel=khanacademymedicine
 
-•	https://www.youtube.com/watch?v=rkntp3_cZl4&ab_channel=khanacademymedicine
+-	https://www.youtube.com/watch?v=rkntp3_cZl4&ab_channel=khanacademymedicine
 
 - Drift Speed: https://www.youtube.com/watch?v=v-En7qY5vzY&ab_channel=KhanAcademyIndia-English
 
-- RC Circuit:
++ RC Circuit:
 
 - https://www.youtube.com/watch?v=PLQrPqYlPmI&t=659s&ab_channel=TheOrganicChemistryTutor
 
@@ -143,14 +148,9 @@ Test bank: https://drive.google.com/drive/folders/1SvbAolIFqTm2xgOycvb37owsN2Tum
 > Probability:
 - https://drive.google.com/drive/folders/1h72xmmxDIPObX1p8nVcozleJcLrNUApj
   
-> COMING SOON...
+> DM me for more...
 
 #
-
-🟢 Notebooks / Notes 🟢
-
-➡️ Penbook <br>
-➡️ Goodnotes 6 <br>
 
 **CREDITS**
 Special thanks to: Nguyeen, Quang, Bao...
