@@ -155,7 +155,7 @@ Test bank: https://drive.google.com/drive/folders/1SvbAolIFqTm2xgOycvb37owsN2Tum
 **CREDITS**
 Special thanks to: Nguyeen, Quang, Bao...
 
-#STT	Mã môn học	Tên môn học	Số TC	Số TCHP	Năm	Học kỳ	BB tự chọn	Đã học
+# STT	Mã môn học	Tên môn học	Số TC	Số TCHP	Năm	Học kỳ	BB tự chọn	Đã học
 1	ENTP03	Intensive English 3- Twinning Program	10	10	2022	1		ENTP03
 2	MA001SB	Calculus 1	4	4	2022	1		X
 3	MA003SB	Calculus 2	4	4	2022	2		X
