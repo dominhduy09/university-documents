@@ -67,6 +67,8 @@ Fact: you do not need to do all of these, choose the one best fit for you must b
 > Applied Linear Algebra:
 - https://drive.google.com/file/d/1_cuMnv2uhoomeKDLocLofJJsDhAlXaLL/view
 - https://drive.google.com/file/d/1d_sWZvTv1DJ5QaBeaBAWvkBreuLwodUG/view
+- https://drive.google.com/file/d/1oPifIRg07tVnhEGHmLfI5WB5B7CyI3EP/view
+- https://drive.google.com/drive/u/1/folders/1si7C_BsrWJ4X8FIo3tTB-D2pns4B9OOY
 
 > Calculus 1:
 - https://mphcmiuedu-my.sharepoint.com/:f:/r/personal/ititwe22145_student_hcmiu_edu_vn/Documents/IUVNU-HCM/Subjects/Calculus/Calculus%201/IU%20-%20Calculus%201/Sample%20Test/Midterm?csf=1&web=1&e=mdD1ud
