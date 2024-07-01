@@ -1,0 +1,11 @@
+Parámetro: (por defecto)
+
+- Normalmente Derrado: (no)
+   Pulsar para abrir (si) o pulsar para cerrar (no).
+
+- Polos: (1)
+   Número de polos controlados por el pulsador.
+
+- Texto en Tecla: ()
+   Caracter que aparece en el botón.
+   Se puede activar con el teclado del PC.

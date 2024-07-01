@@ -1,0 +1,13 @@
+Fuente de Voltage variable.
+
+Activar/desactivar con el botón.
+Ajustar el valor con el dial.
+El botón muestra el voltaje actual.
+
+Parámetros: (por defecto)
+
+- Valor actual: (0 V)
+   Valor del voltaje de salida actual.
+
+- Voltaje Maximo: (5 V)
+   Voltaje máximo con el dial a tope.

@@ -1,0 +1,15 @@
+Fuente de reloj simple.
+
+Activar/desactivar con el botón izquierdo.
+
+
+Parámetros: (por defecto)
+
+- Voltaje: (5 V)
+   Determina la amplitud de onda.
+
+- Frecuencia: (1000 Hz)
+   Ajusta la frecuencia.
+
+- Siempre Encendido (si)
+   Elimina el botón de encendido y queda siempre activo.

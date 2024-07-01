@@ -1,0 +1,3 @@
+240x320 color LCD display.
+
+

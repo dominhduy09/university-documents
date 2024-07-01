@@ -1,0 +1,9 @@
+constucture --> 
+- method, 
+- method have the same name with class
+
+overloading -->
+- same name with diff parameter
+
+static method and static attribute --> 
+Static methods are functions that can be called without creating an instance of the class they belong to, while static attributes are fields that belong to a class, not to a specific object instance. 

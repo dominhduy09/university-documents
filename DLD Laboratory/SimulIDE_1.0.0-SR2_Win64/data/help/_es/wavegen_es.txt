@@ -1,0 +1,30 @@
+Activar/desactivar con el botón izquierdo.
+
+
+Parámetros: (por defecto)
+
+Basico:
+- Tipo de onda: (Seno)
+   Tipo de onda de salida.
+
+- Frecuencia: (1000 Hz)
+   Ajusta la frecuencia.
+
+- Calidad: (100)
+   Número de pasos por ciclo.
+
+- Ciclo: (50 %)
+   Ancho de pulso (Duty cicle).
+   No disponible para todos los tipos.
+
+- Siempre Encendido (si)
+   Elimina el botón de encendido y queda siempre activo.
+
+
+Eléctricas:
+- Media amplitud: (2.5 V)
+   Mitad de amplitud de onda. 
+
+- Voltaje Central: (0 V)
+   Voltaje central de la onda.
+

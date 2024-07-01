@@ -1,0 +1,8 @@
+Conjunto de interruptores redimensionable.
+Haga clic en "botones" individuales para ENCENDER/APAGAR.
+
+
+Parámetro: (por defecto)
+
+- Tamaño: (8)
+   Número de interruptores.

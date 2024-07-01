@@ -1,0 +1,5 @@
+// Khi nao nen dung vong lap For:
+
+
+- Khi muon lap lap 1 khoi code voi so lan cu the va da biet truoc duoc so lan lap
+- Khi can thuc hien cac cong viec lap lai co lien quan den Mang,danh sach cac doi tuong

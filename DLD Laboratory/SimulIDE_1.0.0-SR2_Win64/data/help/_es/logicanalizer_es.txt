@@ -1,0 +1,9 @@
+Click en botón "Expandir" para ver el osciloscopio en una ventana con todos los controles.
+
+Parámetros: (por defecto)
+
+- Tamaño X: (135)
+    Ancho de la pantalla (no expandido).
+
+- Tamaño Y: (135)
+    Alto de la pantalla (no expandido).

@@ -1,0 +1,10 @@
+- Pin Rojo: Positivo.
+- Pin Negro: Negativo.
+- Pin Derecho: Salida de voltage
+   Se actualiza a los FPS del Circuito
+
+
+Parámetros: (por defecto)
+
+- Cambiar Pins: (no)
+   Intercambia posiciones de los Pins.

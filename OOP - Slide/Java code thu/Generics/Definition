@@ -1,0 +1,6 @@
+Generics la mot tinh nang trong Java, no cho phep ban dinh nghia mot lop hoac interface theo cach ma co the hoat dong voi cac kieu du lieu khac nhau
+trong khi van dam bao an toan cho kieu du lieu (Type safety)
+
+No cho phep ban viet code linh hoat hon va co the tai su dung
+
+Phuong thuc Generics? No cung giong nhu lop Generics, Minh co the truyen vao bat cu kieu du lieu nao minh muon 

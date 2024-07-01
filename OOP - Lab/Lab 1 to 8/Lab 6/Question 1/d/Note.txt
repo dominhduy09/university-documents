@@ -1,0 +1,10 @@
+//  d. Can you assign a value of type MyPair<String, Double> to a variable of type  
+// MyPair<String, Integer>? Should this be allowed?  
+
+// No, you cannot assign a value of type MyPair<String, Double> to a variable 
+// of type MyPair<String, Integer>. This would violate type safety because the types 
+// of the second elements (Double and Integer) are not compatible.
+
+// Java's generics are invariant, meaning that even though Double is a subtype of Number and Integer is 
+// also a subtype of Number, MyPair<String, Double> is not a subtype of MyPair<String, Integer>. 
+// In other words, even if the type arguments themselves are related, the generic types are not covariant.

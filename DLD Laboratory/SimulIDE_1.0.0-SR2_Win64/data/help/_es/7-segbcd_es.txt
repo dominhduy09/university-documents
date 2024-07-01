@@ -1,0 +1,6 @@
+7seg con convertidor BCD a 7seg integrado.
+
+El bit 0 está en el pin derecho, el bit 3 es el izquierdo.
+
+No acepta PWM o multiplexado.
+

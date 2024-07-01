@@ -1,0 +1,15 @@
+Parámetro: (por defecto)
+
+- Normalmente Derrado: (no)
+   Estado con el botón no pulsado.
+
+- Doble vía: (no)
+   Si: 2 vías por polo (conmutador).
+   No: 1 vía por polo (interruptor).
+
+- Polos: (1)
+   Número de polos controlados por el interruptor.
+
+- Texto en Tecla: ()
+   Caracter que aparece en el botón.
+   Se puede activar con el teclado del PC.

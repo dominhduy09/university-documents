@@ -1,0 +1,32 @@
+<parts>
+    <!-- BANK 0 -->
+    <regblock name="SFR0" start="0x00" end="0x0B" >
+        <register name="PORTA"   addr="0x05" mask="00011111"/>
+        <register name="PORTB"   addr="0x06" />
+        <register name="EEDATA"  addr="0x08" />
+        <register name="EEADR"   addr="0x09" />
+        <register name="PCLATH"  addr="0x0A" mask="00011111"/>
+        <register name="INTCON"  addr="0x0B" 
+                  bits="RBIF,INTF,T0IF,RBIE,INTE,T0IE,EEIE,GIE"/>
+    </regblock>
+    
+    <!-- BANK 1 -->
+    <regblock name="SFR1" start="0x80" end="0x8B">
+        <mapped                  addr="0x80" mapto="0x00"/><!-- INDF -->
+        <register name="OPTION"  addr="0x81" reset="11111111"
+                  bits="PS0,PS1,PS2,PSA,T0SE,T0CS,INTEDG,RBPU"/>
+                  
+        <mapped                  addr="0x82" mapto="0x02"/><!-- PCL -->
+        <mapped                  addr="0x83" mapto="0x03"/><!-- STATUS -->
+        <mapped                  addr="0x84" mapto="0x04"/><!-- FSR -->
+        <register name="TRISA"   addr="0x85" reset="11111111" mask="00011111"/>
+        <register name="TRISB"   addr="0x86" reset="11111111"/>
+        <register name="EECON1"  addr="0x85" mask="00011111"
+                  bits="RD,WR,WREN,WRERR,EEIF" />
+                  
+        <register name="EECON2"  addr="0x86" bits="" />
+        <mapped                  addr="0x8A" mapto="0x0A"/><!-- PCLATCH -->
+        <mapped                  addr="0x8B" mapto="0x0B"/><!-- INTCON -->
+    </regblock>
+    
+</parts>

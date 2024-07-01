@@ -1,0 +1,3 @@
+Parámetro: (por defecto)
+
+- Impedancia: (8 Ω)

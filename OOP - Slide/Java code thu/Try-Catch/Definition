@@ -1,0 +1,18 @@
+Exception la mot su kien khong mong muon ma khi xay ra no se lam gian doan chuong trinh dang chay
+    
+Khi Exception xay ra thi chuong trinh ket thuc ngay tai do
+
+Neu Exception khong xay ra thi code o trong catch block se khong duoc chay
+
+Co the catch duoc nhieu hon 1 kieu Exception
+
+Moi Exception co mot cach catch block khac nhau
+
+catch (Exception e) --> De chup het tat ca Exceptions
+
+Cau truc chung thuong la:
++ Try 
++ 1 hoac nhieu Catch block
++ Finally (code luon luon dc chay, thuong thi dev dung block nay de dong cac connection hoac nhung file ma ta dang doc)
+
+Chu y: Khi Exception xay ra o dong code nao trong try block thi tat ca cac dong code sau cai dong code do se ko dc chay nua

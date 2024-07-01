@@ -1,0 +1,101 @@
+
+In Java, methods and attributes (also known as fields or instance variables) are fundamental components of a class.
+
+Attributes (Fields or Instance Variables):
+Attributes are variables declared within a class. They represent the state or data associated with objects of the class. Each object of the class has its own copy of these attributes. Attributes define the characteristics or properties of objects.
+
+Example:
+
+java
+Copy code
+public class Rectangle {
+    // Attributes
+    private int width; // Attribute representing the width of the rectangle
+    private int height; // Attribute representing the height of the rectangle
+}
+In this example, width and height are attributes of the Rectangle class.
+
+Methods:
+Methods are functions defined within a class. They represent the behavior or actions that objects of the class can perform. Methods operate on the data contained in the attributes of the class. They encapsulate the logic associated with the class and provide a way to interact with the objects.
+
+Example:
+
+java
+Copy code
+public class Rectangle {
+    // Attributes
+    private int width;
+    private int height;
+
+    // Method to calculate the area of the rectangle
+    public int calculateArea() {
+        return width * height;
+    }
+
+    // Method to set the width of the rectangle
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    // Method to set the height of the rectangle
+    public void setHeight(int height) {
+        this.height = height;
+    }
+}
+In this example, calculateArea(), setWidth(), and setHeight() are methods of the Rectangle class. They define the behavior associated with calculating the area of a rectangle and setting its width and height.
+
+In summary, attributes represent the state of objects, while methods define the behavior of objects in Java classes.
+
+Methods have ()
+
+class and instance differences
+
+Rectangle rect1 =    new Rectangle();
+Rectangle rect2 =    new Rectangle();
+class     instance	constructors
+
+what is constructors? how to define it? why we need constructors?
+- same name with class
+- use constructors to initialize 
+
+neu khong co constructors thi phai ghi them person.setName(""); --> phai tao them nhieu attributes moi
+
+
+In Java, public and private are access modifiers used to control the visibility and accessibility of classes, methods, and attributes within a program.
+
+public:
+When a class, method, or attribute is declared as public, it can be accessed from any other class or package.
+Public members are visible to all classes, regardless of whether they are in the same package or not.
+Example:
+
+java
+Copy code
+public class MyClass {
+    public int myPublicAttribute;
+    
+    public void myPublicMethod() {
+        // Method implementation
+    }
+}
+In this example, myPublicAttribute and myPublicMethod() are accessible from any other class or package.
+
+private:
+When a class member (method or attribute) is declared as private, it can only be accessed within the same class.
+Private members are not visible to classes outside the class in which they are defined.
+Example:
+
+java
+Copy code
+public class MyClass {
+    private int myPrivateAttribute;
+    
+    private void myPrivateMethod() {
+        // Method implementation
+    }
+}
+In this example, myPrivateAttribute and myPrivateMethod() can only be accessed within the MyClass itself. They are not visible to any other classes.
+
+modifier
+need to use set get to use
+private: (-)
+public: (+)

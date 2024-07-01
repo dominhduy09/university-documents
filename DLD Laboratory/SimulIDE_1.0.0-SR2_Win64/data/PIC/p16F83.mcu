@@ -1,0 +1,15 @@
+<!DOCTYPE SimulIDE>
+
+<mcu name="p16F83" core="Pic14" data="256" prog="512" progword="2" eeprom="64"
+            inst_cycle="4">
+            
+    <include file="pic/pic14_regs.xml" />
+    <include file="p16F8x/p16F8x_regs.xml" />
+    
+    <datablock name="GPR0" start="0x0C" end="0x2F"/>
+    <datablock name="GPR1" start="0x8C" end="0xAF" mapto="0x0C"/>
+    
+    <include file="p16F8x/p16F84_int.xml" />
+    <include file="p16F8x/p16F84_perif.xml" />
+    
+</mcu>

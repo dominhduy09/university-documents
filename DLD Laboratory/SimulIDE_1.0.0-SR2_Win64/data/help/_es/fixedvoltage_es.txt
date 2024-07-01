@@ -1,0 +1,12 @@
+Fuente de voltaje simple.
+
+Activar/desactivar con el botón izquierdo.
+
+
+Parámetros: (por defecto)
+
+- Voltaje: (5 V)
+   Establece el voltaje de salida.
+
+
+

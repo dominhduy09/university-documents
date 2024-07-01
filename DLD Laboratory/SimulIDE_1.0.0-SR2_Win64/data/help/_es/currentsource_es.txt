@@ -1,0 +1,13 @@
+Fuente de Corriente variable.
+
+Activar/desactivar con el botón.
+Ajustar el valor con el dial.
+El botón muestra el voltaje actual.
+
+Parámetros: (por defecto)
+
+- Valor actual: (0 A)
+   Valor de la corriente de salida actual.
+
+- Corriente Maxima: (1 A)
+   Corriente máxima con el dial a tope.

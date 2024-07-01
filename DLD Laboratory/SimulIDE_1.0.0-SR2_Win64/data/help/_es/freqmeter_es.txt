@@ -1,0 +1,4 @@
+Parámetros: (por defecto)
+
+- Filtro: (0.1. V)
+   Elimina todos los cambios de voltaje por debajo de este valor.

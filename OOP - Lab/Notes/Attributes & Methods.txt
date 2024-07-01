@@ -1,0 +1,57 @@
+
+In Java, methods and attributes (also known as fields or instance variables) are fundamental components of a class.
+
+Attributes (Fields or Instance Variables):
+Attributes are variables declared within a class. They represent the state or data associated with objects of the class. Each object of the class has its own copy of these attributes. Attributes define the characteristics or properties of objects.
+
+Example:
+
+java
+Copy code
+public class Rectangle {
+    // Attributes
+    private int width; // Attribute representing the width of the rectangle
+    private int height; // Attribute representing the height of the rectangle
+}
+In this example, width and height are attributes of the Rectangle class.
+
+Methods:
+Methods are functions defined within a class. They represent the behavior or actions that objects of the class can perform. Methods operate on the data contained in the attributes of the class. They encapsulate the logic associated with the class and provide a way to interact with the objects.
+
+Example:
+
+java
+Copy code
+public class Rectangle {
+    // Attributes
+    private int width;
+    private int height;
+
+    // Method to calculate the area of the rectangle
+    public int calculateArea() {
+        return width * height;
+    }
+
+    // Method to set the width of the rectangle
+    public void setWidth(int width) {
+        this.width = width;
+    }
+
+    // Method to set the height of the rectangle
+    public void setHeight(int height) {
+        this.height = height;
+    }
+}
+In this example, calculateArea(), setWidth(), and setHeight() are methods of the Rectangle class. They define the behavior associated with calculating the area of a rectangle and setting its width and height.
+
+In summary, attributes represent the state of objects, while methods define the behavior of objects in Java classes.
+
+Methods have ()
+
+class and instance differences
+
+Rectangle rect1 =    new Rectangle();
+Rectangle rect2 =    new Rectangle();
+class     instance	constructors
+
+what is constructors? how to define it? why we need constructors?

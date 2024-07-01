@@ -1,0 +1,12 @@
+128x64 OLED monochrome graphic display.
+
+Property: (default value)
+
+- Color: (white)
+   Pixel color.
+
+- I2C Address: (62)
+   Device address.
+
+- I2C Frequency: (100 KHz)
+   It is better to be similar to I2C Master frequency, but not critical in most cases.

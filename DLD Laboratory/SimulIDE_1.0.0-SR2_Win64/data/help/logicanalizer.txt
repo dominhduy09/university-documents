@@ -1,0 +1,9 @@
+Click on "Expand" button to see the oscilloscope in a window with all controls.
+
+Property: (default value)
+
+- Size X: (135)
+    Width of the screen (not expanded).
+
+- Size Y: (135)
+   Height of the screen (not expanded).

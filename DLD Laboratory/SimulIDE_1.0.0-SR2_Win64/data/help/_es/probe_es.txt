@@ -1,0 +1,12 @@
+Mueve por los cables o pins para ver voltaje.
+
+Como sonda digital: Alto = Naranja.
+
+
+Parámetros: (por defecto)
+
+- Mostar Voltaje: (si)
+   Muestra o no la tensión detectada.
+
+- Umbral: (2.5 V)
+   Voltaje de cambio de estado Lógico Alto/Bajo.
