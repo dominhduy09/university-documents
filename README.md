@@ -3,19 +3,20 @@ University documents that I have collected from HCM-IU VNU
 
 Fact: you do not need to do all of these, choose the one best fit for you must be ideal! ☠️
 
-More information at: http://webdirectory.hcmiu.edu.vn
+🔴 More information 🔴
+- http://webdirectory.hcmiu.edu.vn
 
-Links: 
+🔴 Links 🔴
 - Scribd: https://www.scribd.com/user/662428313/Duy-Do-Minh
 - Studocu: https://www.studocu.com/vn/user/20773621
 
-Tools:
+🔴 Tools 🔴
 - Mathway: https://www.mathway.com
 - Wolfreealpha: https://wolfreealpha.gitlab.io/input/index.html
 - Symbolab: https://www.symbolab.com
 - Quizlet: https://quizlet.com
 
-Documents:
+🔴 Documents 🔴
 - Libgen: https://libgen.is
 
 🟢 Notebooks / Notes 🟢
@@ -49,8 +50,12 @@ Documents:
 ➡️ dpgroup.org <br>
 ➡️ ebookbb.com <br>
 ➡️ 2020ok.com <br>
+
 <br>
-🔻Support to Share Our Channel 🔻:  https://t.me/+ASncLehWlEk3NjY1 or https://t.me/+pnJRMTcZEwxlZWQ1
+
+🔻Support to Share Our Channel 🔻
+- https://t.me/+ASncLehWlEk3NjY1
+- https://t.me/+pnJRMTcZEwxlZWQ1
 
 # Useful Linking for research
 
@@ -59,8 +64,13 @@ Documents:
 - Raymond Chang, Jason Scott Overby - General Chemistry_ The Essential Concepts, 6th Edition  -McGraw-Hill Companies, The (2011)
 - Theodore E. Brown, H. Eugene H LeMay, Bruce E. Bursten, Catherine Murphy, Patrick Woodward, Matthew E Stoltzfus - Chemistry_ The Central Science-P
 
-> Calculus 1:
+> Applied Linear Algebra:
+- https://drive.google.com/file/d/1_cuMnv2uhoomeKDLocLofJJsDhAlXaLL/view
+- https://drive.google.com/file/d/1d_sWZvTv1DJ5QaBeaBAWvkBreuLwodUG/view
+- https://drive.google.com/file/d/1oPifIRg07tVnhEGHmLfI5WB5B7CyI3EP/view
+- https://drive.google.com/drive/u/1/folders/1si7C_BsrWJ4X8FIo3tTB-D2pns4B9OOY
 
+> Calculus 1:
 - https://mphcmiuedu-my.sharepoint.com/:f:/r/personal/ititwe22145_student_hcmiu_edu_vn/Documents/IUVNU-HCM/Subjects/Calculus/Calculus%201/IU%20-%20Calculus%201/Sample%20Test/Midterm?csf=1&web=1&e=mdD1ud
 - https://mphcmiuedu-my.sharepoint.com/:f:/r/personal/ititwe22145_student_hcmiu_edu_vn/Documents/IUVNU-HCM/Subjects/Calculus/Calculus%201/Calculus%201/Mid%20term%20cal%201?csf=1&web=1&e=Ho0Xkb
 
@@ -110,33 +120,21 @@ Test bank: https://drive.google.com/drive/folders/1SvbAolIFqTm2xgOycvb37owsN2Tum
 - Tổng hợp lý thuyết: https://www.youtube.com/playlist?list=PLSQl0a2vh4HAhCmMmeQSMoMDgAml6vuot (học phần nào xem phần đó, không cần xem hết)
 
 + Electric field:
-
 -	Electric field of a dipole theory: https://www.youtube.com/watch?v=RZxyjv8YF3k&ab_channel=BozemanScience
-
 -	Electric dipole potential, torque, work, electric field: https://www.youtube.com/watch?v=Mt9Rn2Ek0SU&ab_channel=TheOrganicChemistryTutor
-
 -	Integrals to find Electric field: https://www.youtube.com/watch?v=mACpLjE_XKk&t=1076s&ab_channel=WeAreShowboat
-
 -	Some exercises: https://www.youtube.com/watch?v=5hhga1L_Hrc&ab_channel=TheOrganicChemistryTutor
-
 -	More exercises: https://www.youtube.com/watch?v=B5UyXkFCg5s&ab_channel=TheOrganicChemistryTutor
-
 - Gauss's law: https://www.youtube.com/watch?v=kpQLcRtUWtc (phần này rất quan trọng nè)
-
 - Electric Potential Energy: https://www.youtube.com/watch?v=KoZ61FujkRk&ab_channel=TheOrganicChemistryTutor
-
 - Kirchhoff's Rule: https://www.youtube.com/watch?v=Z2QDXjG2ynU (dễ, nhưng mà là dễ sai :v nhưng quan trọng lắm phải học nha)
 
 + Capacitor:
-
 -	https://www.youtube.com/watch?v=u-jigaMJT10&ab_channel=khanacademymedicine
-
 -	https://www.youtube.com/watch?v=rkntp3_cZl4&ab_channel=khanacademymedicine
-
 - Drift Speed: https://www.youtube.com/watch?v=v-En7qY5vzY&ab_channel=KhanAcademyIndia-English
 
 + RC Circuit:
-
 - https://www.youtube.com/watch?v=PLQrPqYlPmI&t=659s&ab_channel=TheOrganicChemistryTutor
 
 > Physics 3 laboratory:
@@ -147,43 +145,47 @@ Test bank: https://drive.google.com/drive/folders/1SvbAolIFqTm2xgOycvb37owsN2Tum
 
 > Probability:
 - https://drive.google.com/drive/folders/1h72xmmxDIPObX1p8nVcozleJcLrNUApj
-  
-> DM me for more...
 
 #
 
-**CREDITS**
-Special thanks to: Nguyeen, Quang, Bao...
+🌟 **CREDITS** 🌟
+Special thanks to: Nguyeen, Quang, Bao, LyKhaiMinh...
+
+🌟 **HELP** 🌟
+DM me for more... or you can help us improve. Thank you so much
 
 # STT	Mã môn học	Tên môn học	Số TC	Số TCHP	Năm	Học kỳ	BB tự chọn	Đã học
-1	ENTP03	Intensive English 3- Twinning Program	10	10	2022	1		ENTP03
-2	MA001SB	Calculus 1	4	4	2022	1		X
-3	MA003SB	Calculus 2	4	4	2022	2		X
-4	CH011SB	Chemistry for Engineers	3	3	2022	2		X
-5	PH013SB	Physics 1	2	2	2022	2		X
-6	EN007SB	Writing AE1	2	2	2022	2		X
-7	CH012SB	Chemistry Laboratory	1	1	2022	2		X
-8	EN008SB	Listening AE1	2	2	2022	2		X
-9	IT064SB	Introduction to Computing	3	3	2023	1		X
-10	PT002SB	Physical Training 2	3	3	2023	1		X
-11	EN011SB	Writing AE2	2	2	2023	1		X
-12	EN012SB	Speaking AE2	2	2	2023	1		X
-13	PT001SB	Physical Training 1	3	3	2023	1		X
-14	PH014SB	Physics 2	2	2	2023	1		X
-15	IT069SB	Object-Oriented Programming	4	4	2023	2		X
-16	PE008SB	Critical Thinking	3	3	2023	2		X
-17	PH016SB	Physics 3 Laboratory	1	1	2023	2		X
-18	PH015SB	Physics 3	3	3	2023	2		X
-19	MA026SB	Probability, Statistic & Random Process	3	3	2023	2		X
-20	IT067SB	Digital Logic Design	3	3	2024	1		X
-21	PH012SB	Physics 4	2	2	2024	1		X
-22	IT099SB	Digital Logic Design Laboratory	1	1	2024	1		X
-23	IT098SB	Principles of EE1 Laboratory	1	1	2024	1		X
-24	IT068SB	Principles of EE1	3	3	2024	1		X
-25	MA024SB	Differential Equations	4	4	2024	2		X
-26	EE050SB	Introduction to Computer for Engineers	3	3	2024	2		X
-27	IT013SB	Algorithms & Data Structures	4	4	2024	2		X
-28	MA027SB	Applied Linear Algebra	2	2	2024	2		X
-29	EE084SB	Micro-processing Systems Laboratory	1	1	2024	2		X
-30	EE083SB	Micro-processing Systems	3	3	2024	2		X
+- 1	ENTP03	Intensive English 3- Twinning Program	10	10	2022	1		ENTP03
+- 2	MA001SB	Calculus 1	4	4	2022	1		X
+- 3	MA003SB	Calculus 2	4	4	2022	2		X
+- 4	CH011SB	Chemistry for Engineers	3	3	2022	2		X
+- 5	PH013SB	Physics 1	2	2	2022	2		X
+- 6	EN007SB	Writing AE1	2	2	2022	2		X
+- 7	CH012SB	Chemistry Laboratory	1	1	2022	2		X
+- 8	EN008SB	Listening AE1	2	2	2022	2		X
+- 9	IT064SB	Introduction to Computing	3	3	2023	1		X
+- 10	PT002SB	Physical Training 2	3	3	2023	1		X
+- 11	EN011SB	Writing AE2	2	2	2023	1		X
+- 12	EN012SB	Speaking AE2	2	2	2023	1		X
+- 13	PT001SB	Physical Training 1	3	3	2023	1		X
+- 14	PH014SB	Physics 2	2	2	2023	1		X
+- 15	IT069SB	Object-Oriented Programming	4	4	2023	2		X
+- 16	PE008SB	Critical Thinking	3	3	2023	2		X
+- 17	PH016SB	Physics 3 Laboratory	1	1	2023	2		X
+- 18	PH015SB	Physics 3	3	3	2023	2		X
+- 19	MA026SB	Probability, Statistic & Random Process	3	3	2023	2		X
+- 20	IT067SB	Digital Logic Design	3	3	2024	1		X
+- 21	PH012SB	Physics 4	2	2	2024	1		X
+- 22	IT099SB	Digital Logic Design Laboratory	1	1	2024	1		X
+- 23	IT098SB	Principles of EE1 Laboratory	1	1	2024	1		X
+- 24	IT068SB	Principles of EE1	3	3	2024	1		X
+- 25	MA024SB	Differential Equations	4	4	2024	2		X
+- 26	EE050SB	Introduction to Computer for Engineers	3	3	2024	2		X
+- 27	IT013SB	Algorithms & Data Structures	4	4	2024	2		X
+- 28	MA027SB	Applied Linear Algebra	2	2	2024	2		X
+- 29	EE084SB	Micro-processing Systems Laboratory	1	1	2024	2		X
+- 30	EE083SB	Micro-processing Systems	3	3	2024	2		X
+
+🕗🗓️🎉🪷
+Hope you done well!
 
