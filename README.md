@@ -108,6 +108,11 @@ Fact: you do not need to do all of these, choose the one best fit for you must b
 > Physics 1:
 - https://mphcmiuedu-my.sharepoint.com/personal/bebeiu21284_student_hcmiu_edu_vn/_layouts/15/onedrive.aspx?id=%2Fpersonal%2Fbebeiu21284%5Fstudent%5Fhcmiu%5Fedu%5Fvn%2FDocuments%2FTA%20Physic%201&ga=1
 - https://drive.google.com/drive/folders/1thSG-tBHCiX4uKGMuw9OV6JaBMURUY1u?fbclid=IwAR2j3YQDJ87hyGLufKrxao9bEXvf37eeFRW0i4QNLWYPotX7N-ZqMXTX3WA
+- https://mphcmiuedu.sharepoint.com/:v:/s/Phy1-TANhi/EZPJiivB6dNLrTim5GBbvIgBWeZxAs90ywhoXzHVpNrZPQ?e=nT70Ra&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+- https://mphcmiuedu.sharepoint.com/:v:/s/Phy1_TAthyHi/EdgO-Qkog6lNjqcwUpxAWjMBLtjK2inSgfAA6gT7dl-4vw?e=HhYb9x&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+- https://mphcmiuedu.sharepoint.com/:v:/s/Phy1S12021-2022tutorclass/EY6TPwNqd0ROsLIY77isiW4B8-npdapFqnfr0fDZip6rMA?e=BeGHXQ&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+- https://mphcmiuedu.sharepoint.com/:v:/s/Physics1-Dr.PhanHienVu-Sem2/EVH_dMCsbuNGsbHVDFu0GjYBTgX7nNEVdJDy1mqFpq399g?e=dj6RB6&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
+- https://mphcmiuedu.sharepoint.com/:v:/s/phys/EaoMzjFSKsVIigND305Aak0BWWVmvowFiKT15ioi4Celrw?e=EBfShE&nav=eyJyZWZlcnJhbEluZm8iOnsicmVmZXJyYWxBcHAiOiJTdHJlYW1XZWJBcHAiLCJyZWZlcnJhbFZpZXciOiJTaGFyZURpYWxvZy1MaW5rIiwicmVmZXJyYWxBcHBQbGF0Zm9ybSI6IldlYiIsInJlZmVycmFsTW9kZSI6InZpZXcifX0%3D
 
 > Physics 2:
 - https://mphcmiuedu-my.sharepoint.com/:f:/g/personal/ititwe22145_student_hcmiu_edu_vn/EuMo25QVE8pKuD0ZzDo0m1QBTmL04-lPn_XOvHj26io5cA?e=0pedyV
