@@ -56,46 +56,8 @@ Fact: you do not need to do all of these, choose the one best fit for you must b
 🔻Support to Share Our Channel 🔻
 - https://t.me/+ASncLehWlEk3NjY1
 - https://t.me/+pnJRMTcZEwxlZWQ1
-# Review
+# Review lecturer
 
-+ Đ.X.HỘI - (Physics 1) --> Dạy ngu, né là vừa nếu không muốn rớt, toàn giảng xàm xàm nhưng chả bao giờ làm bài tập (BONUS THÊM NẾU GẶP TA CÓ TÊN: Tạ Minh Trí thì càng phải né)
-
-+ N.T.T.Anh - (AE1) --> Dạy theo giáo trình, buồn ngủ, nản, tạm được
-
-+ P.T.Duong - (Calculus 1) --> Thầy cực vip không cần phải bàn cãi
-
-+ N.T.M.Nguyet - (IE3) --> Cô cực vip khỏi chê 
-
-+ B.N.Y.Tram - (Chemistry Laboratory) --> Chảnh, dạy chán, hay hù sinh viên
-
-+ V.B.Khánh - (Chemistry for Engineers) --> Dạy toàn nói chuyện trên trời, dạy buồn ngủ nhưng tạm được
-
-+ P.B.Ngoc - (Physics 2 & 3) --> Dạy rất có tâm nói từ đầu buổi tới cuối buổi, nhiệt huyết, đáng học nhất mặc dù không hiểu gì, hỏi rất nhiều và phải quay về thời đồ đá (ko cho sài đt và laptop)
-
-+ N.M.Quan - (Calculus 2) --> Dạy khá buồn ngủ, không hiểu thầy sẽ trả lời, thầy còn rất trẻ nên nhiệt huyết có điều giảng không được hay lắm
-
-+ H.K.Tu - (Introduction to Computing) --> Dạy cũng bình thường, cho làm quizz mỗi khi có tiết, đầu cô khá to nhưng mà giảng hơi buồn ngủ luôn, có 1 lựa chọn nên cô này không gì đặc sắc, chấp nhận được
-
-+ D.D.Dung - (Writing AE2) --> Thầy vui tính, hay ghim học sinh khi dùng điện thoại, già nhưng nhiệt huyết, chấm điểm không gắt. rất ok
-
-+ D.T.D.Ngoc - (Speaking AE2) --> Cô này nói nhiều, nói nhanh, gây ngủ nhanh, có tâm, nhưng mà sao sao ấy lâu lâu cô nói mấy câu muốn drop table luôn
-
-+ T.Q.Bao - (Probability,ALA) --> Thầy cực dễ, vô lớp muốn làm gì làm nhưng dạy lại cực có tâm nữa, thầy quá đỉnh con bà bỉnh
-
-+ P.H.Ha - (Probability) --> Cô bị ngọng, nói vừa khó nghe vừa khó hiểu, nhưng cô sẵn sàng giảng lại bài lúc không hiểu, tuần nào cô cũng cho bài tập và cứ cách 2,3 tuần là 1 bài quizz
-
-+ T.T.Tung - (OOP) --> Thầy thích dạy lí thuyết và ít thực hành, có đam mê với pvz mọi ví dụ của thầy lúc nào cũng pvz và bắt làm project cũng rcm pvz. Học thầy mà không chú ý khả năng cao là rớt, thầy cho đề cực khó
-
-+ N.T.Nghĩa - (OOP Lab) --> Anh còn trẻ dạy nhiệt huyết dễ hiểu, có tâm và nghiêm khắc
-
-+ D.T.D.Ngoc - (Critical Thinking) --> Cô có đam mê với điểm danh bằng GG Form, tận tình với nghề, lúc nào cũng tra hỏi học sinh có hiểu bài không mặc dù chả hiểu gì hết.
-
-+ Minh - (Introduction to Computer for Engineers) --> Thầy giảng bài dễ hiểu, trong lớp cực dễ, ra đề thi trên trời
-
-+ V.Q.Bao - (Digital Logic Design Laboratory) --> Thầy có tâm vãi, giảng bài trước mỗi buổi sau đó đi chơi rồi cho sinh viên tự làm tới cuối, lâu lâu tâm sự các kiểu
-
-+ Đ.Đ.A.Vũ - (Digital Logic Design) --> Thầy giảng chả hiểu j hết, giảng chậm hơn lab đâm ra lab không học được, học cực kì chậm và cũng chả liên quan j tới bài thi
-	
 + COMING SOON....
 (Mọi đóng góp đến từ người ngoài ko liên quan gì tới tôi!)
 
