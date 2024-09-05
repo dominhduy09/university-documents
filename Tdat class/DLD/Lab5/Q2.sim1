@@ -1,0 +1,63 @@
+<circuit version="1.0.0-SR1" rev="1402" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Subcircuit" CircId="74HC238-1" mainComp="false" Show_id="true" Show_Val="false" Pos="740,492" rotation="0" hflip="1" vflip="1" label="74HC238-1" idLabPos="0,-20" labelrot="0" valLabPos="-16,20" valLabRot="0" Logic_Symbol="true" />
+
+<item itemtype="Led" CircId="Led-2" mainComp="false" Show_id="false" Show_Val="false" Pos="900,496" rotation="0" hflip="1" vflip="1" label="Led-2" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="30 Ω" />
+
+<item itemtype="Led" CircId="Led-3" mainComp="false" Show_id="false" Show_Val="false" Pos="876,532" rotation="0" hflip="1" vflip="1" label="Led-3" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="30 Ω" />
+
+<item itemtype="Led" CircId="Led-4" mainComp="false" Show_id="false" Show_Val="false" Pos="928,604" rotation="0" hflip="1" vflip="1" label="Led-4" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="30 Ω" />
+
+<item itemtype="Led" CircId="Led-5" mainComp="false" Show_id="false" Show_Val="false" Pos="864,476" rotation="0" hflip="1" vflip="1" label="Led-5" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="30 Ω" />
+
+<item itemtype="Led" CircId="Led-6" mainComp="false" Show_id="false" Show_Val="false" Pos="916,552" rotation="0" hflip="1" vflip="1" label="Led-6" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="30 Ω" />
+
+<item itemtype="Led" CircId="Led-7" mainComp="false" Show_id="false" Show_Val="false" Pos="872,588" rotation="0" hflip="1" vflip="1" label="Led-7" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="30 Ω" />
+
+<item itemtype="Led" CircId="Led-8" mainComp="false" Show_id="false" Show_Val="false" Pos="864,420" rotation="0" hflip="1" vflip="1" label="Led-8" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="30 Ω" />
+
+<item itemtype="Led" CircId="Led-9" mainComp="false" Show_id="false" Show_Val="false" Pos="896,444" rotation="0" hflip="1" vflip="1" label="Led-9" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Color="Yellow" Grounded="true" Threshold="2.4 V" MaxCurrent="0.03 A" Resistance="30 Ω" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-19" mainComp="false" Show_id="true" Show_Val="false" Pos="664,468" rotation="0" hflip="1" vflip="1" label="S0" idLabPos="-5.89599,-8.91957" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-20" mainComp="false" Show_id="true" Show_Val="false" Pos="664,516" rotation="0" hflip="1" vflip="1" label="S2" idLabPos="-5.45245,-8.47603" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-21" mainComp="false" Show_id="true" Show_Val="false" Pos="664,492" rotation="0" hflip="1" vflip="1" label="S1" idLabPos="-3.67828,-7.58894" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Ground" CircId="Ground-23" mainComp="false" Show_id="false" Show_Val="false" Pos="624,556" rotation="0" hflip="1" vflip="1" label="Ground-23" idLabPos="-16,8" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Rail" CircId="Rail-24" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="688,592" rotation="0" hflip="1" vflip="1" label="Rail-24" idLabPos="-16,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" />
+
+<item itemtype="Node" CircId="Node-30" mainComp="false" Pos="628,540" />
+
+<item itemtype="Connector" uid="Connector-10" startpinid="74HC238-1-Y0" endpinid="Led-8-lPin" pointList="780,500,780,420,848,420" />
+
+<item itemtype="Connector" uid="Connector-11" startpinid="Led-9-lPin" endpinid="74HC238-1-Y1" pointList="880,444,804,444,804,508,780,508" />
+
+<item itemtype="Connector" uid="Connector-12" startpinid="74HC238-1-Y2" endpinid="Led-5-lPin" pointList="780,516,828,516,828,476,848,476" />
+
+<item itemtype="Connector" uid="Connector-13" startpinid="Led-2-lPin" endpinid="74HC238-1-Y3" pointList="884,496,836,496,836,524,780,524" />
+
+<item itemtype="Connector" uid="Connector-14" startpinid="Led-3-lPin" endpinid="74HC238-1-Y4" pointList="860,532,780,532" />
+
+<item itemtype="Connector" uid="Connector-15" startpinid="74HC238-1-Y5" endpinid="Led-6-lPin" pointList="780,540,840,540,840,552,900,552" />
+
+<item itemtype="Connector" uid="Connector-16" startpinid="Led-7-lPin" endpinid="74HC238-1-Y6" pointList="856,588,856,568,816,568,816,548,780,548" />
+
+<item itemtype="Connector" uid="Connector-17" startpinid="74HC238-1-Y7" endpinid="Led-4-lPin" pointList="780,556,780,604,912,604" />
+
+<item itemtype="Connector" uid="Connector-25" startpinid="Fixed Voltage-19-outnod" endpinid="74HC238-1-A0" pointList="680,468,732,468,732,500" />
+
+<item itemtype="Connector" uid="Connector-26" startpinid="Fixed Voltage-21-outnod" endpinid="74HC238-1-A1" pointList="680,492,680,508,732,508" />
+
+<item itemtype="Connector" uid="Connector-27" startpinid="Fixed Voltage-20-outnod" endpinid="74HC238-1-A2" pointList="680,516,732,516" />
+
+<item itemtype="Connector" uid="Connector-28" startpinid="74HC238-1-!E1" endpinid="Node-30-0" pointList="732,540,628,540" />
+
+<item itemtype="Connector" uid="Connector-29" startpinid="74HC238-1-!E2" endpinid="Node-30-1" pointList="732,548,640,548,640,540,628,540" />
+
+<item itemtype="Connector" uid="Connector-31" startpinid="Node-30-2" endpinid="Ground-23-Gnd" pointList="628,540,624,540" />
+
+<item itemtype="Connector" uid="Connector-32" startpinid="Rail-24-outnod" endpinid="74HC238-1-E3" pointList="704,592,732,592,732,556" />
+
+</circuit>

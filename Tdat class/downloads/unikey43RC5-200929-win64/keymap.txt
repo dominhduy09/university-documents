@@ -1,0 +1,13 @@
+; This is UniKey user-defined key mapping file, generated from UniKey (Windows)
+
+Z = Tone0
+S = Tone1
+F = Tone2
+R = Tone3
+X = Tone4
+J = Tone5
+W = Hook-Bowl
+A = Roof-A
+E = Roof-E
+O = Roof-O
+D = D-Mark

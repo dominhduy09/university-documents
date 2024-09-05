@@ -1,0 +1,221 @@
+<circuit version="1.0.0-SR1" rev="1402" stepSize="1000000" stepsPS="1000000" NLsteps="100000" reaStep="1000000" animate="0" >
+
+<item itemtype="Clock" CircId="Clock-148" mainComp="false" Show_id="false" Show_Val="false" Pos="312,512" rotation="0" hflip="1" vflip="1" label="Clock-148" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Voltage="5 V" Freq="3 Hz" Always_On="false" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-150" mainComp="false" Show_id="false" Show_Val="false" Pos="308,544" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-150" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Rail" CircId="Rail-151" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="312,448" rotation="0" hflip="1" vflip="1" label="Rail-151" idLabPos="-16,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" />
+
+<item itemtype="Or Gate" CircId="Or Gate-152" mainComp="false" Show_id="false" Show_Val="false" Pos="620,392" rotation="0" hflip="1" vflip="1" label="Or Gate-152" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Num_Inputs="2" Inverted="false" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="7-Seg BCD" CircId="7-Seg BCD-153" mainComp="false" Show_id="false" Show_Val="false" Pos="784,376" rotation="0" hflip="1" vflip="1" label="7-Seg BCD-153" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="FlipFlopJK" CircId="FlipFlopJK-154" mainComp="false" Show_id="false" Show_Val="false" Pos="452,512" rotation="0" hflip="1" vflip="1" label="FlipFlopJK-154" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" UseRS="true" Reset_Inverted="true" Clock_Inverted="true" Trigger="Clock" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="FlipFlopJK" CircId="FlipFlopJK-155" mainComp="false" Show_id="false" Show_Val="false" Pos="672,512" rotation="0" hflip="1" vflip="1" label="FlipFlopJK-155" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" UseRS="true" Reset_Inverted="true" Clock_Inverted="true" Trigger="Clock" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="FlipFlopJK" CircId="FlipFlopJK-156" mainComp="false" Show_id="false" Show_Val="false" Pos="552,508" rotation="0" hflip="1" vflip="1" label="FlipFlopJK-156" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" UseRS="true" Reset_Inverted="true" Clock_Inverted="true" Trigger="Clock" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-191" mainComp="false" Show_id="false" Show_Val="false" Pos="308,416" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-191" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="FlipFlopJK" CircId="FlipFlopJK-384" mainComp="false" Show_id="false" Show_Val="false" Pos="576,808" rotation="0" hflip="1" vflip="1" label="FlipFlopJK-384" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" UseRS="true" Reset_Inverted="true" Clock_Inverted="false" Trigger="Clock" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="FlipFlopJK" CircId="FlipFlopJK-385" mainComp="false" Show_id="false" Show_Val="false" Pos="452,816" rotation="0" hflip="1" vflip="1" label="FlipFlopJK-385" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" UseRS="true" Reset_Inverted="true" Clock_Inverted="false" Trigger="Clock" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="FlipFlopJK" CircId="FlipFlopJK-386" mainComp="false" Show_id="false" Show_Val="false" Pos="660,816" rotation="0" hflip="1" vflip="1" label="FlipFlopJK-386" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" UseRS="true" Reset_Inverted="true" Clock_Inverted="false" Trigger="Clock" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-389" mainComp="false" Show_id="false" Show_Val="false" Pos="324,752" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-389" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Fixed Voltage" CircId="Fixed Voltage-390" mainComp="false" Show_id="false" Show_Val="false" Pos="328,876" rotation="0" hflip="1" vflip="1" label="Fixed Voltage-390" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Voltage="5 V" />
+
+<item itemtype="Clock" CircId="Clock-391" mainComp="false" Show_id="false" Show_Val="false" Pos="328,808" rotation="0" hflip="1" vflip="1" label="Clock-391" idLabPos="-64,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Out="true" Running="true" Voltage="5 V" Freq="2 Hz" Always_On="false" />
+
+<item itemtype="Xor Gate" CircId="Xor Gate-394" mainComp="false" Show_id="false" Show_Val="false" Pos="520,744" rotation="0" hflip="1" vflip="1" label="Xor Gate-394" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Inverted="false" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Xor Gate" CircId="Xor Gate-395" mainComp="false" Show_id="false" Show_Val="false" Pos="620,764" rotation="0" hflip="1" vflip="1" label="Xor Gate-395" idLabPos="-16,-24" labelrot="0" valLabPos="-16,20" valLabRot="0" Inverted="false" Open_Collector="false" Input_High_V="2.5 V" Input_Low_V="2.5 V" Input_Imped="1000 MΩ" Out_High_V="5 V" Out_Low_V="0 V" Out_Imped="40 Ω" initHigh="false" Tpd_ps="10000 ps" Tr_ps="3000 ps" Tf_ps="4000 ps" />
+
+<item itemtype="Rail" CircId="Rail-402" mainComp="false" ShowProp="Voltage" Show_id="false" Show_Val="true" Pos="532,888" rotation="270" hflip="1" vflip="1" label="Rail-402" idLabPos="-16,-24" labelrot="0" valLabPos="-16,8" valLabRot="0" Voltage="5 V" />
+
+<item itemtype="7-Seg BCD" CircId="7-Seg BCD-436" mainComp="false" Show_id="false" Show_Val="false" Pos="764,724" rotation="0" hflip="1" vflip="1" label="7-Seg BCD-436" idLabPos="-16,-40" labelrot="0" valLabPos="-16,20" valLabRot="0" />
+
+<item itemtype="Node" CircId="Node-216" mainComp="false" Pos="380,448" />
+
+<item itemtype="Node" CircId="Node-219" mainComp="false" Pos="436,448" />
+
+<item itemtype="Node" CircId="Node-222" mainComp="false" Pos="500,448" />
+
+<item itemtype="Node" CircId="Node-231" mainComp="false" Pos="528,448" />
+
+<item itemtype="Node" CircId="Node-234" mainComp="false" Pos="636,448" />
+
+<item itemtype="Node" CircId="Node-237" mainComp="false" Pos="460,544" />
+
+<item itemtype="Node" CircId="Node-241" mainComp="false" Pos="560,544" />
+
+<item itemtype="Node" CircId="Node-248" mainComp="false" Pos="568,428" />
+
+<item itemtype="Node" CircId="Node-251" mainComp="false" Pos="636,392" />
+
+<item itemtype="Node" CircId="Node-256" mainComp="false" Pos="696,484" />
+
+<item itemtype="Node" CircId="Node-259" mainComp="false" Pos="476,476" />
+
+<item itemtype="Node" CircId="Node-405" mainComp="false" Pos="380,836" />
+
+<item itemtype="Node" CircId="Node-409" mainComp="false" Pos="532,872" />
+
+<item itemtype="Node" CircId="Node-412" mainComp="false" Pos="532,824" />
+
+<item itemtype="Node" CircId="Node-415" mainComp="false" Pos="532,860" />
+
+<item itemtype="Node" CircId="Node-418" mainComp="false" Pos="620,860" />
+
+<item itemtype="Node" CircId="Node-421" mainComp="false" Pos="508,872" />
+
+<item itemtype="Node" CircId="Node-428" mainComp="false" Pos="384,748" />
+
+<item itemtype="Node" CircId="Node-431" mainComp="false" Pos="608,860" />
+
+<item itemtype="Node" CircId="Node-434" mainComp="false" Pos="644,860" />
+
+<item itemtype="Node" CircId="Node-437" mainComp="false" Pos="476,772" />
+
+<item itemtype="Node" CircId="Node-440" mainComp="false" Pos="600,780" />
+
+<item itemtype="Node" CircId="Node-446" mainComp="false" Pos="460,852" />
+
+<item itemtype="Node" CircId="Node-449" mainComp="false" Pos="584,848" />
+
+<item itemtype="Connector" uid="connector-450" startpinid="FlipFlopJK-154-in0" endpinid="Node-219-0" pointList="436,504,436,448" />
+
+<item itemtype="Connector" uid="connector-451" startpinid="FlipFlopJK-154-in1" endpinid="Node-216-1" pointList="436,520,380,520,380,448" />
+
+<item itemtype="Connector" uid="connector-452" startpinid="Node-216-2" endpinid="Rail-151-outnod" pointList="380,448,328,448" />
+
+<item itemtype="Connector" uid="connector-453" startpinid="Node-219-2" endpinid="Node-216-0" pointList="436,448,380,448" />
+
+<item itemtype="Connector" uid="connector-454" startpinid="FlipFlopJK-156-in1" endpinid="Node-222-1" pointList="536,516,500,516,500,448" />
+
+<item itemtype="Connector" uid="connector-455" startpinid="Node-222-2" endpinid="Node-219-1" pointList="500,448,436,448" />
+
+<item itemtype="Connector" uid="connector-456" startpinid="FlipFlopJK-156-in0" endpinid="Node-231-0" pointList="536,500,536,448,528,448" />
+
+<item itemtype="Connector" uid="connector-457" startpinid="FlipFlopJK-155-in1" endpinid="Node-234-0" pointList="656,520,636,520,636,448" />
+
+<item itemtype="Connector" uid="connector-458" startpinid="Node-231-2" endpinid="Node-222-0" pointList="528,448,500,448" />
+
+<item itemtype="Connector" uid="connector-459" startpinid="FlipFlopJK-155-in0" endpinid="Node-234-1" pointList="656,504,656,448,636,448" />
+
+<item itemtype="Connector" uid="connector-460" startpinid="Node-234-2" endpinid="Node-231-1" pointList="636,448,528,448" />
+
+<item itemtype="Connector" uid="connector-461" startpinid="FlipFlopJK-154-in3" endpinid="Node-237-0" pointList="460,536,460,544" />
+
+<item itemtype="Connector" uid="connector-462" startpinid="Node-237-2" endpinid="Fixed Voltage-150-outnod" pointList="460,544,324,544" />
+
+<item itemtype="Connector" uid="connector-463" startpinid="Node-237-1" endpinid="Node-241-0" pointList="460,544,560,544" />
+
+<item itemtype="Connector" uid="connector-464" startpinid="FlipFlopJK-155-in3" endpinid="Node-241-1" pointList="680,536,680,544,560,544" />
+
+<item itemtype="Connector" uid="connector-465" startpinid="Node-241-2" endpinid="FlipFlopJK-156-in3" pointList="560,544,560,532" />
+
+<item itemtype="Connector" uid="connector-466" startpinid="FlipFlopJK-154-out0" endpinid="Node-259-0" pointList="476,504,476,476" />
+
+<item itemtype="Connector" uid="connector-467" startpinid="FlipFlopJK-155-out0" endpinid="Node-256-0" pointList="696,504,696,484" />
+
+<item itemtype="Connector" uid="connector-468" startpinid="FlipFlopJK-154-in2" endpinid="Node-248-0" pointList="452,488,452,428,568,428" />
+
+<item itemtype="Connector" uid="connector-469" startpinid="FlipFlopJK-156-in2" endpinid="Node-248-1" pointList="552,484,552,428,568,428" />
+
+<item itemtype="Connector" uid="connector-470" startpinid="Node-248-2" endpinid="Node-251-0" pointList="568,428,636,428,636,392" />
+
+<item itemtype="Connector" uid="connector-471" startpinid="FlipFlopJK-155-in2" endpinid="Node-251-1" pointList="672,488,672,392,636,392" />
+
+<item itemtype="Connector" uid="connector-472" startpinid="Node-251-2" endpinid="Or Gate-152-out" pointList="636,392,636,392" />
+
+<item itemtype="Connector" uid="connector-473" startpinid="FlipFlopJK-154-out1" endpinid="FlipFlopJK-156-in4" pointList="476,520,512,520,512,508,536,508" />
+
+<item itemtype="Connector" uid="connector-474" startpinid="FlipFlopJK-156-out1" endpinid="FlipFlopJK-155-in4" pointList="576,516,604,516,604,512,656,512" />
+
+<item itemtype="Connector" uid="connector-475" startpinid="FlipFlopJK-156-out0" endpinid="7-Seg BCD-153-in1" pointList="576,500,576,464,788,464,788,408" />
+
+<item itemtype="Connector" uid="connector-476" startpinid="Node-256-2" endpinid="Or Gate-152-in1" pointList="696,484,696,424,604,424,604,396" />
+
+<item itemtype="Connector" uid="connector-477" startpinid="Node-256-1" endpinid="7-Seg BCD-153-in2" pointList="696,484,780,484,780,408" />
+
+<item itemtype="Connector" uid="connector-478" startpinid="Node-259-2" endpinid="Or Gate-152-in0" pointList="476,476,476,388,604,388" />
+
+<item itemtype="Connector" uid="connector-479" startpinid="Node-259-1" endpinid="7-Seg BCD-153-in0" pointList="476,476,796,476,796,408" />
+
+<item itemtype="Connector" uid="connector-480" startpinid="FlipFlopJK-154-in4" endpinid="Clock-148-outnod" pointList="436,512,328,512" />
+
+<item itemtype="Connector" uid="connector-481" startpinid="Xor Gate-394-out" endpinid="FlipFlopJK-384-in4" pointList="536,744,536,808,560,808" />
+
+<item itemtype="Connector" uid="connector-482" startpinid="FlipFlopJK-384-out0" endpinid="Node-440-0" pointList="600,800,600,780" />
+
+<item itemtype="Connector" uid="connector-483" startpinid="Xor Gate-395-out" endpinid="FlipFlopJK-386-in4" pointList="636,764,636,816,644,816" />
+
+<item itemtype="Connector" uid="connector-484" startpinid="FlipFlopJK-385-in0" endpinid="Node-405-0" pointList="436,808,380,808,380,836" />
+
+<item itemtype="Connector" uid="connector-485" startpinid="FlipFlopJK-385-in1" endpinid="Node-405-1" pointList="436,824,436,836,380,836" />
+
+<item itemtype="Connector" uid="connector-486" startpinid="Node-405-2" endpinid="Node-421-0" pointList="380,836,380,872,508,872" />
+
+<item itemtype="Connector" uid="connector-487" startpinid="FlipFlopJK-384-in0" endpinid="Node-412-0" pointList="560,800,532,800,532,824" />
+
+<item itemtype="Connector" uid="connector-488" startpinid="Node-409-2" endpinid="Rail-402-outnod" pointList="532,872,532,872" />
+
+<item itemtype="Connector" uid="connector-489" startpinid="FlipFlopJK-384-in1" endpinid="Node-412-1" pointList="560,816,532,816,532,824" />
+
+<item itemtype="Connector" uid="connector-490" startpinid="Node-412-2" endpinid="Node-415-0" pointList="532,824,532,860" />
+
+<item itemtype="Connector" uid="connector-491" startpinid="FlipFlopJK-386-in0" endpinid="Node-418-0" pointList="644,808,620,808,620,860" />
+
+<item itemtype="Connector" uid="connector-492" startpinid="Node-415-2" endpinid="Node-409-1" pointList="532,860,532,872" />
+
+<item itemtype="Connector" uid="connector-493" startpinid="FlipFlopJK-386-in1" endpinid="Node-434-0" pointList="644,824,644,860" />
+
+<item itemtype="Connector" uid="connector-494" startpinid="Node-418-2" endpinid="Node-431-0" pointList="620,860,608,860" />
+
+<item itemtype="Connector" uid="connector-495" startpinid="FlipFlopJK-385-in2" endpinid="Node-421-1" pointList="452,792,508,792,508,872" />
+
+<item itemtype="Connector" uid="connector-496" startpinid="Node-421-2" endpinid="Node-409-0" pointList="508,872,532,872" />
+
+<item itemtype="Connector" uid="connector-497" startpinid="FlipFlopJK-385-out0" endpinid="Node-437-0" pointList="476,808,476,772" />
+
+<item itemtype="Connector" uid="connector-498" startpinid="Clock-391-outnod" endpinid="FlipFlopJK-385-in4" pointList="344,808,344,816,436,816" />
+
+<item itemtype="Connector" uid="connector-499" startpinid="Fixed Voltage-389-outnod" endpinid="Node-428-0" pointList="340,752,340,748,384,748" />
+
+<item itemtype="Connector" uid="connector-500" startpinid="Xor Gate-395-in0" endpinid="Node-428-1" pointList="604,760,604,732,384,732,384,748" />
+
+<item itemtype="Connector" uid="connector-501" startpinid="Node-428-2" endpinid="Xor Gate-394-in1" pointList="384,748,504,748" />
+
+<item itemtype="Connector" uid="connector-502" startpinid="FlipFlopJK-384-in2" endpinid="Node-431-1" pointList="576,784,608,784,608,860" />
+
+<item itemtype="Connector" uid="connector-503" startpinid="Node-431-2" endpinid="Node-415-1" pointList="608,860,532,860" />
+
+<item itemtype="Connector" uid="connector-504" startpinid="FlipFlopJK-386-in2" endpinid="Node-434-1" pointList="660,792,660,788,732,788,732,860,644,860" />
+
+<item itemtype="Connector" uid="connector-505" startpinid="Node-434-2" endpinid="Node-418-1" pointList="644,860,620,860" />
+
+<item itemtype="Connector" uid="connector-506" startpinid="Node-437-2" endpinid="Xor Gate-394-in0" pointList="476,772,476,740,504,740" />
+
+<item itemtype="Connector" uid="connector-507" startpinid="Node-437-1" endpinid="7-Seg BCD-436-in0" pointList="476,772,776,772,776,756" />
+
+<item itemtype="Connector" uid="connector-508" startpinid="Node-440-2" endpinid="Xor Gate-395-in1" pointList="600,780,600,768,604,768" />
+
+<item itemtype="Connector" uid="connector-509" startpinid="Node-440-1" endpinid="7-Seg BCD-436-in1" pointList="600,780,768,780,768,756" />
+
+<item itemtype="Connector" uid="connector-510" startpinid="FlipFlopJK-386-out0" endpinid="7-Seg BCD-436-in2" pointList="684,808,760,808,760,756" />
+
+<item itemtype="Connector" uid="connector-511" startpinid="FlipFlopJK-385-in3" endpinid="Node-446-0" pointList="460,840,460,852" />
+
+<item itemtype="Connector" uid="connector-512" startpinid="FlipFlopJK-384-in3" endpinid="Node-449-0" pointList="584,832,584,848" />
+
+<item itemtype="Connector" uid="connector-513" startpinid="Node-446-2" endpinid="Fixed Voltage-390-outnod" pointList="460,852,460,876,344,876" />
+
+<item itemtype="Connector" uid="connector-514" startpinid="FlipFlopJK-386-in3" endpinid="Node-449-1" pointList="668,840,668,848,584,848" />
+
+<item itemtype="Connector" uid="connector-515" startpinid="Node-449-2" endpinid="Node-446-1" pointList="584,848,460,848,460,852" />
+
+</circuit>
