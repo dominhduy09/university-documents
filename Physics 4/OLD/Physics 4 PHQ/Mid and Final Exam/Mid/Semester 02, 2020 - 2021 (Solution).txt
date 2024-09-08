@@ -1,0 +1,39 @@
+Q1)
+Call C is listener
+a) f' = (344 + (-15))/344 * 392 ~ 374.907 Hz
+b) f' = (344 + 15)/(344 - (-35))* 392 ~ 371.314 Hz
+
+Q2) 
+a) 
+delta_F = 1764 - 1372 = 392 Hz
+Fb / delta_F = 4.5 = 4 + 1/2
+Fa / delta_F = 3.5 = 3 + 1/2
+
+b) Standing waves
+L = v/2*delta_F = 0.4388 m
+
+Q3)
+a = 1.8 um = 1.8*10^-6 m
+D = 35 cm = 0.35 m
+lambda = 550 nm = 550 * 10^-9 m
+
+a) 
+sin(phi2) = 1.5 * lambda / a => 27.279 độ
+sin(phi1) = 0.5 * lambda / a => 8.787 độ
+delta = 18.492 độ
+b) 
+distance = i = lambda*D/a = 0.1069 m = 10.69 cm
+Reverse:
+y1 = 1/2 i = 5.347 cm
+phi1 = 8.686 độ (correct)
+
+Q4)
+a) a = 3 * 681 nm / sin(78.4) =~ 2085.6 nm
+=> 1 cm has 4794.79 slits
+b) 
+sin(phi2) = 2 * 681 nm / 2085.6 nm => 40.77 độ
+sin(phi1) = 1 * 681 nm / 2085.6 nm => 19.0579 độ
+delta = 21.714 độ
+c) sin(phi) = 1.306 >> 1
+=> No
+
