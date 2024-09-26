@@ -163,6 +163,11 @@ Special thanks to: Nguyeen, Quang, Bao, LyKhaiMinh...
 🌟 **HELP** 🌟
 DM me for more... or you can help us improve. Thank you so much
 
+🌟 **COLLECTION** 🌟
+https://drive.google.com/drive/u/2/folders/1WFrh34fbsONEkoFcao6U1pMjmSTaPUrS
+
+🌟 **PLAYLIST** 🌟
+
 # STT	Mã môn học	Tên môn học	Số TC	Số TCHP	Năm	Học kỳ	BB tự chọn	Đã học
 - 1	ENTP03	Intensive English 3- Twinning Program	10	10	2022	1		ENTP03
 - 2	MA001SB	Calculus 1	4	4	2022	1		X
