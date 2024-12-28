@@ -1,0 +1,6 @@
+Data Structure: Low-level array (long[]).
+Algorithms: Insertion, traversal, linear search, and deletion.
+Time Complexity: 
+𝑂(𝑛)
+O(n) for traversal, searching, and deletion; 𝑂(1)
+O(1) for setting an element in a single operation.

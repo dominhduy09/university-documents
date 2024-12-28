@@ -1,0 +1,26 @@
+Data Structures
+Array:
+The primary data structure used is a simple array of long values (long[] a).
+An integer nElems keeps track of the number of elements currently in the array, ensuring the array can be treated as ordered.
+
+
+Algorithms
+Insertion:
+
+The insert(long value) method finds the appropriate index for the new value using a linear search and then shifts larger elements up to make room for the new value.
+Algorithm Type:
+The initial search for the position is a linear search (O(n)).
+The subsequent shifting of elements is also O(n) in the worst case.
+Overall, the time complexity for insertion is O(n).
+Searching:
+
+The find(long searchKey) method uses binary search, which requires the array to be sorted.
+It continually divides the search interval in half until the value is found or the interval is empty.
+Algorithm Type: Binary search (O(log n)), which is efficient for sorted arrays.
+
+
+Time Complexity
+Insertion:
+O(n) due to the linear search to find the position and the shifting of elements.
+Searching (find):
+O(log n) due to binary search, which is efficient for ordered data structures.

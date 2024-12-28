@@ -1,0 +1,39 @@
+Data Structures
+Classes:
+
+Order: Represents an order with attributes like orderId, deadline, numItems, fulfilled, assignedWarehouse, and completionTime.
+Warehouse: Represents a warehouse with attributes like warehouseId, processingSpeed, and availableTime.
+Lists:
+
+ArrayLists: Used to store the orders and warehouses. ArrayLists allow dynamic resizing and provide methods to manipulate the data easily (e.g., adding and accessing elements).
+Maps:
+
+HashMap: Used to map warehouse IDs to their corresponding list of assigned orders, and to store unfulfilled orders. This allows for efficient retrieval of the scheduled orders based on the warehouse.
+
+
+
+Algorithms
+Sorting Algorithms:
+
+Bubble Sort:
+Implemented in bubbleSortOrdersByDeadline to sort the orders by their deadlines in ascending order.
+Implemented in bubbleSortWarehousesBySpeed to sort the warehouses by their processing speeds in descending order.
+Both sorting algorithms are straightforward but are not the most efficient for large datasets. They have a simple structure that is easy to understand and implement.
+Greedy Algorithm:
+
+The process of fulfilling orders can be considered a greedy approach, where the algorithm selects the warehouse that can complete the order the fastest (i.e., with the earliest completion time) while ensuring the order can still meet its deadline.
+Time Complexity
+Bubble Sort:
+
+
+
+Time Complexity: O(n²)
+The worst-case and average time complexity of Bubble Sort is O(n²) due to the nested loops (where n is the number of orders or warehouses). This occurs because, in the worst case, each element must be compared with every other element.
+Order Fulfillment Logic:
+
+The overall complexity of fulfilling orders involves iterating over the list of orders and warehouses:
+Time Complexity: O(m * n)
+Here, m is the number of orders and n is the number of warehouses. For each order, it checks against all warehouses to determine the best one to fulfill the order.
+The fulfillment logic includes sorting (O(m²) for orders and O(n²) for warehouses) before processing, which may add additional time complexity but is typically overshadowed by the order-warehouse comparison.
+Overall Complexity
+Given the sorting and fulfillment process, the overall time complexity can be approximated as O(m² + n² + m * n). However, in practical scenarios, the sorting operations are often less significant compared to the fulfillment logic, so the dominating factor is typically O(m * n).

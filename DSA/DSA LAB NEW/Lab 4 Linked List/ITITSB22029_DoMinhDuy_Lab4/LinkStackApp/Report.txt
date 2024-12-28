@@ -1,0 +1,7 @@
+Data Structure: Stack (implemented with a linked list)
+
+Algorithm: Traverse the list, push each element onto the stack, then pop each element to get the reversed list.
+
+Time Complexity: O(n)
+
+

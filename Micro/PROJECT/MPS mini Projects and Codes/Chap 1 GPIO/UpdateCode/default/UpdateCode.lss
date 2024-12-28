@@ -1,0 +1,339 @@
+
+UpdateCode.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .data         00000010  00800100  000001ce  00000262  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  1 .text         000001ce  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  2 .bss          00000003  00800110  00800110  00000272  2**0
+                  ALLOC
+  3 .debug_aranges 00000020  00000000  00000000  00000272  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_pubnames 0000008a  00000000  00000000  00000292  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000319  00000000  00000000  0000031c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000001b0  00000000  00000000  00000635  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000203  00000000  00000000  000007e5  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000070  00000000  00000000  000009e8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000017a  00000000  00000000  00000a58  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    000000cb  00000000  00000000  00000bd2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000060  00000000  00000000  00000c9d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 46 00 	jmp	0x8c	; 0x8c <__ctors_end>
+   4:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+   8:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+   c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  10:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  14:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  18:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  1c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  20:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  24:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  28:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  2c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  30:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  34:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  38:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  3c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  40:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  44:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  48:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  4c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  50:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  54:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  58:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  5c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  60:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  64:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  68:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  6c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  70:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  74:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  78:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  7c:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  80:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  84:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+  88:	0c 94 65 00 	jmp	0xca	; 0xca <__bad_interrupt>
+
+0000008c <__ctors_end>:
+  8c:	11 24       	eor	r1, r1
+  8e:	1f be       	out	0x3f, r1	; 63
+  90:	cf ef       	ldi	r28, 0xFF	; 255
+  92:	d0 e1       	ldi	r29, 0x10	; 16
+  94:	de bf       	out	0x3e, r29	; 62
+  96:	cd bf       	out	0x3d, r28	; 61
+
+00000098 <__do_copy_data>:
+  98:	11 e0       	ldi	r17, 0x01	; 1
+  9a:	a0 e0       	ldi	r26, 0x00	; 0
+  9c:	b1 e0       	ldi	r27, 0x01	; 1
+  9e:	ee ec       	ldi	r30, 0xCE	; 206
+  a0:	f1 e0       	ldi	r31, 0x01	; 1
+  a2:	00 e0       	ldi	r16, 0x00	; 0
+  a4:	0b bf       	out	0x3b, r16	; 59
+  a6:	02 c0       	rjmp	.+4      	; 0xac <__do_copy_data+0x14>
+  a8:	07 90       	elpm	r0, Z+
+  aa:	0d 92       	st	X+, r0
+  ac:	a0 31       	cpi	r26, 0x10	; 16
+  ae:	b1 07       	cpc	r27, r17
+  b0:	d9 f7       	brne	.-10     	; 0xa8 <__do_copy_data+0x10>
+
+000000b2 <__do_clear_bss>:
+  b2:	11 e0       	ldi	r17, 0x01	; 1
+  b4:	a0 e1       	ldi	r26, 0x10	; 16
+  b6:	b1 e0       	ldi	r27, 0x01	; 1
+  b8:	01 c0       	rjmp	.+2      	; 0xbc <.do_clear_bss_start>
+
+000000ba <.do_clear_bss_loop>:
+  ba:	1d 92       	st	X+, r1
+
+000000bc <.do_clear_bss_start>:
+  bc:	a3 31       	cpi	r26, 0x13	; 19
+  be:	b1 07       	cpc	r27, r17
+  c0:	e1 f7       	brne	.-8      	; 0xba <.do_clear_bss_loop>
+  c2:	0e 94 93 00 	call	0x126	; 0x126 <main>
+  c6:	0c 94 e5 00 	jmp	0x1ca	; 0x1ca <_exit>
+
+000000ca <__bad_interrupt>:
+  ca:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+000000ce <initPortC>:
+uint8_t i = 0;
+uint16_t step = 0;
+
+void initPortC() {
+    // Initialize Port C for output (lower 4 bits)
+    DDRC |= 0x0F;               // Set PC0 to PC3 as output
+  ce:	84 b3       	in	r24, 0x14	; 20
+  d0:	8f 60       	ori	r24, 0x0F	; 15
+  d2:	84 bb       	out	0x14, r24	; 20
+    PORTC &= ~(0x0F);           // Set all outputs low
+  d4:	85 b3       	in	r24, 0x15	; 21
+  d6:	80 7f       	andi	r24, 0xF0	; 240
+  d8:	85 bb       	out	0x15, r24	; 21
+}
+  da:	08 95       	ret
+
+000000dc <setPattern>:
+
+void setPattern(uint8_t pattern) {
+    // Set the output pattern on PORTC
+    PORTC = pattern;
+  dc:	85 bb       	out	0x15, r24	; 21
+}
+  de:	08 95       	ret
+
+000000e0 <delayMs>:
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+  e0:	20 ea       	ldi	r18, 0xA0	; 160
+  e2:	3f e0       	ldi	r19, 0x0F	; 15
+  e4:	04 c0       	rjmp	.+8      	; 0xee <delayMs+0xe>
+  e6:	f9 01       	movw	r30, r18
+  e8:	31 97       	sbiw	r30, 0x01	; 1
+  ea:	f1 f7       	brne	.-4      	; 0xe8 <delayMs+0x8>
+  ec:	01 97       	sbiw	r24, 0x01	; 1
+
+void delayMs(uint16_t ms) {
+    // Delay for specified milliseconds
+    while (ms--) {
+  ee:	00 97       	sbiw	r24, 0x00	; 0
+  f0:	d1 f7       	brne	.-12     	; 0xe6 <delayMs+0x6>
+        _delay_ms(1);
+    }
+}
+  f2:	08 95       	ret
+
+000000f4 <cyclePatterns>:
+
+void cyclePatterns(uint8_t patternArray[], uint8_t patternCount) {
+  f4:	fc 01       	movw	r30, r24
+    // Cycle through patterns in the given array
+    setPattern(patternArray[step % patternCount]);
+  f6:	20 91 11 01 	lds	r18, 0x0111
+  fa:	30 91 12 01 	lds	r19, 0x0112
+  fe:	c9 01       	movw	r24, r18
+ 100:	70 e0       	ldi	r23, 0x00	; 0
+ 102:	0e 94 d1 00 	call	0x1a2	; 0x1a2 <__udivmodhi4>
+ 106:	e8 0f       	add	r30, r24
+ 108:	f9 1f       	adc	r31, r25
+ 10a:	80 81       	ld	r24, Z
+    PORTC &= ~(0x0F);           // Set all outputs low
+}
+
+void setPattern(uint8_t pattern) {
+    // Set the output pattern on PORTC
+    PORTC = pattern;
+ 10c:	85 bb       	out	0x15, r24	; 21
+}
+
+void cyclePatterns(uint8_t patternArray[], uint8_t patternCount) {
+    // Cycle through patterns in the given array
+    setPattern(patternArray[step % patternCount]);
+    step++;
+ 10e:	2f 5f       	subi	r18, 0xFF	; 255
+ 110:	3f 4f       	sbci	r19, 0xFF	; 255
+ 112:	30 93 12 01 	sts	0x0112, r19
+ 116:	20 93 11 01 	sts	0x0111, r18
+}
+ 11a:	08 95       	ret
+
+0000011c <resetStep>:
+
+void resetStep() {
+    // Reset the step counter to 0
+    step = 0;
+ 11c:	10 92 12 01 	sts	0x0112, r1
+ 120:	10 92 11 01 	sts	0x0111, r1
+}
+ 124:	08 95       	ret
+
+00000126 <main>:
+
+int main(void) {
+ 126:	cf 93       	push	r28
+ 128:	df 93       	push	r29
+uint8_t i = 0;
+uint16_t step = 0;
+
+void initPortC() {
+    // Initialize Port C for output (lower 4 bits)
+    DDRC |= 0x0F;               // Set PC0 to PC3 as output
+ 12a:	84 b3       	in	r24, 0x14	; 20
+ 12c:	8f 60       	ori	r24, 0x0F	; 15
+ 12e:	84 bb       	out	0x14, r24	; 20
+    PORTC &= ~(0x0F);           // Set all outputs low
+ 130:	85 b3       	in	r24, 0x15	; 21
+ 132:	80 7f       	andi	r24, 0xF0	; 240
+ 134:	85 bb       	out	0x15, r24	; 21
+ 136:	c0 ea       	ldi	r28, 0xA0	; 160
+ 138:	df e0       	ldi	r29, 0x0F	; 15
+    // Initialize Port C
+    initPortC();
+
+    while (1) {
+        // Cycle through the main pattern code
+        cyclePatterns(code, 8);
+ 13a:	80 e0       	ldi	r24, 0x00	; 0
+ 13c:	91 e0       	ldi	r25, 0x01	; 1
+ 13e:	68 e0       	ldi	r22, 0x08	; 8
+ 140:	0e 94 7a 00 	call	0xf4	; 0xf4 <cyclePatterns>
+ 144:	84 ef       	ldi	r24, 0xF4	; 244
+ 146:	91 e0       	ldi	r25, 0x01	; 1
+ 148:	03 c0       	rjmp	.+6      	; 0x150 <main+0x2a>
+ 14a:	fe 01       	movw	r30, r28
+ 14c:	31 97       	sbiw	r30, 0x01	; 1
+ 14e:	f1 f7       	brne	.-4      	; 0x14c <main+0x26>
+    PORTC = pattern;
+}
+
+void delayMs(uint16_t ms) {
+    // Delay for specified milliseconds
+    while (ms--) {
+ 150:	01 97       	sbiw	r24, 0x01	; 1
+ 152:	2f ef       	ldi	r18, 0xFF	; 255
+ 154:	8f 3f       	cpi	r24, 0xFF	; 255
+ 156:	92 07       	cpc	r25, r18
+ 158:	c1 f7       	brne	.-16     	; 0x14a <main+0x24>
+        // Cycle through the main pattern code
+        cyclePatterns(code, 8);
+        delayMs(_dl);  // Wait for a short period
+
+        // Optional: Cycle through additional patterns
+        if (step % 16 == 0) {  // Example condition to switch to extraCode pattern
+ 15a:	80 91 11 01 	lds	r24, 0x0111
+ 15e:	90 91 12 01 	lds	r25, 0x0112
+ 162:	8f 70       	andi	r24, 0x0F	; 15
+ 164:	90 70       	andi	r25, 0x00	; 0
+ 166:	89 2b       	or	r24, r25
+ 168:	81 f4       	brne	.+32     	; 0x18a <main+0x64>
+            cyclePatterns(extraCode, 8);
+ 16a:	88 e0       	ldi	r24, 0x08	; 8
+ 16c:	91 e0       	ldi	r25, 0x01	; 1
+ 16e:	68 e0       	ldi	r22, 0x08	; 8
+ 170:	0e 94 7a 00 	call	0xf4	; 0xf4 <cyclePatterns>
+ 174:	84 ef       	ldi	r24, 0xF4	; 244
+ 176:	91 e0       	ldi	r25, 0x01	; 1
+ 178:	03 c0       	rjmp	.+6      	; 0x180 <main+0x5a>
+ 17a:	fe 01       	movw	r30, r28
+ 17c:	31 97       	sbiw	r30, 0x01	; 1
+ 17e:	f1 f7       	brne	.-4      	; 0x17c <main+0x56>
+    PORTC = pattern;
+}
+
+void delayMs(uint16_t ms) {
+    // Delay for specified milliseconds
+    while (ms--) {
+ 180:	01 97       	sbiw	r24, 0x01	; 1
+ 182:	2f ef       	ldi	r18, 0xFF	; 255
+ 184:	8f 3f       	cpi	r24, 0xFF	; 255
+ 186:	92 07       	cpc	r25, r18
+ 188:	c1 f7       	brne	.-16     	; 0x17a <main+0x54>
+            cyclePatterns(extraCode, 8);
+            delayMs(_dl);  // Wait for a short period
+        }
+
+        // Stop execution when step reaches 4096
+        if (step == 4096) {
+ 18a:	80 91 11 01 	lds	r24, 0x0111
+ 18e:	90 91 12 01 	lds	r25, 0x0112
+ 192:	80 50       	subi	r24, 0x00	; 0
+ 194:	90 41       	sbci	r25, 0x10	; 16
+ 196:	89 f6       	brne	.-94     	; 0x13a <main+0x14>
+    step++;
+}
+
+void resetStep() {
+    // Reset the step counter to 0
+    step = 0;
+ 198:	10 92 12 01 	sts	0x0112, r1
+ 19c:	10 92 11 01 	sts	0x0111, r1
+ 1a0:	ff cf       	rjmp	.-2      	; 0x1a0 <main+0x7a>
+
+000001a2 <__udivmodhi4>:
+ 1a2:	aa 1b       	sub	r26, r26
+ 1a4:	bb 1b       	sub	r27, r27
+ 1a6:	51 e1       	ldi	r21, 0x11	; 17
+ 1a8:	07 c0       	rjmp	.+14     	; 0x1b8 <__udivmodhi4_ep>
+
+000001aa <__udivmodhi4_loop>:
+ 1aa:	aa 1f       	adc	r26, r26
+ 1ac:	bb 1f       	adc	r27, r27
+ 1ae:	a6 17       	cp	r26, r22
+ 1b0:	b7 07       	cpc	r27, r23
+ 1b2:	10 f0       	brcs	.+4      	; 0x1b8 <__udivmodhi4_ep>
+ 1b4:	a6 1b       	sub	r26, r22
+ 1b6:	b7 0b       	sbc	r27, r23
+
+000001b8 <__udivmodhi4_ep>:
+ 1b8:	88 1f       	adc	r24, r24
+ 1ba:	99 1f       	adc	r25, r25
+ 1bc:	5a 95       	dec	r21
+ 1be:	a9 f7       	brne	.-22     	; 0x1aa <__udivmodhi4_loop>
+ 1c0:	80 95       	com	r24
+ 1c2:	90 95       	com	r25
+ 1c4:	bc 01       	movw	r22, r24
+ 1c6:	cd 01       	movw	r24, r26
+ 1c8:	08 95       	ret
+
+000001ca <_exit>:
+ 1ca:	f8 94       	cli
+
+000001cc <__stop_program>:
+ 1cc:	ff cf       	rjmp	.-2      	; 0x1cc <__stop_program>

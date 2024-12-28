@@ -1,0 +1,41 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega32</DEVICE>
+ <WORKING_DIR>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m32def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>141</LINE></start>
+  <program_author><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>131</LINE></program_author>
+  <program_version><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>134</LINE></program_version>
+  <program_date><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>137</LINE></program_date>
+  <lcd_init_8d><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>190</LINE></lcd_init_8d>
+  <lcd_write_string_8d><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>258</LINE></lcd_write_string_8d>
+  <here><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>178</LINE></here>
+  <delayTx1mS><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>395</LINE></delayTx1mS>
+  <lcd_write_instruction_8d><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>311</LINE></lcd_write_instruction_8d>
+  <delayTx1uS><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>433</LINE></delayTx1uS>
+  <lcd_write_string_8d_01><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>274</LINE></lcd_write_string_8d_01>
+  <lcd_write_string_8d_02><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>286</LINE></lcd_write_string_8d_02>
+  <lcd_write_character_8d><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>298</LINE></lcd_write_character_8d>
+  <lcd_write_8><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>327</LINE></lcd_write_8>
+  <delay1uS><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>448</LINE></delay1uS>
+  <delayYx1mS><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>379</LINE></delayYx1mS>
+  <delay1mS><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>410</LINE></delay1mS>
+  <delay1mS_01><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\LCD\LCD.asm</FILE><LINE>416</LINE></delay1mS_01>
+ </LABELS>
+</ASSEMBLER_INFO>

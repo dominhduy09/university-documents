@@ -1,0 +1,28 @@
+Data Structures
+Array:
+The primary data structure used is a simple array of long values (long[] a).
+An integer nElems keeps track of the number of elements currently in the array.
+
+
+Algorithms
+Insertion:
+
+The insert(long value) method adds a new value to the end of the array.
+This method runs in constant time O(1) as it simply places the value at the next index.
+Insertion Sort:
+
+The insertionSort() method implements the insertion sort algorithm to sort the elements of the array.
+The insertion sort algorithm works by iteratively taking an element from the unsorted portion of the array and inserting it into the correct position in the sorted portion.
+The outer loop iterates over each element in the array starting from the second element, while the inner loop shifts elements in the sorted portion to the right until the correct position for the current element is found.
+
+
+Time Complexity
+Insertion:
+
+O(1): Each insertion is constant time as it involves simply adding an element to the end of the array.
+Insertion Sort:
+
+Worst-case Time Complexity: O(n²)
+In the worst case (when the array is sorted in reverse order), the outer loop runs n times, and for each iteration of the outer loop, the inner loop could potentially run up to n times, leading to a quadratic time complexity of O(n²).
+Best-case Time Complexity: O(n)
+In the best case (when the array is already sorted), the inner loop does not perform any shifts, and the outer loop runs n times, making the total time complexity O(n).

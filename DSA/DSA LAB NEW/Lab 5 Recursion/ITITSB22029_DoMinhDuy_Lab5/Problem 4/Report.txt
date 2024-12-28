@@ -1,0 +1,7 @@
+Data Structure: Array (no additional data structure used, but recursion uses the call stack).
+
+Algorithms:
+	findmin: Recursive comparison to find the minimum element.
+	findsum: Recursive addition to calculate the sum of elements.
+
+Time Complexity: O(n) for both functions.

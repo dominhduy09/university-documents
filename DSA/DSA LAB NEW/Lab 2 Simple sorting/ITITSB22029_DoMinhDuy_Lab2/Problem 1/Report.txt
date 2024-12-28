@@ -1,0 +1,27 @@
+Data Structures
+Array:
+The primary data structure used is a simple array of long values (long[] a).
+An integer nElems keeps track of the number of elements currently in the array.
+
+Algorithms
+Insertion:
+
+The insert(long value) method adds a new value to the end of the array.
+This method runs in constant time O(1) since it simply places the value at the next index.
+Bubble Sort:
+
+The bubbleSort() method implements the bubble sort algorithm to sort the elements of the array.
+It repeatedly steps through the array, compares adjacent elements, and swaps them if they are in the wrong order.
+The process continues until no swaps are needed, indicating that the array is sorted.
+The method keeps track of the number of swaps and comparisons made during the sorting process.
+
+Time Complexity
+Insertion:
+
+O(1): Each insertion is constant time as it involves simply adding an element to the end of the array.
+Bubble Sort:
+
+Worst-case Time Complexity: O(n²)
+In the worst case (when the array is sorted in reverse order), the outer loop runs n times, and for each iteration of the outer loop, the inner loop runs a maximum of n times, leading to a quadratic time complexity of O(n²).
+Best-case Time Complexity: O(n)
+If the array is already sorted, the algorithm will still need to perform n comparisons (in the outer loop), but no swaps will occur.

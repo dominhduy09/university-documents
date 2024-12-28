@@ -1,0 +1,18 @@
+Efficiency: For scenarios with simple FIFO processing, QueueApp.java is more efficient. For scenarios that require prioritization, PriorityQApp.java is justified, but it comes at the cost of less efficient insertions.
+Best Choice: Choose the implementation based on your requirements:
+Use a regular queue when processing order matters without regard to priority.
+Use a priority queue when the importance of items affects their processing order, even if it results in slower insertions.
+
+Data Structure
+Priority Queue: The data structure used is an array (queArray) that maintains elements in sorted order, where the highest priority element is at the front (index 0) and the lowest priority element is at the end.
+Algorithms
+Insertion Algorithm:
+Inserts an item in a sorted manner, which may involve shifting elements to maintain the order.
+Removal Algorithm:
+Removes the minimum item (highest priority) from the queue by simply accessing the last element in the array (where the minimum item resides).
+Time Complexity
+Insertion: O(n) - In the worst case, inserting an item may require shifting all elements to maintain order.
+Removal: O(1) - Removing the highest priority item takes constant time since it involves accessing the last element and decrementing the item count.
+Space Complexity: O(n) - Space is required for the array storing the queue elements.
+
+The QueueApp implementation is efficient for scenarios where order matters without prioritization, while the PriorityQApp is suitable for scenarios requiring prioritization but has a slower insertion time.

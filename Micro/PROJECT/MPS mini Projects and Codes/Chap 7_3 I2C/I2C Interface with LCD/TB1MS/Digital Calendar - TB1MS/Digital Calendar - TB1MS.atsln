@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Digital Calendar - TB1MS", "Digital Calendar - TB1MS\Digital Calendar - TB1MS.cproj", "{CA1D474E-59FA-41CC-BAB8-F6C321478FC3}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{CA1D474E-59FA-41CC-BAB8-F6C321478FC3}.Debug|AVR.ActiveCfg = Debug|AVR
+		{CA1D474E-59FA-41CC-BAB8-F6C321478FC3}.Debug|AVR.Build.0 = Debug|AVR
+		{CA1D474E-59FA-41CC-BAB8-F6C321478FC3}.Release|AVR.ActiveCfg = Release|AVR
+		{CA1D474E-59FA-41CC-BAB8-F6C321478FC3}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

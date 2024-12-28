@@ -1,0 +1,41 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega32</DEVICE>
+ <WORKING_DIR>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m32def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <start><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>129</LINE></start>
+  <program_author><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>119</LINE></program_author>
+  <program_version><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>122</LINE></program_version>
+  <program_date><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>125</LINE></program_date>
+  <lcd_init_8d><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>172</LINE></lcd_init_8d>
+  <lcd_write_string_8d><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>247</LINE></lcd_write_string_8d>
+  <here><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>160</LINE></here>
+  <delayTx1mS><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>403</LINE></delayTx1mS>
+  <lcd_write_instruction_8d><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>300</LINE></lcd_write_instruction_8d>
+  <delayTx1uS><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>441</LINE></delayTx1uS>
+  <lcd_write_string_8d_01><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>263</LINE></lcd_write_string_8d_01>
+  <lcd_write_string_8d_02><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>275</LINE></lcd_write_string_8d_02>
+  <lcd_write_character_8d><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>287</LINE></lcd_write_character_8d>
+  <LCD_4bit_write_Data><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>317</LINE></LCD_4bit_write_Data>
+  <delay1uS><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>456</LINE></delay1uS>
+  <delayYx1mS><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>387</LINE></delayYx1mS>
+  <delay1mS><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>418</LINE></delay1mS>
+  <delay1mS_01><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab2\Lab2_Exercise5\Lab2_Exercise5.asm</FILE><LINE>424</LINE></delay1mS_01>
+ </LABELS>
+</ASSEMBLER_INFO>

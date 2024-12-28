@@ -1,0 +1,3 @@
+Data Structure: Circular queue implemented with a fixed-size array.
+Algorithms: Enqueue (insert), Dequeue (remove), wraparound handling, and customer service simulation.
+Time Complexity: O(1) for insert, remove, and wraparound checks; O(n) for displaying the queue.

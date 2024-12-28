@@ -1,0 +1,38 @@
+Data Structures
+Array:
+The main data structure used is a simple array of long values (long[] a).
+An integer nElems keeps track of the number of elements currently in the array.
+This structure allows for efficient indexing and traversal but does not provide dynamic resizing.
+
+
+Algorithms
+Insertion:
+
+The insert(long value) method appends a new value to the end of the array, incrementing nElems.
+Algorithm Type: Constant time (O(1)) operation if space is available.
+Searching:
+
+The find(long searchKey) method uses a linear search to find a specified value in the array.
+It iterates through each element until it either finds the key or reaches the end.
+Algorithm Type: Linear search (O(n)), where n is the number of elements in the array.
+Deletion:
+
+The delete(long value) method also employs a linear search to locate the value and then shifts elements down to fill the gap.
+Algorithm Type: Linear search for finding the item (O(n)), followed by a shifting operation (O(n)), resulting in O(n) overall.
+Finding Maximum:
+
+The getMax() method iterates through the array to find the maximum value.
+Algorithm Type: Linear search (O(n)).
+Removing Duplicates:
+
+The noDups() method checks for duplicates by comparing each element with every other element.
+Marks duplicates with -1 and then creates a new array without duplicates.
+Algorithm Type: Quadratic time complexity (O(n²)) due to the nested loops.
+
+
+Time Complexity
+Insertion: O(1) on average, but can become O(n) if resizing is needed (in dynamic arrays).
+Search (find): O(n) due to linear search.
+Deletion: O(n) for both search and shift operations.
+Finding Maximum: O(n) as it checks each element.
+Removing Duplicates: O(n²) because of the nested loop structure.

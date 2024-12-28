@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Encoder", "Encoder\Encoder.cproj", "{1EE91FF2-0F7D-4A9D-B0D3-9F6FFA6BC769}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1EE91FF2-0F7D-4A9D-B0D3-9F6FFA6BC769}.Debug|AVR.ActiveCfg = Debug|AVR
+		{1EE91FF2-0F7D-4A9D-B0D3-9F6FFA6BC769}.Debug|AVR.Build.0 = Debug|AVR
+		{1EE91FF2-0F7D-4A9D-B0D3-9F6FFA6BC769}.Release|AVR.ActiveCfg = Release|AVR
+		{1EE91FF2-0F7D-4A9D-B0D3-9F6FFA6BC769}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

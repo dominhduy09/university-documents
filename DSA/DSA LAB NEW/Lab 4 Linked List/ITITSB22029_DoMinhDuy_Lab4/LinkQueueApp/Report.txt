@@ -1,0 +1,5 @@
+Data Structure: Queue (FIFO), implemented with a linked list.
+
+Algorithm: Insert items as customers arrive, serve each customer for a random time, remove every N-th customer upon serving, and monitor queue size.
+
+Time Complexity: 𝑂 ( 𝑚 ) O(m) for 𝑚 m operations (insertions and removals).

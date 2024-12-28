@@ -1,0 +1,29 @@
+MergeSort
+1.	Data Structure:
+	Works primarily on arrays or lists.
+	Uses additional temporary storage (workspace array) for merging sorted halves.
+2.	Algorithm:
+	Divide and Conquer approach: 
+	Divide the array into two halves recursively until each half has one or no elements.
+	Merge the two halves in a sorted manner to form a fully sorted array.
+	Merging involves comparing elements from each half and placing them into the correct position in the output.
+3.	Time Complexity:
+	Best Case: O(nlogn) (requires splitting and merging even if already sorted).
+	Worst Case: O(nlogn) (always requires splitting and merging).
+	Space Complexity: O(n) (due to the workspace array).
+
+QuickSort
+1.	Data Structure:
+	Works primarily on arrays or lists.
+	Uses in-place partitioning, meaning no additional space is needed except for recursion stack space.
+2.	Algorithm:
+	Divide and Conquer approach: 
+	Choose a pivot element.
+	Partition the array so that all elements less than the pivot are on the left, and those greater than the pivot are on the right.
+	Recursively apply the same procedure to the left and right subarrays.
+3.	Time Complexity:
+	Best Case: O(nlogn) (occurs when the pivot divides the array into two nearly equal halves).
+	Average Case: O(nlogn) (occurs when pivots are chosen randomly or well).
+	Worst Case: O(n^2) (occurs when the pivot divides the array into two highly unequal parts, such as when the smallest or largest element is chosen as pivot repeatedly).
+	Space Complexity: O(logn) (for the recursion stack in the average case) or O(n)O(n) (in the worst case).
+

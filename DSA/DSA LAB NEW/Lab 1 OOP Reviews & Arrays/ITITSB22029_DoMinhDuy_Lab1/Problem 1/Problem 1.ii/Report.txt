@@ -1,0 +1,5 @@
+Data Structures: The code utilizes an ArrayList<Integer> to hold the numbers. 
+
+Algorithms: The input algorithm collects numbers from the user. The median calculation algorithm sorts the list and computes the median based on whether the count of numbers is even or odd. 
+
+Time Complexity: The overall time complexity of the program is 𝑂 ( 𝑛 log ⁡ 𝑛 ) O(nlogn), primarily due to the sorting step.

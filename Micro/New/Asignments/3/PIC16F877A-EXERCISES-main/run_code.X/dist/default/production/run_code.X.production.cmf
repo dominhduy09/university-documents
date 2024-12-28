@@ -1,0 +1,378 @@
+%CMF
+# %PSECTS Section
+# For each object file, details of its psects are enumerated here.
+# The begining of the section is indicated by %PSECTS.  The first
+# line indicates the name of the first object file, e.g.
+#    $foo.obj
+# Each line that follows describes a psect in that object file, until
+# the next object file.  The lines that describe a psect have the
+# format:
+#    <psect name> <class name> <space> <link address> <load addresses> <length> <delta> <reloc>
+# All addresses and the length are given in unqualified hexadecimal
+# in delta units.  Any other numeric values are decimal.
+%PSECTS
+$C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+end_init CODE 0 0 0 3 2 1
+$dist/default/production\run_code.X.production.o
+cinit CODE 0 7EE 7EE 12 2 1
+text1 CODE 0 6C7 6C7 57 2 1
+text2 CODE 0 71E 71E 63 2 1
+maintext CODE 0 781 781 6D 2 1
+cstackCOMMON COMMON 1 70 70 A 1 1
+cstackBANK0 BANK0 1 2A 2A 6 1 1
+inittext CODE 0 6B4 6B4 13 2 1
+idataBANK0 CODE 0 6AA 6AA A 2 1
+dataBANK0 BANK0 1 20 20 A 1 1
+# %UNUSED Section
+# This section enumerates the unused ranges of each CLASS. Each entry
+# is described on a single line as follows:
+#    <class name> <range> <delta>
+# Addresses given in the range are in hexadecimal and units of delta.
+%UNUSED
+RAM 30-6F 1
+RAM A0-EF 1
+RAM 110-16F 1
+RAM 190-1EF 1
+BANK0 30-6F 1
+BANK1 A0-EF 1
+BANK2 110-16F 1
+BANK3 190-1EF 1
+CONST 3-6A9 2
+CONST 800-1FFF 2
+ENTRY 3-6A9 2
+ENTRY 800-1FFF 2
+IDLOC 2000-2003 2
+CODE 3-6A9 2
+CODE 800-1FFF 2
+SFR0 0-1F 1
+SFR1 80-9F 1
+SFR2 100-10F 1
+SFR3 180-18F 1
+COMMON 7A-7D 1
+CONFIG 2007-2007 2
+EEDATA 2100-21FF 2
+STRCODE 3-6A9 2
+STRCODE 800-1FFF 2
+STRING 3-6A9 2
+STRING 800-1FFF 2
+# %LINETAB Section
+# This section enumerates the file/line to address mappings.
+# The beginning of the section is indicated by %LINETAB.
+# The first line indicates the name of the first object file, e.g.
+#   $foo.obj
+# Each line that follows describes a single mapping until the next
+# object file.  Mappings have the following format:
+#    <address> <psect name> <class name> ><line number>:<file name>
+# The address is absolute and given given in unqualified hex 
+# in delta units of the psect. All mappings within an object file
+# are in ascending order of addresses.
+# All other numeric values are in decimal.
+%LINETAB
+$dist/default/production\run_code.X.production.o
+7EE cinit CODE >368:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7EE cinit CODE >371:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7EE cinit CODE >412:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7EF cinit CODE >413:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7F0 cinit CODE >414:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7F1 cinit CODE >415:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7F2 cinit CODE >416:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7F3 cinit CODE >417:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7F4 cinit CODE >418:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7F5 cinit CODE >419:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7F6 cinit CODE >420:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7F7 cinit CODE >421:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7FC cinit CODE >427:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7FC cinit CODE >429:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+7FD cinit CODE >430:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+71E text2 CODE >5:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+71E text2 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+71F text2 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+723 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+726 text2 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+728 text2 CODE >16:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+72A text2 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+72E text2 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+731 text2 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+733 text2 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+735 text2 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+737 text2 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+73D text2 CODE >24:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+73F text2 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+740 text2 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+741 text2 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+745 text2 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+747 text2 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+749 text2 CODE >25:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+74D text2 CODE >30:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+74E text2 CODE >30:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+752 text2 CODE >30:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+754 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+756 text2 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+75A text2 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+75E text2 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+761 text2 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+764 text2 CODE >33:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+765 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+766 text2 CODE >35:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+76A text2 CODE >35:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+76C text2 CODE >36:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+772 text2 CODE >38:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+777 text2 CODE >39:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+77A text2 CODE >39:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+77C text2 CODE >40:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+780 text2 CODE >41:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awdiv.c
+6C7 text1 CODE >5:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6C7 text1 CODE >12:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6C8 text1 CODE >13:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6CC text1 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6CF text1 CODE >14:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6D1 text1 CODE >15:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6D3 text1 CODE >17:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6D7 text1 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6DA text1 CODE >18:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6DC text1 CODE >19:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6E2 text1 CODE >20:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6E4 text1 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6E5 text1 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6E6 text1 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6EA text1 CODE >22:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6EC text1 CODE >23:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6EE text1 CODE >21:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6F2 text1 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6F4 text1 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6F8 text1 CODE >26:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6FC text1 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+6FF text1 CODE >27:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+702 text1 CODE >28:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+703 text1 CODE >28:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+707 text1 CODE >28:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+709 text1 CODE >29:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+70F text1 CODE >31:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+714 text1 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+717 text1 CODE >32:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+719 text1 CODE >33:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+71D text1 CODE >34:C:\Program Files\Microchip\xc8\v2.50\pic\sources\c99\common\awmod.c
+781 maintext CODE >8:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+781 maintext CODE >11:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+784 maintext CODE >12:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+785 maintext CODE >13:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+788 maintext CODE >14:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+789 maintext CODE >16:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+789 maintext CODE >17:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+78D maintext CODE >19:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+7A2 maintext CODE >20:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+7B5 maintext CODE >23:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+7BB maintext CODE >24:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+7C4 maintext CODE >27:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+7CC maintext CODE >28:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+7D5 maintext CODE >29:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+7D9 maintext CODE >29:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+7E2 maintext CODE >29:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+7E6 maintext CODE >29:C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Desktop\Micro\NEW\Asignments\3\PIC16F877A-EXERCISES-main/Lcd interface/newmain.c
+6B4 inittext CODE >386:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6B4 inittext CODE >387:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6B5 inittext CODE >388:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6B6 inittext CODE >389:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6B7 inittext CODE >390:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6B8 inittext CODE >397:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6B8 inittext CODE >398:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6BD inittext CODE >399:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6BE inittext CODE >400:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6BF inittext CODE >401:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6C0 inittext CODE >402:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6C1 inittext CODE >403:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6C2 inittext CODE >404:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6C3 inittext CODE >405:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6C4 inittext CODE >406:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6C5 inittext CODE >407:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+6C6 inittext CODE >408:C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_1.s
+# %SYMTAB Section
+# An enumeration of all symbols in the program.
+# The beginning of the section is indicated by %SYMTAB.
+# Each line describes a single symbol as follows:
+#    <label> <value> [-]<load-adj> <class> <space> <psect> <file-name>
+# The value and load-adj are both in unqualified hexadecimal.
+# All other numeric values are in decimal.  The load-adj is the
+# quantity one needs to add to the symbol value in order to obtain the load
+# address of the symbol.  This value may be signed. If the symbol
+# was defined in a psect then <psect> will be "-". File-name
+# is the name of the object file in which the symbol was defined.
+%SYMTAB
+___latbits 2 0 ABS 0 - dist/default/production\run_code.X.production.o
+___awdiv@counter 74 0 COMMON 1 cstackCOMMON dist/default/production\run_code.X.production.o
+__LdataBANK0 0 0 ABS 0 dataBANK0 -
+__Hspace_0 800 0 ABS 0 - -
+__Hspace_1 7A 0 ABS 0 - -
+__Hspace_2 0 0 ABS 0 - -
+__Hspace_3 0 0 ABS 0 - -
+__HidataBANK0 0 0 ABS 0 idataBANK0 -
+__Heeprom_data 0 0 EEDATA 3 eeprom_data -
+__L__absolute__ 0 0 ABS 0 __absolute__ -
+main@i 2E 0 BANK0 1 cstackBANK0 dist/default/production\run_code.X.production.o
+__Hstrings 0 0 ABS 0 strings -
+___sp 0 0 STACK 2 stack C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+_main F02 0 CODE 0 maintext dist/default/production\run_code.X.production.o
+btemp 7E 0 ABS 0 - dist/default/production\run_code.X.production.o
+___stack_hi 0 0 STACK 2 stack C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+___stack_lo 0 0 STACK 2 stack C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+start 0 0 CODE 0 init C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+__LidataBANK0 0 0 ABS 0 idataBANK0 -
+__Hpowerup 0 0 CODE 0 powerup -
+___awmod@sign 75 0 COMMON 1 cstackCOMMON dist/default/production\run_code.X.production.o
+intlevel0 0 0 ENTRY 0 functab C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+intlevel1 0 0 ENTRY 0 functab C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+intlevel2 0 0 ENTRY 0 functab C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+intlevel3 0 0 ENTRY 0 functab C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+intlevel4 0 0 ENTRY 0 functab C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+intlevel5 0 0 ENTRY 0 functab C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+wtemp0 7E 0 ABS 0 - dist/default/production\run_code.X.production.o
+__Hfunctab 0 0 ENTRY 0 functab -
+___awdiv@sign 75 0 COMMON 1 cstackCOMMON dist/default/production\run_code.X.production.o
+__Hclrtext 0 0 ABS 0 clrtext -
+___awdiv@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\run_code.X.production.o
+__Lmaintext 0 0 ABS 0 maintext -
+___awdiv@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\run_code.X.production.o
+__end_of___awdiv F02 0 CODE 0 text2 dist/default/production\run_code.X.production.o
+__end_of___awmod E3C 0 CODE 0 text1 dist/default/production\run_code.X.production.o
+___stackhi 0 0 ABS 0 - C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+___stacklo 0 0 ABS 0 - C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+start_initialization FDC 0 CODE 0 cinit dist/default/production\run_code.X.production.o
+__pcstackBANK0 2A 0 BANK0 1 cstackBANK0 dist/default/production\run_code.X.production.o
+___int_sp 0 0 STACK 2 stack C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+__Hbank0 0 0 ABS 0 bank0 -
+__Hbank1 0 0 ABS 0 bank1 -
+__Hbank2 0 0 ABS 0 bank2 -
+__Hbank3 0 0 ABS 0 bank3 -
+__Hcinit 1000 0 CODE 0 cinit -
+__Hstack 0 0 STACK 2 stack -
+__Hmaintext 0 0 ABS 0 maintext -
+__Hcommon 0 0 ABS 0 common -
+__Lbank0 0 0 ABS 0 bank0 -
+__Lbank1 0 0 ABS 0 bank1 -
+__Lbank2 0 0 ABS 0 bank2 -
+__Lbank3 0 0 ABS 0 bank3 -
+__Lcinit FDC 0 CODE 0 cinit -
+__Lstack 0 0 STACK 2 stack -
+__Linittext 0 0 ABS 0 inittext -
+__Habs1 0 0 ABS 0 abs1 -
+__Hcode 0 0 ABS 0 code -
+__Hheap 0 0 HEAP 7 heap -
+__Hinit 0 0 CODE 0 init -
+__Hsfr0 0 0 ABS 0 sfr0 -
+__Hsfr1 0 0 ABS 0 sfr1 -
+__Hsfr2 0 0 ABS 0 sfr2 -
+__Hsfr3 0 0 ABS 0 sfr3 -
+__Hsivt 0 0 CODE 0 sivt -
+__Htext 0 0 ABS 0 text -
+__Labs1 0 0 ABS 0 abs1 -
+__Lcode 0 0 ABS 0 code -
+__Lheap 0 0 HEAP 7 heap -
+__Linit 0 0 CODE 0 init -
+__Lsfr0 0 0 ABS 0 sfr0 -
+__Lsfr1 0 0 ABS 0 sfr1 -
+__Lsfr2 0 0 ABS 0 sfr2 -
+__Lsfr3 0 0 ABS 0 sfr3 -
+__Lsivt 0 0 CODE 0 sivt -
+__Ltext 0 0 ABS 0 text -
+__LcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__HcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+__S0 800 0 ABS 0 - -
+__S1 7A 0 ABS 0 - -
+__S3 0 0 ABS 0 - -
+__Lintentry 0 0 CODE 0 intentry -
+reset_vec 0 0 CODE 0 reset_vec C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+__pdataBANK0 20 0 BANK0 1 dataBANK0 dist/default/production\run_code.X.production.o
+___awmod@counter 74 0 COMMON 1 cstackCOMMON dist/default/production\run_code.X.production.o
+_seg_display 20 0 BANK0 1 dataBANK0 dist/default/production\run_code.X.production.o
+___awdiv E3C 0 CODE 0 text2 dist/default/production\run_code.X.production.o
+___awmod D8E 0 CODE 0 text1 dist/default/production\run_code.X.production.o
+__pmaintext F02 0 CODE 0 maintext dist/default/production\run_code.X.production.o
+__Lcommon 0 0 ABS 0 common -
+__Hinittext 0 0 ABS 0 inittext -
+main@ones 2C 0 BANK0 1 cstackBANK0 dist/default/production\run_code.X.production.o
+main@tens 2A 0 BANK0 1 cstackBANK0 dist/default/production\run_code.X.production.o
+__Lspace_0 0 0 ABS 0 - -
+__Lspace_1 0 0 ABS 0 - -
+__Lspace_2 0 0 ABS 0 - -
+__Lspace_3 0 0 ABS 0 - -
+init_fetch0 D68 0 CODE 0 inittext dist/default/production\run_code.X.production.o
+__HcstackBANK0 0 0 ABS 0 cstackBANK0 -
+__Lend_init 0 0 CODE 0 end_init -
+__LcstackCOMMON 0 0 ABS 0 cstackCOMMON -
+end_of_initialization FF8 0 CODE 0 cinit dist/default/production\run_code.X.production.o
+__Hintentry 0 0 CODE 0 intentry -
+__Lstrings 0 0 ABS 0 strings -
+___awdiv@quotient 76 0 COMMON 1 cstackCOMMON dist/default/production\run_code.X.production.o
+?___awdiv 70 0 COMMON 1 cstackCOMMON dist/default/production\run_code.X.production.o
+?___awmod 70 0 COMMON 1 cstackCOMMON dist/default/production\run_code.X.production.o
+__Hreset_vec 0 0 CODE 0 reset_vec -
+___awmod@dividend 72 0 COMMON 1 cstackCOMMON dist/default/production\run_code.X.production.o
+__ptext1 D8E 0 CODE 0 text1 dist/default/production\run_code.X.production.o
+__ptext2 E3C 0 CODE 0 text2 dist/default/production\run_code.X.production.o
+__Lpowerup 0 0 CODE 0 powerup -
+__Leeprom_data 0 0 EEDATA 3 eeprom_data -
+__H__absolute__ 0 0 ABS 0 __absolute__ -
+__Lreset_vec 0 0 CODE 0 reset_vec -
+___heap_hi 0 0 ABS 0 - C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+___heap_lo 0 0 ABS 0 - C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+__end_of__initialization FF8 0 CODE 0 cinit dist/default/production\run_code.X.production.o
+___awmod@divisor 70 0 COMMON 1 cstackCOMMON dist/default/production\run_code.X.production.o
+__Lfunctab 0 0 ENTRY 0 functab -
+__pidataBANK0 D54 0 CODE 0 idataBANK0 dist/default/production\run_code.X.production.o
+__Lclrtext 0 0 ABS 0 clrtext -
+__pcstackCOMMON 70 0 COMMON 1 cstackCOMMON dist/default/production\run_code.X.production.o
+__Hend_init 6 0 CODE 0 end_init -
+init_ram0 D70 0 CODE 0 inittext dist/default/production\run_code.X.production.o
+__end_of_main FDC 0 CODE 0 maintext dist/default/production\run_code.X.production.o
+_PORTB 6 0 ABS 0 - dist/default/production\run_code.X.production.o
+_PORTD 8 0 ABS 0 - dist/default/production\run_code.X.production.o
+_TRISB 86 0 ABS 0 - dist/default/production\run_code.X.production.o
+_TRISD 88 0 ABS 0 - dist/default/production\run_code.X.production.o
+__Hram 0 0 ABS 0 ram -
+__Lram 0 0 ABS 0 ram -
+__HdataBANK0 0 0 ABS 0 dataBANK0 -
+__initialization FDC 0 CODE 0 cinit dist/default/production\run_code.X.production.o
+___int_stack_hi 0 0 STACK 2 stack C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+___int_stack_lo 0 0 STACK 2 stack C:\Users\domin\AppData\Local\Temp\xcAsc0o.\driver_tmp_12.o
+# %SPLITSTAB Section
+# This section enumerates all the psect splits performed by the assembler.
+# The beginning of the section is indicated by %SPLITSTAB.
+# Each line is a record a particular split, where the parent psect is on
+# the left and the child on the right.  Note that a child psect is always
+# split form the top of the parent psect. All splits from a given parent
+# are listed in the order in which they occurred.
+%SPLITSTAB
+# %DABS Section
+# This section contains a table of all usuage of the assember
+# directive DABS in the program. Each line has the following format:
+#   <name> <space> <address> <size>
+# If the DABS was originally labelled then that shall be <name>,
+# otherwise name will be "-".  The <space> number is in decimal.
+# <address> and <size> are in byte units as unqaulified hexadecimal
+%DABS
+- 1 7E 2
+# %SEGMENTS Section
+# This sections enumerates the segments of the program.  Each segment
+# is described on a single line as follows:
+#    <name> <space> <link address> <file address> <size> <delta>
+# Addresses and size are in unqualified hexadecimal.  The link address
+# and size are in units of delta. The file address is in units of bytes.
+# All other numeric quantities are in decimal.
+%SEGMENTS
+cinit 0 7EE FDC 12 2
+text1 0 6C7 D8E 57 2
+text2 0 71E E3C 63 2
+maintext 0 781 F02 6D 2
+cstackCOMMON 1 70 70 A 1
+inittext 0 6B4 D68 13 2
+reset_vec 0 0 0 3 2
+idataBANK0 0 6AA D54 A 2
+dataBANK0 1 20 20 10 1
+# %NOTES Section
+# This section contains data of all the note-psects.  The beginning of the section
+# is indicated by %NOTES. The first line indicates the name and decimal
+# byte-length of the first note-psect, e.g.
+#   $codecov_info_hdr 16
+# Each line that follows contains the byte-data of the psect in hexadecimal as a
+# space-separated list. These lines are limited to 16 bytes of data.
+%NOTES

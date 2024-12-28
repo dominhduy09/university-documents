@@ -1,0 +1,94 @@
+
+LM35.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000008a  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .debug_aranges 00000020  00000000  00000000  000000de  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  2 .debug_pubnames 0000001b  00000000  00000000  000000fe  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   00000076  00000000  00000000  00000119  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 00000041  00000000  00000000  0000018f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   0000008b  00000000  00000000  000001d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  00000020  00000000  00000000  0000025c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    0000008f  00000000  00000000  0000027c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 36 00 	call	0x6c	; 0x6c <main>
+  64:	0c 94 43 00 	jmp	0x86	; 0x86 <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <main>:
+// this program reads the sensor and displays it on PortD
+#include <avr/io.h>	//standard AVR header
+int main (void)
+{	
+	DDRD   = 0xFF;	// make Port D an output
+  6c:	8f ef       	ldi	r24, 0xFF	; 255
+  6e:	81 bb       	out	0x11, r24	; 17
+	DDRA   = 0X00;	// make Port A an input
+  70:	1a ba       	out	0x1a, r1	; 26
+	ADCSRA = 0x87;	// make ADC enable and select CLK/128
+  72:	87 e8       	ldi	r24, 0x87	; 135
+  74:	86 b9       	out	0x06, r24	; 6
+	ADMUX  = 0xE0;	// 2.56V Vref and ADC0
+  76:	80 ee       	ldi	r24, 0xE0	; 224
+  78:	87 b9       	out	0x07, r24	; 7
+	                // data will be left-justified
+	while (1)
+	{		
+		ADCSRA |= (1<<ADSC) ;            // start conversion
+  7a:	36 9a       	sbi	0x06, 6	; 6
+		while( (ADCSRA&(1<<ADIF))==0 );  // wait for end
+  7c:	34 9b       	sbis	0x06, 4	; 6
+  7e:	fe cf       	rjmp	.-4      	; 0x7c <main+0x10>
+		PORTD = ADCH;	         // give the high byte to PortD
+  80:	85 b1       	in	r24, 0x05	; 5
+  82:	82 bb       	out	0x12, r24	; 18
+  84:	fa cf       	rjmp	.-12     	; 0x7a <main+0xe>
+
+00000086 <_exit>:
+  86:	f8 94       	cli
+
+00000088 <__stop_program>:
+  88:	ff cf       	rjmp	.-2      	; 0x88 <__stop_program>

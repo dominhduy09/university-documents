@@ -1,0 +1,115 @@
+
+ADC_Interrupt.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000a8  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .debug_aranges 00000020  00000000  00000000  000000fc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  2 .debug_pubnames 0000002b  00000000  00000000  0000011c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   0000008a  00000000  00000000  00000147  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 00000056  00000000  00000000  000001d1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   000000bc  00000000  00000000  00000227  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  00000030  00000000  00000000  000002e4  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    000000ad  00000000  00000000  00000314  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 36 00 	jmp	0x6c	; 0x6c <__vector_16>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 47 00 	call	0x8e	; 0x8e <main>
+  64:	0c 94 52 00 	jmp	0xa4	; 0xa4 <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <__vector_16>:
+#include <avr/io.h>	//standard AVR header	
+#include <avr/interrupt.h>
+ISR(ADC_vect){
+  6c:	1f 92       	push	r1
+  6e:	0f 92       	push	r0
+  70:	0f b6       	in	r0, 0x3f	; 63
+  72:	0f 92       	push	r0
+  74:	11 24       	eor	r1, r1
+  76:	8f 93       	push	r24
+	PORTD  = ADCL; 	// give the low  byte to PORTD
+  78:	84 b1       	in	r24, 0x04	; 4
+  7a:	82 bb       	out	0x12, r24	; 18
+	PORTC  = ADCH;	// give the high byte to PORTB
+  7c:	85 b1       	in	r24, 0x05	; 5
+  7e:	85 bb       	out	0x15, r24	; 21
+	ADCSRA |= (1<<ADSC) ; // start conversion
+  80:	36 9a       	sbi	0x06, 6	; 6
+}
+  82:	8f 91       	pop	r24
+  84:	0f 90       	pop	r0
+  86:	0f be       	out	0x3f, r0	; 63
+  88:	0f 90       	pop	r0
+  8a:	1f 90       	pop	r1
+  8c:	18 95       	reti
+
+0000008e <main>:
+int main (void){
+	DDRC = 0xFF;	// make Port B an output	
+  8e:	8f ef       	ldi	r24, 0xFF	; 255
+  90:	84 bb       	out	0x14, r24	; 20
+	DDRD = 0xFF;	// make Port D an output	
+  92:	81 bb       	out	0x11, r24	; 17
+	DDRA = 0;		// make Port A an input for ADC input
+  94:	1a ba       	out	0x1a, r1	; 26
+	sei();		// enable global interrupts
+  96:	78 94       	sei
+	// enable ADC and interrupt, and select CLK/128
+	ADCSRA= 0x8F;
+  98:	8f e8       	ldi	r24, 0x8F	; 143
+  9a:	86 b9       	out	0x06, r24	; 6
+	// 2.56V Vref internal, right justified,
+	// select  ADC0 chanel 0
+	ADMUX = 0xC0;	
+  9c:	80 ec       	ldi	r24, 0xC0	; 192
+  9e:	87 b9       	out	0x07, r24	; 7
+	ADCSRA |= (1<<ADSC) ;  // start conversion
+  a0:	36 9a       	sbi	0x06, 6	; 6
+  a2:	ff cf       	rjmp	.-2      	; 0xa2 <main+0x14>
+
+000000a4 <_exit>:
+  a4:	f8 94       	cli
+
+000000a6 <__stop_program>:
+  a6:	ff cf       	rjmp	.-2      	; 0xa6 <__stop_program>

@@ -1,0 +1,14 @@
+Data Structures:
+Array: Used to store 20 random integers.
+Stack: Used for storing previous states of the array for undo/redo operations.
+
+Algorithms:
+Random Number Generation: Generates random values for the array.
+Undo/Redo Operations: Implements undo and redo functionality by saving and restoring previous array states using two stacks.
+Array Cloning: Copies the current state of the array to preserve history.
+
+Time Complexity:
+Array Access/Update: O(1) for updating or accessing a value at a specific index.
+Array Cloning: O(n), where n = 20 (size of the array).
+Stack Push/Pop: O(1) for pushing and popping from the undoStack and redoStack.
+Display: O(n) to iterate through and print the entire array.

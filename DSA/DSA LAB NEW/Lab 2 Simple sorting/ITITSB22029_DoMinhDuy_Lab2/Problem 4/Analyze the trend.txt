@@ -1,0 +1,12 @@
+Bubble Sort:
+Comparisons: The number of comparisons grows quadratically as the array size increases. This is because Bubble Sort needs to compare each element with every other element.
+Swaps and Copies: The number of swaps and copies is almost as large as the number of comparisons, especially for larger arrays, which leads to a significant performance overhead.
+
+Selection Sort:
+Comparisons: The number of comparisons also grows quadratically, but it remains stable and predictable because Selection Sort always compares every element to every other element, regardless of array order.
+Swaps: The number of swaps is much lower compared to Bubble Sort, making it somewhat more efficient in terms of data movement. This can result in better performance for large datasets.
+
+Insertion Sort:
+Comparisons: The number of comparisons is lower than in Bubble Sort and Selection Sort for arrays that are partially sorted. For large random arrays, however, it becomes comparable to the others.
+Copies: Fewer copies than Bubble Sort but more than Selection Sort, especially for larger, unsorted arrays.
+Swaps: The shift operations reduce the number of actual swaps needed, making Insertion Sort more efficient than Bubble Sort when dealing with partially sorted data.

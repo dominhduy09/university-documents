@@ -1,0 +1,30 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega32</DEVICE>
+ <WORKING_DIR>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem5b</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem5b\Lab1_Problem5b.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\M32DEF.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem5b\Lab1_Problem5b.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem5b\Lab1_Problem5b.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem5b\Lab1_Problem5b.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MLOOP><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem5b\Lab1_Problem5b.asm</FILE><LINE>4</LINE></MLOOP>
+  <L1><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem5b\Lab1_Problem5b.asm</FILE><LINE>7</LINE></L1>
+  <delay_1s><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem5b\Lab1_Problem5b.asm</FILE><LINE>23</LINE></delay_1s>
+  <L2><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem5b\Lab1_Problem5b.asm</FILE><LINE>15</LINE></L2>
+  <DL3><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem5b\Lab1_Problem5b.asm</FILE><LINE>25</LINE></DL3>
+  <DL2><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem5b\Lab1_Problem5b.asm</FILE><LINE>26</LINE></DL2>
+  <DL1><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem5b\Lab1_Problem5b.asm</FILE><LINE>27</LINE></DL1>
+ </LABELS>
+</ASSEMBLER_INFO>

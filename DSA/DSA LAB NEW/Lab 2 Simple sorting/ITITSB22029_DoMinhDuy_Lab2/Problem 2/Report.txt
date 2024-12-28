@@ -1,0 +1,16 @@
+Data Structures Array: 
+
+The primary data structure used is a simple array of long values (long[] a). 
+An integer nElems keeps track of the number of elements currently in the array. 
+
+
+Algorithms 
+Insertion: 
+The insert(long value) method adds a new value to the end of the array. This method runs in constant time O(1) since it simply places the value at the next index. 
+
+Selection Sort: 
+The selectionSort() method implements the selection sort algorithm to sort the elements of the array. This algorithm works by repeatedly selecting the minimum element from the unsorted portion of the array and swapping it with the first unsorted element. The outer loop iterates over each index in the array, while the inner loop searches for the minimum value in the remaining unsorted section. After finding the minimum, it swaps the minimum element with the current position if they are not the same. 
+
+Time Complexity 
+Insertion: O(1): Each insertion is constant time as it involves simply adding an element to the end of the array. 
+Selection Sort: Worst-case Time Complexity: O(n²) In the worst case (and in fact, the average and best cases as well), the outer loop runs n times, and for each iteration of the outer loop, the inner loop runs a maximum of n times, leading to a quadratic time complexity of O(n²). Each comparison in the inner loop checks if an element is smaller than the current minimum, leading to a total of approximately 𝑛 ( 𝑛 − 1 ) / 2 n(n−1)/2 comparisons. Best-case Time Complexity: O(n²) Even if the array is already sorted, the selection sort will still go through the process of finding the minimum in each pass.

@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<MCU_DEVICE_FLAGS>
+  <DEVICE>
+    <DEVICE_NAME>P16F877A</DEVICE_NAME>
+    <VALUE>
+      <COUNT>1</COUNT>
+      <VALUE0>
+        <VAL>$002007:$2F4A</VAL>
+      </VALUE0>
+    </VALUE>
+  </DEVICE>
+</MCU_DEVICE_FLAGS>

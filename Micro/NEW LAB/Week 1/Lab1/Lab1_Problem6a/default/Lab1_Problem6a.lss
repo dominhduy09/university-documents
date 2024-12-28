@@ -1,0 +1,226 @@
+
+Lab1_Problem6a.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000fc  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .debug_aranges 00000020  00000000  00000000  00000150  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  2 .debug_pubnames 0000003b  00000000  00000000  00000170  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   0000019c  00000000  00000000  000001ab  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 000000d6  00000000  00000000  00000347  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   000001f6  00000000  00000000  0000041d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  00000040  00000000  00000000  00000614  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    0000013b  00000000  00000000  00000654  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_loc    00000040  00000000  00000000  0000078f  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_ranges 00000090  00000000  00000000  000007cf  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 6f 00 	call	0xde	; 0xde <main>
+  64:	0c 94 7c 00 	jmp	0xf8	; 0xf8 <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <led_patern1>:
+#define F_CPU 16000000UL       	// XTAL = 16MHZ = 8000000Hz
+#include <util/delay.h>	// _delay_ms(d) and _delay_us(d)
+#include <avr/io.h> 
+void led_patern1()
+{
+  6c:	20 e0       	ldi	r18, 0x00	; 0
+  6e:	30 e0       	ldi	r19, 0x00	; 0
+    int i;
+	for(i=0;i<=8;i++)
+	{
+	   PORTD=(1<<i);
+  70:	61 e0       	ldi	r22, 0x01	; 1
+  72:	70 e0       	ldi	r23, 0x00	; 0
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+  74:	40 e9       	ldi	r20, 0x90	; 144
+  76:	51 e0       	ldi	r21, 0x01	; 1
+  78:	cb 01       	movw	r24, r22
+  7a:	02 2e       	mov	r0, r18
+  7c:	02 c0       	rjmp	.+4      	; 0x82 <led_patern1+0x16>
+  7e:	88 0f       	add	r24, r24
+  80:	99 1f       	adc	r25, r25
+  82:	0a 94       	dec	r0
+  84:	e2 f7       	brpl	.-8      	; 0x7e <led_patern1+0x12>
+  86:	82 bb       	out	0x12, r24	; 18
+  88:	80 e1       	ldi	r24, 0x10	; 16
+  8a:	97 e2       	ldi	r25, 0x27	; 39
+  8c:	fa 01       	movw	r30, r20
+  8e:	31 97       	sbiw	r30, 0x01	; 1
+  90:	f1 f7       	brne	.-4      	; 0x8e <led_patern1+0x22>
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  92:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  94:	d9 f7       	brne	.-10     	; 0x8c <led_patern1+0x20>
+#include <util/delay.h>	// _delay_ms(d) and _delay_us(d)
+#include <avr/io.h> 
+void led_patern1()
+{
+    int i;
+	for(i=0;i<=8;i++)
+  96:	2f 5f       	subi	r18, 0xFF	; 255
+  98:	3f 4f       	sbci	r19, 0xFF	; 255
+  9a:	29 30       	cpi	r18, 0x09	; 9
+  9c:	31 05       	cpc	r19, r1
+  9e:	61 f7       	brne	.-40     	; 0x78 <led_patern1+0xc>
+	{
+	   PORTD=(1<<i);
+	   _delay_ms(1000);
+        }
+	PORTD=0x00;
+  a0:	12 ba       	out	0x12, r1	; 18
+}
+  a2:	08 95       	ret
+
+000000a4 <led_patern2>:
+
+void led_patern2()
+{
+  a4:	27 e0       	ldi	r18, 0x07	; 7
+  a6:	30 e0       	ldi	r19, 0x00	; 0
+    int i;
+	for(i=7;i>=0;i--)
+	{
+	   	PORTD=(1<<i);
+  a8:	61 e0       	ldi	r22, 0x01	; 1
+  aa:	70 e0       	ldi	r23, 0x00	; 0
+  ac:	40 e9       	ldi	r20, 0x90	; 144
+  ae:	51 e0       	ldi	r21, 0x01	; 1
+  b0:	cb 01       	movw	r24, r22
+  b2:	02 2e       	mov	r0, r18
+  b4:	02 c0       	rjmp	.+4      	; 0xba <led_patern2+0x16>
+  b6:	88 0f       	add	r24, r24
+  b8:	99 1f       	adc	r25, r25
+  ba:	0a 94       	dec	r0
+  bc:	e2 f7       	brpl	.-8      	; 0xb6 <led_patern2+0x12>
+  be:	82 bb       	out	0x12, r24	; 18
+  c0:	80 e1       	ldi	r24, 0x10	; 16
+  c2:	97 e2       	ldi	r25, 0x27	; 39
+  c4:	fa 01       	movw	r30, r20
+  c6:	31 97       	sbiw	r30, 0x01	; 1
+  c8:	f1 f7       	brne	.-4      	; 0xc6 <led_patern2+0x22>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  ca:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  cc:	d9 f7       	brne	.-10     	; 0xc4 <led_patern2+0x20>
+}
+
+void led_patern2()
+{
+    int i;
+	for(i=7;i>=0;i--)
+  ce:	21 50       	subi	r18, 0x01	; 1
+  d0:	30 40       	sbci	r19, 0x00	; 0
+  d2:	8f ef       	ldi	r24, 0xFF	; 255
+  d4:	2f 3f       	cpi	r18, 0xFF	; 255
+  d6:	38 07       	cpc	r19, r24
+  d8:	59 f7       	brne	.-42     	; 0xb0 <led_patern2+0xc>
+	{
+	   	PORTD=(1<<i);
+		_delay_ms(1000);
+        }
+	PORTD=0x00;
+  da:	12 ba       	out	0x12, r1	; 18
+}
+  dc:	08 95       	ret
+
+000000de <main>:
+   				
+int main(void) 
+{
+	DDRD = 0xFF;    		//PORTD is output
+  de:	8f ef       	ldi	r24, 0xFF	; 255
+  e0:	81 bb       	out	0x11, r24	; 17
+	DDRB =0x00;             //PORTB is input
+  e2:	17 ba       	out	0x17, r1	; 23
+	PORTB = 0xFF;           // connect pull-up resistor
+  e4:	88 bb       	out	0x18, r24	; 24
+	while (1) 
+	{	
+	    if((PINB&(1<<0))==0)
+  e6:	b0 99       	sbic	0x16, 0	; 22
+  e8:	02 c0       	rjmp	.+4      	; 0xee <main+0x10>
+		{ 
+                 led_patern1();
+  ea:	0e 94 36 00 	call	0x6c	; 0x6c <led_patern1>
+                }
+	    if((PINB&(1<<1))==0)
+  ee:	b1 99       	sbic	0x16, 1	; 22
+  f0:	fa cf       	rjmp	.-12     	; 0xe6 <main+0x8>
+		{ 
+                led_patern2();
+  f2:	0e 94 52 00 	call	0xa4	; 0xa4 <led_patern2>
+  f6:	f7 cf       	rjmp	.-18     	; 0xe6 <main+0x8>
+
+000000f8 <_exit>:
+  f8:	f8 94       	cli
+
+000000fa <__stop_program>:
+  fa:	ff cf       	rjmp	.-2      	; 0xfa <__stop_program>

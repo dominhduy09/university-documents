@@ -1,0 +1,178 @@
+
+Lab1_Problem5a.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000d4  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .debug_aranges 00000020  00000000  00000000  00000128  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  2 .debug_pubnames 0000001b  00000000  00000000  00000148  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   00000164  00000000  00000000  00000163  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 000000db  00000000  00000000  000002c7  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   00000186  00000000  00000000  000003a2  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  00000020  00000000  00000000  00000528  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    00000123  00000000  00000000  00000548  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_loc    00000068  00000000  00000000  0000066b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_ranges 00000090  00000000  00000000  000006d3  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 36 00 	call	0x6c	; 0x6c <main>
+  64:	0c 94 68 00 	jmp	0xd0	; 0xd0 <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <main>:
+#include <util/delay.h>	// _delay_ms(d) and _delay_us(d)
+#include <avr/io.h>    				
+int main(void) 
+{
+	char i;
+	DDRD = 0xFF;    		//PORTD is output
+  6c:	8f ef       	ldi	r24, 0xFF	; 255
+  6e:	81 bb       	out	0x11, r24	; 17
+  70:	20 e0       	ldi	r18, 0x00	; 0
+  72:	30 e0       	ldi	r19, 0x00	; 0
+	while (1) 
+	{	
+		for(i=0;i<8;i++)
+		{
+	   		PORTD=(1<<i);
+  74:	61 e0       	ldi	r22, 0x01	; 1
+  76:	70 e0       	ldi	r23, 0x00	; 0
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+  78:	40 e9       	ldi	r20, 0x90	; 144
+  7a:	51 e0       	ldi	r21, 0x01	; 1
+  7c:	cb 01       	movw	r24, r22
+  7e:	02 2e       	mov	r0, r18
+  80:	02 c0       	rjmp	.+4      	; 0x86 <main+0x1a>
+  82:	88 0f       	add	r24, r24
+  84:	99 1f       	adc	r25, r25
+  86:	0a 94       	dec	r0
+  88:	e2 f7       	brpl	.-8      	; 0x82 <main+0x16>
+  8a:	82 bb       	out	0x12, r24	; 18
+  8c:	80 e1       	ldi	r24, 0x10	; 16
+  8e:	97 e2       	ldi	r25, 0x27	; 39
+  90:	fa 01       	movw	r30, r20
+  92:	31 97       	sbiw	r30, 0x01	; 1
+  94:	f1 f7       	brne	.-4      	; 0x92 <main+0x26>
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  96:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  98:	d9 f7       	brne	.-10     	; 0x90 <main+0x24>
+  9a:	2f 5f       	subi	r18, 0xFF	; 255
+  9c:	3f 4f       	sbci	r19, 0xFF	; 255
+{
+	char i;
+	DDRD = 0xFF;    		//PORTD is output
+	while (1) 
+	{	
+		for(i=0;i<8;i++)
+  9e:	28 30       	cpi	r18, 0x08	; 8
+  a0:	31 05       	cpc	r19, r1
+  a2:	61 f7       	brne	.-40     	; 0x7c <main+0x10>
+  a4:	27 e0       	ldi	r18, 0x07	; 7
+	   		PORTD=(1<<i);
+	   		_delay_ms(1000);
+    	}
+		for(i=7;i>=0;i--)
+		{
+	   		PORTD=(1<<i);
+  a6:	61 e0       	ldi	r22, 0x01	; 1
+  a8:	70 e0       	ldi	r23, 0x00	; 0
+  aa:	40 e9       	ldi	r20, 0x90	; 144
+  ac:	51 e0       	ldi	r21, 0x01	; 1
+  ae:	cb 01       	movw	r24, r22
+  b0:	02 2e       	mov	r0, r18
+  b2:	02 c0       	rjmp	.+4      	; 0xb8 <main+0x4c>
+  b4:	88 0f       	add	r24, r24
+  b6:	99 1f       	adc	r25, r25
+  b8:	0a 94       	dec	r0
+  ba:	e2 f7       	brpl	.-8      	; 0xb4 <main+0x48>
+  bc:	82 bb       	out	0x12, r24	; 18
+  be:	80 e1       	ldi	r24, 0x10	; 16
+  c0:	97 e2       	ldi	r25, 0x27	; 39
+  c2:	fa 01       	movw	r30, r20
+  c4:	31 97       	sbiw	r30, 0x01	; 1
+  c6:	f1 f7       	brne	.-4      	; 0xc4 <main+0x58>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+  c8:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+  ca:	d9 f7       	brne	.-10     	; 0xc2 <main+0x56>
+		for(i=0;i<8;i++)
+		{
+	   		PORTD=(1<<i);
+	   		_delay_ms(1000);
+    	}
+		for(i=7;i>=0;i--)
+  cc:	21 50       	subi	r18, 0x01	; 1
+  ce:	ef cf       	rjmp	.-34     	; 0xae <main+0x42>
+
+000000d0 <_exit>:
+  d0:	f8 94       	cli
+
+000000d2 <__stop_program>:
+  d2:	ff cf       	rjmp	.-2      	; 0xd2 <__stop_program>

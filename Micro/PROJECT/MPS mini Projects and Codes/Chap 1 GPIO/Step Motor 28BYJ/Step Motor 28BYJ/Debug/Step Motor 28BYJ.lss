@@ -1,0 +1,156 @@
+
+Step Motor 28BYJ.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000e0  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         00000008  00800060  000000e0  00000174  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000003  00800068  00800068  0000017c  2**0
+                  ALLOC
+  3 .stab         000006cc  00000000  00000000  0000017c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  4 .stabstr      00000090  00000000  00000000  00000848  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_aranges 00000020  00000000  00000000  000008d8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_pubnames 00000033  00000000  00000000  000008f8  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_info   000001b6  00000000  00000000  0000092b  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_abbrev 0000013c  00000000  00000000  00000ae1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_line   000001e5  00000000  00000000  00000c1d  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_frame  00000020  00000000  00000000  00000e04  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_str    00000123  00000000  00000000  00000e24  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_pubtypes 00000038  00000000  00000000  00000f47  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+   8:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+   c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  10:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  14:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  18:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  1c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  20:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  24:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  28:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  2c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  30:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  34:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  38:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  3c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  40:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  44:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  48:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  4c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  50:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_copy_data>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	e0 ee       	ldi	r30, 0xE0	; 224
+  68:	f0 e0       	ldi	r31, 0x00	; 0
+  6a:	02 c0       	rjmp	.+4      	; 0x70 <__do_copy_data+0x10>
+  6c:	05 90       	lpm	r0, Z+
+  6e:	0d 92       	st	X+, r0
+  70:	a8 36       	cpi	r26, 0x68	; 104
+  72:	b1 07       	cpc	r27, r17
+  74:	d9 f7       	brne	.-10     	; 0x6c <__do_copy_data+0xc>
+
+00000076 <__do_clear_bss>:
+  76:	10 e0       	ldi	r17, 0x00	; 0
+  78:	a8 e6       	ldi	r26, 0x68	; 104
+  7a:	b0 e0       	ldi	r27, 0x00	; 0
+  7c:	01 c0       	rjmp	.+2      	; 0x80 <.do_clear_bss_start>
+
+0000007e <.do_clear_bss_loop>:
+  7e:	1d 92       	st	X+, r1
+
+00000080 <.do_clear_bss_start>:
+  80:	ab 36       	cpi	r26, 0x6B	; 107
+  82:	b1 07       	cpc	r27, r17
+  84:	e1 f7       	brne	.-8      	; 0x7e <.do_clear_bss_loop>
+  86:	0e 94 49 00 	call	0x92	; 0x92 <main>
+  8a:	0c 94 6e 00 	jmp	0xdc	; 0xdc <_exit>
+
+0000008e <__bad_interrupt>:
+  8e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000092 <main>:
+uint8_t i = 0;
+uint16_t step = 0;
+
+int main(void){
+	
+	DDRC |= 0x0F;
+  92:	84 b3       	in	r24, 0x14	; 20
+  94:	8f 60       	ori	r24, 0x0F	; 15
+  96:	84 bb       	out	0x14, r24	; 20
+	PORTC &= ~(0x0F);
+  98:	85 b3       	in	r24, 0x15	; 21
+  9a:	80 7f       	andi	r24, 0xF0	; 240
+  9c:	85 bb       	out	0x15, r24	; 21
+	PORTC = 0x0F;
+  9e:	8f e0       	ldi	r24, 0x0F	; 15
+  a0:	85 bb       	out	0x15, r24	; 21
+    while(1){
+		PORTC = code[step%8];
+  a2:	20 e6       	ldi	r18, 0x60	; 96
+  a4:	30 e0       	ldi	r19, 0x00	; 0
+  a6:	80 91 69 00 	lds	r24, 0x0069
+  aa:	90 91 6a 00 	lds	r25, 0x006A
+  ae:	fc 01       	movw	r30, r24
+  b0:	e7 70       	andi	r30, 0x07	; 7
+  b2:	f0 70       	andi	r31, 0x00	; 0
+  b4:	e2 0f       	add	r30, r18
+  b6:	f3 1f       	adc	r31, r19
+  b8:	40 81       	ld	r20, Z
+  ba:	45 bb       	out	0x15, r20	; 21
+		step++;
+  bc:	01 96       	adiw	r24, 0x01	; 1
+  be:	90 93 6a 00 	sts	0x006A, r25
+  c2:	80 93 69 00 	sts	0x0069, r24
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  c6:	ef e9       	ldi	r30, 0x9F	; 159
+  c8:	ff e0       	ldi	r31, 0x0F	; 15
+  ca:	31 97       	sbiw	r30, 0x01	; 1
+  cc:	f1 f7       	brne	.-4      	; 0xca <main+0x38>
+  ce:	00 c0       	rjmp	.+0      	; 0xd0 <main+0x3e>
+  d0:	00 00       	nop
+		_delay_ms(_dl);
+		if(step == 4096) while(1){}	
+  d2:	f0 e1       	ldi	r31, 0x10	; 16
+  d4:	80 30       	cpi	r24, 0x00	; 0
+  d6:	9f 07       	cpc	r25, r31
+  d8:	31 f7       	brne	.-52     	; 0xa6 <main+0x14>
+  da:	ff cf       	rjmp	.-2      	; 0xda <main+0x48>
+
+000000dc <_exit>:
+  dc:	f8 94       	cli
+
+000000de <__stop_program>:
+  de:	ff cf       	rjmp	.-2      	; 0xde <__stop_program>

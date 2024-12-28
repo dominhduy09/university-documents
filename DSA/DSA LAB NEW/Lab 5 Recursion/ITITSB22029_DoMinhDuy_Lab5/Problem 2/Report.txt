@@ -1,0 +1,5 @@
+Algorithm: Recursive computation of the harmonic series H(n).
+
+Data Structure: Implicit use of the call stack.
+
+Time Complexity: O(n).

@@ -1,0 +1,38 @@
+#include <avr/io.h>    			
+int main(void) 
+{
+	unsigned char temp;
+	DDRC = 0;	   // PORTC: Input
+	
+	DDRB = 0xFF; // PORTB: Output 
+		
+	DDRD = 0xFF; // PORTD: Output 		
+	
+    while(1)
+     {
+         temp = PINC; //read from PINC 
+         if (temp < 100)
+	 PORTB = temp;
+         else
+	 PORTD = temp;
+      } 
+
+     return 0;
+}
+
+.include "M32def.inc"
+#define temp = R16
+	ldi	r20,0x00  ;Set Port C as input
+	out	ddrc,r20
+	ldi	r20,0xff  ;Set Port B as output
+	out	ddrb,r20
+	ldi	r20,0xff  ;Set Port B as output
+	out	ddrd,r20
+loop_while:
+        in temp,PINC
+	cpi temp,100
+        brcc less_than
+        out PORTD,temp 
+less_than:
+       out PORTB,temp
+       jmp loop_while

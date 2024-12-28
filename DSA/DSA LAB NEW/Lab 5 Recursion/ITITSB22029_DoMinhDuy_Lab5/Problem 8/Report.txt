@@ -1,0 +1,5 @@
+Data Structures: List and ArrayList for dynamic storage and subset management.
+
+Algorithm: Backtracking to explore all possible subsets of the input set.
+
+Time Complexity: O(2^n * n)

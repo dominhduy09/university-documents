@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Sawtooth Wave PWM", "Sawtooth Wave PWM\Sawtooth Wave PWM.cproj", "{B22D51A9-230F-4756-8A71-44C635F2BF04}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B22D51A9-230F-4756-8A71-44C635F2BF04}.Debug|AVR.ActiveCfg = Debug|AVR
+		{B22D51A9-230F-4756-8A71-44C635F2BF04}.Debug|AVR.Build.0 = Debug|AVR
+		{B22D51A9-230F-4756-8A71-44C635F2BF04}.Release|AVR.ActiveCfg = Release|AVR
+		{B22D51A9-230F-4756-8A71-44C635F2BF04}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

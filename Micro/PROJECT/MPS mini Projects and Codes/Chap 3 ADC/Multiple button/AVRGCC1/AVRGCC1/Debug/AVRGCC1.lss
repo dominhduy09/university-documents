@@ -1,0 +1,236 @@
+
+AVRGCC1.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000011e  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .stab         000006cc  00000000  00000000  00000174  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  2 .stabstr      00000090  00000000  00000000  00000840  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_aranges 00000040  00000000  00000000  000008d0  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_pubnames 00000058  00000000  00000000  00000910  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000262  00000000  00000000  00000968  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 000001b4  00000000  00000000  00000bca  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000377  00000000  00000000  00000d7e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000060  00000000  00000000  000010f8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    0000013c  00000000  00000000  00001158  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000009e  00000000  00000000  00001294  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_pubtypes 0000006e  00000000  00000000  00001332  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 51 00 	call	0xa2	; 0xa2 <main>
+  64:	0c 94 8d 00 	jmp	0x11a	; 0x11a <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <Check_button>:
+#include "adc.h"
+
+
+int8_t Check_button(const uint8_t pin){
+	uint16_t temp;
+	temp = ADC_Read(pin);
+  6c:	0e 94 82 00 	call	0x104	; 0x104 <ADC_Read>
+	if( temp < 200 ) return 4;
+  70:	88 3c       	cpi	r24, 0xC8	; 200
+  72:	91 05       	cpc	r25, r1
+  74:	70 f0       	brcs	.+28     	; 0x92 <Check_button+0x26>
+	else if( temp < 400 ) return 3;
+  76:	21 e0       	ldi	r18, 0x01	; 1
+  78:	80 39       	cpi	r24, 0x90	; 144
+  7a:	92 07       	cpc	r25, r18
+  7c:	60 f0       	brcs	.+24     	; 0x96 <Check_button+0x2a>
+	else if( temp < 600 ) return 2;
+  7e:	22 e0       	ldi	r18, 0x02	; 2
+  80:	88 35       	cpi	r24, 0x58	; 88
+  82:	92 07       	cpc	r25, r18
+  84:	50 f0       	brcs	.+20     	; 0x9a <Check_button+0x2e>
+	else if( temp < 850 ) return 1;
+  86:	23 e0       	ldi	r18, 0x03	; 3
+  88:	82 35       	cpi	r24, 0x52	; 82
+  8a:	92 07       	cpc	r25, r18
+  8c:	40 f4       	brcc	.+16     	; 0x9e <Check_button+0x32>
+  8e:	81 e0       	ldi	r24, 0x01	; 1
+  90:	08 95       	ret
+
+
+int8_t Check_button(const uint8_t pin){
+	uint16_t temp;
+	temp = ADC_Read(pin);
+	if( temp < 200 ) return 4;
+  92:	84 e0       	ldi	r24, 0x04	; 4
+  94:	08 95       	ret
+	else if( temp < 400 ) return 3;
+  96:	83 e0       	ldi	r24, 0x03	; 3
+  98:	08 95       	ret
+	else if( temp < 600 ) return 2;
+  9a:	82 e0       	ldi	r24, 0x02	; 2
+  9c:	08 95       	ret
+	else if( temp < 850 ) return 1;
+	else return -1;
+  9e:	8f ef       	ldi	r24, 0xFF	; 255
+}
+  a0:	08 95       	ret
+
+000000a2 <main>:
+
+int main(void){
+  a2:	cf 93       	push	r28
+  a4:	df 93       	push	r29
+	
+	DDRC |= 0x0F;
+  a6:	84 b3       	in	r24, 0x14	; 20
+  a8:	8f 60       	ori	r24, 0x0F	; 15
+  aa:	84 bb       	out	0x14, r24	; 20
+	PORTC = 0;
+  ac:	15 ba       	out	0x15, r1	; 21
+	DDRA &= ~(1<<PINA0);
+  ae:	d0 98       	cbi	0x1a, 0	; 26
+	PORTA |= 0x01;
+  b0:	d8 9a       	sbi	0x1b, 0	; 27
+
+	// init ADC
+	ADC_Init();
+  b2:	0e 94 7d 00 	call	0xfa	; 0xfa <ADC_Init>
+ 
+	while (1){	
+		
+		BS = Check_button(0);
+		if(BS != -1){
+			PORTC ^= (1<<(PINC,BS-1));
+  b6:	c1 e0       	ldi	r28, 0x01	; 1
+  b8:	d0 e0       	ldi	r29, 0x00	; 0
+	ADC_Init();
+	int8_t BS = -1;
+ 
+	while (1){	
+		
+		BS = Check_button(0);
+  ba:	80 e0       	ldi	r24, 0x00	; 0
+  bc:	0e 94 36 00 	call	0x6c	; 0x6c <Check_button>
+		if(BS != -1){
+  c0:	8f 3f       	cpi	r24, 0xFF	; 255
+  c2:	89 f0       	breq	.+34     	; 0xe6 <main+0x44>
+			PORTC ^= (1<<(PINC,BS-1));
+  c4:	93 b3       	in	r25, 0x13	; 19
+  c6:	25 b3       	in	r18, 0x15	; 21
+  c8:	99 27       	eor	r25, r25
+  ca:	87 fd       	sbrc	r24, 7
+  cc:	90 95       	com	r25
+  ce:	01 97       	sbiw	r24, 0x01	; 1
+  d0:	ae 01       	movw	r20, r28
+  d2:	02 c0       	rjmp	.+4      	; 0xd8 <main+0x36>
+  d4:	44 0f       	add	r20, r20
+  d6:	55 1f       	adc	r21, r21
+  d8:	8a 95       	dec	r24
+  da:	e2 f7       	brpl	.-8      	; 0xd4 <main+0x32>
+  dc:	ca 01       	movw	r24, r20
+  de:	30 e0       	ldi	r19, 0x00	; 0
+  e0:	82 27       	eor	r24, r18
+  e2:	93 27       	eor	r25, r19
+  e4:	85 bb       	out	0x15, r24	; 21
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+  e6:	8f ef       	ldi	r24, 0xFF	; 255
+  e8:	90 e7       	ldi	r25, 0x70	; 112
+  ea:	a2 e0       	ldi	r26, 0x02	; 2
+  ec:	81 50       	subi	r24, 0x01	; 1
+  ee:	90 40       	sbci	r25, 0x00	; 0
+  f0:	a0 40       	sbci	r26, 0x00	; 0
+  f2:	e1 f7       	brne	.-8      	; 0xec <main+0x4a>
+  f4:	00 c0       	rjmp	.+0      	; 0xf6 <main+0x54>
+  f6:	00 00       	nop
+  f8:	e0 cf       	rjmp	.-64     	; 0xba <main+0x18>
+
+000000fa <ADC_Init>:
+
+void ADC_Init(void){
+ //ADCSRA (ADC Control and Status RegisterA ) ***
+ //ADEN (ADC Enable by writing this bit 1 to enables the ADC. By writing it to 0 the ADC is turned off)
+ // ADPS2 , ADPS1 , ADPS0 (ADC Prescaler Select Bits) 
+  ADCSRA |= (1<<ADEN) | (1<<ADPS2) | (1<<ADPS1) | (1<<ADPS0);	
+  fa:	86 b1       	in	r24, 0x06	; 6
+  fc:	87 68       	ori	r24, 0x87	; 135
+  fe:	86 b9       	out	0x06, r24	; 6
+  
+  //ADMUX (ADC Multiplexer Selection Register)	***	
+  ADMUX |= ADC_VREF_TYPE;
+ 100:	3e 9a       	sbi	0x07, 6	; 7
+}
+ 102:	08 95       	ret
+
+00000104 <ADC_Read>:
+
+
+uint16_t ADC_Read(unsigned char adc_channel){
+   ADMUX = adc_channel|ADC_VREF_TYPE;			// adc_channel (0->7 \ : 0000 -> 0111) 
+ 104:	80 64       	ori	r24, 0x40	; 64
+ 106:	87 b9       	out	0x07, r24	; 7
+   //ADSC: ADC Start Conversion
+   ADCSRA |= (1<<ADSC);						//ADCSRA=(1<<ADEN)|(1<<ADPS2)|(1<<ADPS1)|(1<<ADPS0)|(1<<ADSC) 
+ 108:	36 9a       	sbi	0x06, 6	; 6
+   //ADIF: ADC Interrupt Flag. This bit is set when an ADC conversion completes and the Data Registers are updated
+   while(!((ADCSRA>>ADIF)&1));		//loop until the ADIF bit in the ADCSRA register is set to 1
+ 10a:	86 b1       	in	r24, 0x06	; 6
+ 10c:	84 ff       	sbrs	r24, 4
+ 10e:	fd cf       	rjmp	.-6      	; 0x10a <ADC_Read+0x6>
+   //ADCW: ADC Word (combination ADCL and ADCH – The ADC Data Register)
+   return ADCW;
+ 110:	24 b1       	in	r18, 0x04	; 4
+ 112:	35 b1       	in	r19, 0x05	; 5
+ 114:	82 2f       	mov	r24, r18
+ 116:	93 2f       	mov	r25, r19
+ 118:	08 95       	ret
+
+0000011a <_exit>:
+ 11a:	f8 94       	cli
+
+0000011c <__stop_program>:
+ 11c:	ff cf       	rjmp	.-2      	; 0x11c <__stop_program>

@@ -1,0 +1,290 @@
+
+SPI_SLAVE.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000001ac  00000000  00000000  00000074  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .bss          0000000a  00800060  00800060  00000220  2**0
+                  ALLOC
+  2 .stab         000006cc  00000000  00000000  00000220  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  3 .stabstr      00000090  00000000  00000000  000008ec  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_aranges 00000020  00000000  00000000  0000097c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_pubnames 0000009a  00000000  00000000  0000099c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_info   00000298  00000000  00000000  00000a36  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_abbrev 00000184  00000000  00000000  00000cce  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_line   000002a6  00000000  00000000  00000e52  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_frame  00000050  00000000  00000000  000010f8  2**2
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_str    00000152  00000000  00000000  00001148  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_loc    00000013  00000000  00000000  0000129a  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 12 .debug_pubtypes 00000038  00000000  00000000  000012ad  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+   8:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+   c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  10:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  14:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  18:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  1c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  20:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  24:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  28:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  2c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  30:	0c 94 c5 00 	jmp	0x18a	; 0x18a <__vector_12>
+  34:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  38:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  3c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  40:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  44:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  48:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  4c:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+  50:	0c 94 3c 00 	jmp	0x78	; 0x78 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_clear_bss>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	01 c0       	rjmp	.+2      	; 0x6a <.do_clear_bss_start>
+
+00000068 <.do_clear_bss_loop>:
+  68:	1d 92       	st	X+, r1
+
+0000006a <.do_clear_bss_start>:
+  6a:	aa 36       	cpi	r26, 0x6A	; 106
+  6c:	b1 07       	cpc	r27, r17
+  6e:	e1 f7       	brne	.-8      	; 0x68 <.do_clear_bss_loop>
+  70:	0e 94 55 00 	call	0xaa	; 0xaa <main>
+  74:	0c 94 d4 00 	jmp	0x1a8	; 0x1a8 <_exit>
+
+00000078 <__bad_interrupt>:
+  78:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000007c <Check_button>:
+uint8_t DIR = 0, index = 0;
+uint8_t S_data = 0,S_l_data = 0, M_data = 0;
+uint8_t BS[2], L_BS[2], i;
+
+uint8_t Check_button(uint8_t __i){
+	if ((BS[__i] - L_BS[__i]) == 1) return 1;				//detect when button is pressed
+  7c:	90 e0       	ldi	r25, 0x00	; 0
+  7e:	fc 01       	movw	r30, r24
+  80:	e8 59       	subi	r30, 0x98	; 152
+  82:	ff 4f       	sbci	r31, 0xFF	; 255
+  84:	20 81       	ld	r18, Z
+  86:	30 e0       	ldi	r19, 0x00	; 0
+  88:	8a 59       	subi	r24, 0x9A	; 154
+  8a:	9f 4f       	sbci	r25, 0xFF	; 255
+  8c:	fc 01       	movw	r30, r24
+  8e:	80 81       	ld	r24, Z
+  90:	28 1b       	sub	r18, r24
+  92:	31 09       	sbc	r19, r1
+  94:	81 e0       	ldi	r24, 0x01	; 1
+  96:	21 30       	cpi	r18, 0x01	; 1
+  98:	31 05       	cpc	r19, r1
+  9a:	09 f0       	breq	.+2      	; 0x9e <Check_button+0x22>
+  9c:	80 e0       	ldi	r24, 0x00	; 0
+	else return 0;
+}
+  9e:	08 95       	ret
+
+000000a0 <SPI_Slave_Init>:
+
+void SPI_Slave_Init(){
+	SPCR |= (1<<SPE)|(1<<SPIE);
+  a0:	8d b1       	in	r24, 0x0d	; 13
+  a2:	80 6c       	ori	r24, 0xC0	; 192
+  a4:	8d b9       	out	0x0d, r24	; 13
+	DDRB |= (1<<MISO);
+  a6:	be 9a       	sbi	0x17, 6	; 23
+}
+  a8:	08 95       	ret
+
+000000aa <main>:
+
+
+int main(void){
+  aa:	af 92       	push	r10
+  ac:	bf 92       	push	r11
+  ae:	cf 92       	push	r12
+  b0:	df 92       	push	r13
+  b2:	ef 92       	push	r14
+  b4:	ff 92       	push	r15
+  b6:	0f 93       	push	r16
+  b8:	1f 93       	push	r17
+  ba:	cf 93       	push	r28
+  bc:	df 93       	push	r29
+	
+	DDRC |= 0xFF;
+  be:	84 b3       	in	r24, 0x14	; 20
+  c0:	8f ef       	ldi	r24, 0xFF	; 255
+  c2:	84 bb       	out	0x14, r24	; 20
+	PORTC = 0;
+  c4:	15 ba       	out	0x15, r1	; 21
+	DDRD |= 0xFF;
+  c6:	91 b3       	in	r25, 0x11	; 17
+  c8:	81 bb       	out	0x11, r24	; 17
+	PORTD = 0;
+  ca:	12 ba       	out	0x12, r1	; 18
+	SPI_Slave_Init();
+  cc:	0e 94 50 00 	call	0xa0	; 0xa0 <SPI_Slave_Init>
+	sei();
+  d0:	78 94       	sei
+	
+	while(1){
+		for(i = 0; i < 2; i++) BS[i] = (PINB>>i)&1;
+  d2:	c8 e6       	ldi	r28, 0x68	; 104
+  d4:	d0 e0       	ldi	r29, 0x00	; 0
+  d6:	ff 24       	eor	r15, r15
+  d8:	f3 94       	inc	r15
+  da:	8e 01       	movw	r16, r28
+  dc:	0f 5f       	subi	r16, 0xFF	; 255
+  de:	1f 4f       	sbci	r17, 0xFF	; 255
+  e0:	ee 24       	eor	r14, r14
+  e2:	68 94       	set
+  e4:	e1 f8       	bld	r14, 1
+		if(Check_button(1)) S_data--;
+		if(S_l_data != S_data) PORTD = S_data;
+		if((PINB>>CE)&1) SPDR = S_data;
+		
+		S_l_data = S_data;
+		for(i = 0; i < 2; i++) L_BS[i] = BS[i];
+  e6:	0f 2e       	mov	r0, r31
+  e8:	f6 e6       	ldi	r31, 0x66	; 102
+  ea:	cf 2e       	mov	r12, r31
+  ec:	f0 e0       	ldi	r31, 0x00	; 0
+  ee:	df 2e       	mov	r13, r31
+  f0:	f0 2d       	mov	r31, r0
+  f2:	56 01       	movw	r10, r12
+  f4:	08 94       	sec
+  f6:	a1 1c       	adc	r10, r1
+  f8:	b1 1c       	adc	r11, r1
+	PORTD = 0;
+	SPI_Slave_Init();
+	sei();
+	
+	while(1){
+		for(i = 0; i < 2; i++) BS[i] = (PINB>>i)&1;
+  fa:	10 92 65 00 	sts	0x0065, r1
+  fe:	86 b3       	in	r24, 0x16	; 22
+ 100:	81 70       	andi	r24, 0x01	; 1
+ 102:	88 83       	st	Y, r24
+ 104:	f0 92 65 00 	sts	0x0065, r15
+ 108:	86 b3       	in	r24, 0x16	; 22
+ 10a:	90 e0       	ldi	r25, 0x00	; 0
+ 10c:	95 95       	asr	r25
+ 10e:	87 95       	ror	r24
+ 110:	81 70       	andi	r24, 0x01	; 1
+ 112:	f8 01       	movw	r30, r16
+ 114:	80 83       	st	Z, r24
+ 116:	e0 92 65 00 	sts	0x0065, r14
+		if(Check_button(0)) S_data++;
+ 11a:	80 e0       	ldi	r24, 0x00	; 0
+ 11c:	0e 94 3e 00 	call	0x7c	; 0x7c <Check_button>
+ 120:	88 23       	and	r24, r24
+ 122:	29 f0       	breq	.+10     	; 0x12e <main+0x84>
+ 124:	80 91 62 00 	lds	r24, 0x0062
+ 128:	8f 5f       	subi	r24, 0xFF	; 255
+ 12a:	80 93 62 00 	sts	0x0062, r24
+		if(Check_button(1)) S_data--;
+ 12e:	8f 2d       	mov	r24, r15
+ 130:	0e 94 3e 00 	call	0x7c	; 0x7c <Check_button>
+ 134:	88 23       	and	r24, r24
+ 136:	29 f0       	breq	.+10     	; 0x142 <main+0x98>
+ 138:	80 91 62 00 	lds	r24, 0x0062
+ 13c:	81 50       	subi	r24, 0x01	; 1
+ 13e:	80 93 62 00 	sts	0x0062, r24
+		if(S_l_data != S_data) PORTD = S_data;
+ 142:	80 91 62 00 	lds	r24, 0x0062
+ 146:	90 91 63 00 	lds	r25, 0x0063
+ 14a:	98 13       	cpse	r25, r24
+ 14c:	82 bb       	out	0x12, r24	; 18
+		if((PINB>>CE)&1) SPDR = S_data;
+ 14e:	86 b3       	in	r24, 0x16	; 22
+ 150:	84 ff       	sbrs	r24, 4
+ 152:	06 c0       	rjmp	.+12     	; 0x160 <main+0xb6>
+ 154:	80 91 62 00 	lds	r24, 0x0062
+ 158:	8f b9       	out	0x0f, r24	; 15
+		
+		S_l_data = S_data;
+ 15a:	80 93 63 00 	sts	0x0063, r24
+ 15e:	04 c0       	rjmp	.+8      	; 0x168 <main+0xbe>
+ 160:	80 91 62 00 	lds	r24, 0x0062
+ 164:	80 93 63 00 	sts	0x0063, r24
+		for(i = 0; i < 2; i++) L_BS[i] = BS[i];
+ 168:	88 81       	ld	r24, Y
+ 16a:	f6 01       	movw	r30, r12
+ 16c:	80 83       	st	Z, r24
+ 16e:	f8 01       	movw	r30, r16
+ 170:	80 81       	ld	r24, Z
+ 172:	f5 01       	movw	r30, r10
+ 174:	80 83       	st	Z, r24
+		
+		PORTC = M_data;
+ 176:	80 91 64 00 	lds	r24, 0x0064
+ 17a:	85 bb       	out	0x15, r24	; 21
+	#else
+		//round up by default
+		__ticks_dc = (uint32_t)(ceil(fabs(__tmp)));
+	#endif
+
+	__builtin_avr_delay_cycles(__ticks_dc);
+ 17c:	8f e1       	ldi	r24, 0x1F	; 31
+ 17e:	9e e4       	ldi	r25, 0x4E	; 78
+ 180:	01 97       	sbiw	r24, 0x01	; 1
+ 182:	f1 f7       	brne	.-4      	; 0x180 <main+0xd6>
+ 184:	00 c0       	rjmp	.+0      	; 0x186 <main+0xdc>
+ 186:	00 00       	nop
+ 188:	b8 cf       	rjmp	.-144    	; 0xfa <main+0x50>
+
+0000018a <__vector_12>:
+		_delay_ms(5);
+	}
+	return 1;
+}
+
+ISR(SPI_STC_vect){
+ 18a:	1f 92       	push	r1
+ 18c:	0f 92       	push	r0
+ 18e:	0f b6       	in	r0, 0x3f	; 63
+ 190:	0f 92       	push	r0
+ 192:	11 24       	eor	r1, r1
+ 194:	8f 93       	push	r24
+	M_data = SPDR;
+ 196:	8f b1       	in	r24, 0x0f	; 15
+ 198:	80 93 64 00 	sts	0x0064, r24
+	
+ 19c:	8f 91       	pop	r24
+ 19e:	0f 90       	pop	r0
+ 1a0:	0f be       	out	0x3f, r0	; 63
+ 1a2:	0f 90       	pop	r0
+ 1a4:	1f 90       	pop	r1
+ 1a6:	18 95       	reti
+
+000001a8 <_exit>:
+ 1a8:	f8 94       	cli
+
+000001aa <__stop_program>:
+ 1aa:	ff cf       	rjmp	.-2      	; 0x1aa <__stop_program>

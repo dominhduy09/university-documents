@@ -1,0 +1,36 @@
+1. Data Structure Used:
+Stack: The primary data structure used in the code is a stack. A stack follows the LIFO (Last In, First Out) principle, meaning that the last element pushed onto the stack will be the first element popped off.
+
+Stack Operations:
+Push: Add an element to the top of the stack.
+Pop: Remove an element from the top of the stack.
+isEmpty: Check whether the stack is empty.
+Array: The PersonStack internally uses an array (Person[] stackArray) to store Person objects. The array helps in efficiently managing the fixed number of Person objects within the stack.
+
+List: The List<Person> is used to store the original and reversed list of Person objects in the main program. This list is created using the ArrayList class, which dynamically adjusts in size.
+
+2. Algorithms:
+Push to Stack Algorithm:
+
+The algorithm iterates over the list of Person objects and pushes each person onto the stack.
+The push operation appends a Person to the next available index in the stackArray.
+Pop from Stack Algorithm:
+
+The algorithm pops the Person objects from the stack in reverse order and adds them back to the reversedPersons list.
+The pop operation retrieves the last inserted Person from the stack and decrements the top index.
+Reversing Algorithm:
+
+The process of reversing is achieved using the stack. By pushing all elements onto the stack and then popping them, we reverse the order of the elements. This is a classic use of the stack data structure to reverse a list.
+
+3. Time Complexity:
+Push Operation (Stack):
+
+Each push operation is O(1) because adding an element to the stack (via the array) is a constant-time operation. The new Person object is added to the top of the stack and the top index is incremented.
+Pop Operation (Stack):
+
+Similarly, each pop operation is O(1) because removing an element from the top of the stack and decrementing the top index is done in constant time.
+Reversing the List:
+
+To reverse the list, the algorithm first iterates through all the elements in the list and pushes them onto the stack, which is O(n) where n is the number of Person objects.
+Then, it iterates over the stack and pops each element to form the reversed list, which is also O(n).
+

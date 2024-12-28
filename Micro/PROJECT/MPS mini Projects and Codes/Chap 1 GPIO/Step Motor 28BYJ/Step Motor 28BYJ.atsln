@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Step Motor 28BYJ", "Step Motor 28BYJ\Step Motor 28BYJ.cproj", "{2F553F44-B05C-4A3B-962B-FD80AFC45B17}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{2F553F44-B05C-4A3B-962B-FD80AFC45B17}.Debug|AVR.ActiveCfg = Debug|AVR
+		{2F553F44-B05C-4A3B-962B-FD80AFC45B17}.Debug|AVR.Build.0 = Debug|AVR
+		{2F553F44-B05C-4A3B-962B-FD80AFC45B17}.Release|AVR.ActiveCfg = Release|AVR
+		{2F553F44-B05C-4A3B-962B-FD80AFC45B17}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

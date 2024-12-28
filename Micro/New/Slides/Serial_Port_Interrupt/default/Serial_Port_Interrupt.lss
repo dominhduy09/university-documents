@@ -1,0 +1,140 @@
+
+Serial_Port_Interrupt.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         000000c2  00000000  00000000  00000054  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .debug_aranges 00000020  00000000  00000000  00000116  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  2 .debug_pubnames 0000003d  00000000  00000000  00000136  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  3 .debug_info   000000eb  00000000  00000000  00000173  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_abbrev 000000b7  00000000  00000000  0000025e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_line   000000f4  00000000  00000000  00000315  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_frame  00000050  00000000  00000000  0000040c  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_str    000000bb  00000000  00000000  0000045c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   8:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+   c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  10:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  14:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  18:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  1c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  20:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  24:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  28:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  2c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  30:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  34:	0c 94 3a 00 	jmp	0x74	; 0x74 <__vector_13>
+  38:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  3c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  40:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  44:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  48:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  4c:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+  50:	0c 94 34 00 	jmp	0x68	; 0x68 <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+  60:	0e 94 5a 00 	call	0xb4	; 0xb4 <main>
+  64:	0c 94 5f 00 	jmp	0xbe	; 0xbe <_exit>
+
+00000068 <__bad_interrupt>:
+  68:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+0000006c <Tx>:
+#include <avr/io.h>
+#include <avr/interrupt.h>
+void Tx( unsigned char data ){
+while ( !(UCSRA & (1<<UDRE)) ); // wait until UDR is empty
+  6c:	5d 9b       	sbis	0x0b, 5	; 11
+  6e:	fe cf       	rjmp	.-4      	; 0x6c <Tx>
+    UDR = data;
+  70:	8c b9       	out	0x0c, r24	; 12
+}
+  72:	08 95       	ret
+
+00000074 <__vector_13>:
+ISR (USART_RXC_vect){
+  74:	1f 92       	push	r1
+  76:	0f 92       	push	r0
+  78:	0f b6       	in	r0, 0x3f	; 63
+  7a:	0f 92       	push	r0
+  7c:	11 24       	eor	r1, r1
+  7e:	8f 93       	push	r24
+    PORTB = UDR; Tx(++PORTB);
+  80:	8c b1       	in	r24, 0x0c	; 12
+  82:	88 bb       	out	0x18, r24	; 24
+  84:	88 b3       	in	r24, 0x18	; 24
+  86:	8f 5f       	subi	r24, 0xFF	; 255
+  88:	88 bb       	out	0x18, r24	; 24
+  8a:	88 b3       	in	r24, 0x18	; 24
+#include <avr/io.h>
+#include <avr/interrupt.h>
+void Tx( unsigned char data ){
+while ( !(UCSRA & (1<<UDRE)) ); // wait until UDR is empty
+  8c:	5d 9b       	sbis	0x0b, 5	; 11
+  8e:	fe cf       	rjmp	.-4      	; 0x8c <__vector_13+0x18>
+    UDR = data;
+  90:	8c b9       	out	0x0c, r24	; 12
+}
+ISR (USART_RXC_vect){
+    PORTB = UDR; Tx(++PORTB);
+}
+  92:	8f 91       	pop	r24
+  94:	0f 90       	pop	r0
+  96:	0f be       	out	0x3f, r0	; 63
+  98:	0f 90       	pop	r0
+  9a:	1f 90       	pop	r1
+  9c:	18 95       	reti
+
+0000009e <init_s>:
+void init_s(){
+    DDRD  = DDRD & 0xFE;
+  9e:	88 98       	cbi	0x11, 0	; 17
+    UCSRB = (1<<RXEN )|(1<<TXEN )|(1<<RXCIE); // Rx, Tx and Receive Interrupt Enable
+  a0:	88 e9       	ldi	r24, 0x98	; 152
+  a2:	8a b9       	out	0x0a, r24	; 10
+    UCSRC = (1<<UCSZ1)|(1<<UCSZ0);            // 8-bit data
+  a4:	86 e0       	ldi	r24, 0x06	; 6
+  a6:	80 bd       	out	0x20, r24	; 32
+    UBRRH = 415>>8; UBRRL = 415;
+  a8:	81 e0       	ldi	r24, 0x01	; 1
+  aa:	80 bd       	out	0x20, r24	; 32
+  ac:	8f e9       	ldi	r24, 0x9F	; 159
+  ae:	89 b9       	out	0x09, r24	; 9
+    sei();
+  b0:	78 94       	sei
+}
+  b2:	08 95       	ret
+
+000000b4 <main>:
+int main(){
+    DDRB = 0XFF;
+  b4:	8f ef       	ldi	r24, 0xFF	; 255
+  b6:	87 bb       	out	0x17, r24	; 23
+    init_s();
+  b8:	0e 94 4f 00 	call	0x9e	; 0x9e <init_s>
+  bc:	ff cf       	rjmp	.-2      	; 0xbc <main+0x8>
+
+000000be <_exit>:
+  be:	f8 94       	cli
+
+000000c0 <__stop_program>:
+  c0:	ff cf       	rjmp	.-2      	; 0xc0 <__stop_program>

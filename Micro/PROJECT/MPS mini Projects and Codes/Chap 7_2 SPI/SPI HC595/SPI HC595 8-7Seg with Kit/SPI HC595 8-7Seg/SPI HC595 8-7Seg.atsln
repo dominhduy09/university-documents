@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "SPI HC595 8-7Seg", "SPI HC595 8-7Seg\SPI HC595 8-7Seg.cproj", "{BCF76F91-314C-4558-8C13-7DED2FDAB8C0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{BCF76F91-314C-4558-8C13-7DED2FDAB8C0}.Debug|AVR.ActiveCfg = Debug|AVR
+		{BCF76F91-314C-4558-8C13-7DED2FDAB8C0}.Debug|AVR.Build.0 = Debug|AVR
+		{BCF76F91-314C-4558-8C13-7DED2FDAB8C0}.Release|AVR.ActiveCfg = Release|AVR
+		{BCF76F91-314C-4558-8C13-7DED2FDAB8C0}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

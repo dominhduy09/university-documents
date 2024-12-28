@@ -1,0 +1,48 @@
+Data Structures
+Array:
+The primary data structure is an array of long values (long[] a), which holds the numbers to be sorted.
+An integer nElems keeps track of the number of elements currently in the array.
+Additional counters are used to track comparisons, copies, and swaps.
+
+
+Algorithms
+Insertion:
+
+The insert(long value) method adds a new value to the end of the array.
+The fillRandom(int size) method populates the array with random numbers.
+Sorting Algorithms:
+
+Bubble Sort (bubbleSort() method):
+
+Iteratively compares adjacent elements and swaps them if they are in the wrong order.
+Continues to pass through the array until no swaps are needed, indicating that the array is sorted.
+Selection Sort (selectionSort() method):
+
+Divides the array into a sorted and an unsorted part.
+Repeatedly selects the minimum element from the unsorted portion and swaps it with the first unsorted element.
+Insertion Sort (insertionSort() method):
+
+Builds a sorted array one element at a time by repeatedly taking the next element from the unsorted portion and inserting it into its correct position in the sorted portion.
+
+
+Time Complexity
+Insertion:
+
+Insert Operation: O(1)
+Adding an element to the end of the array is a constant time operation.
+Bubble Sort:
+
+Worst-case Time Complexity: O(n²)
+In the worst case, the algorithm performs n passes, and each pass involves n comparisons.
+Best-case Time Complexity: O(n)
+If the array is already sorted, it may only make n comparisons in the first pass before terminating.
+Selection Sort:
+
+Time Complexity: O(n²)
+Selection sort always performs n passes through the array, and each pass involves n comparisons.
+Insertion Sort:
+
+Worst-case Time Complexity: O(n²)
+In the worst case (reverse sorted order), each new element must be compared against all previously sorted elements.
+Best-case Time Complexity: O(n)
+If the array is already sorted, each element is already in the correct position, leading to n comparisons and minimal shifts.

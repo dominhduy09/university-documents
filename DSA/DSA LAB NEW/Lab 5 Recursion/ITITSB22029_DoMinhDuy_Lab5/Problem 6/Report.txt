@@ -1,0 +1,5 @@
+Data Structure: No explicit data structure; recursion uses the call stack.
+
+Algorithm: Euclidean Algorithm for computing the GCD.
+
+Time Complexity: O(log(min(p,q)))

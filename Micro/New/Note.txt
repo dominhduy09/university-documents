@@ -1,0 +1,3 @@
+https://www.hocavr.com/2018/06/assembly-cho-avr.html
+
+https://nicerland.com/atmega32/

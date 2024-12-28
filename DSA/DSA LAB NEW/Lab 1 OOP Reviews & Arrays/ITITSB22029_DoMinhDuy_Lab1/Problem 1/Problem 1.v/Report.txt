@@ -1,0 +1,10 @@
+Data Structure: ArrayList
+
+Algorithm: File reading and categorization
+
+Time Complexity: 
+𝑂(𝑛)
+
+O(n) for loading students and 𝑂(𝑚)
+O(m) for categorizing students, where 𝑛 n and 𝑚
+m are the number of students in the file and the list, respectively.

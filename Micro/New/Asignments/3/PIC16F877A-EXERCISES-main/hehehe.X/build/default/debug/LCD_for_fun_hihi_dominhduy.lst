@@ -1,0 +1,123 @@
+
+
+Microchip MPLAB XC8 Assembler V2.50 build 20240725155939 
+                                                                                                           Thu Nov 28 11:19:37 2024
+
+
+     1                           	processor	16F877
+     2                           	pagewidth 132
+     3                           	psect	pa_nodes0,global,class=CODE,space=0,delta=2
+     4  0000                     _main:
+     5                           
+     6                           ;PIR interface with pic.c,17 :: void main(void)
+     7                           ;PIR interface with pic.c,20 :: ADC_Init();
+     8  0000  2000'              	call	_ADC_Init
+     9                           
+    10                           ;PIR interface with pic.c,21 :: Lcd_Init();
+    11  0001  2000'              	call	_Lcd_Init
+    12                           
+    13                           ;PIR interface with pic.c,22 :: Lcd_Cmd(_LCD_CLEAR);
+    14  0002  3001               	movlw	1
+    15  0003  0080'              	movwf	FARG_Lcd_Cmd_out_char
+    16  0004  2000'              	call	_Lcd_Cmd
+    17                           
+    18                           ;PIR interface with pic.c,23 :: Lcd_Cmd(_LCD_CURSOR_OFF);
+    19  0005  300C               	movlw	12
+    20  0006  0080'              	movwf	FARG_Lcd_Cmd_out_char
+    21  0007  2000'              	call	_Lcd_Cmd
+    22                           
+    23                           ;PIR interface with pic.c,24 :: Lcd_Out(1,1,"MOTION DETECTOR" );
+    24  0008  3001               	movlw	1
+    25  0009  0080'              	movwf	FARG_Lcd_Out_row
+    26  000A  3001               	movlw	1
+    27  000B  0080'              	movwf	FARG_Lcd_Out_column
+    28  000C  3000'              	movlw	?lstr1_PIR_32interface_32with_32pic
+    29  000D  0080'              	movwf	FARG_Lcd_Out_text
+    30  000E  2000'              	call	_Lcd_Out
+    31                           
+    32                           ;PIR interface with pic.c,25 :: delay_ms(500);
+    33  000F  3006               	movlw	6
+    34  0010  0080'              	movwf	R11
+    35  0011  3013               	movlw	19
+    36  0012  0080'              	movwf	R12
+    37  0013  30AD               	movlw	173
+    38  0014  0080'              	movwf	R13
+    39  0015                     L_main0:
+    40  0015  0B80'              	decfsz	R13,f
+    41  0016  2815               	goto	L_main0
+    42  0017  0B80'              	decfsz	R12,f
+    43  0018  2815               	goto	L_main0
+    44  0019  0B80'              	decfsz	R11,f
+    45  001A  2815               	goto	L_main0
+    46  001B  0000               	nop
+    47  001C  0000               	nop
+    48                           
+    49                           ;PIR interface with pic.c,27 :: TRISB.B0=1;
+    50  001D  1400'              	bsf	TRISB,0
+    51                           
+    52                           ;PIR interface with pic.c,28 :: PORTB.B0=0;
+    53  001E  1000'              	bcf	PORTB,0
+    54                           
+    55                           ;PIR interface with pic.c,30 :: TRISD.B0=0;
+    56  001F  1000'              	bcf	TRISD,0
+    57                           
+    58                           ;PIR interface with pic.c,31 :: PORTD.B0=0;
+    59  0020  1000'              	bcf	PORTD,0
+    60  0021                     L_main1:	
+    61                           ;PIR interface with pic.c,33 :: while(1)
+    62                           
+    63                           
+    64                           ;PIR interface with pic.c,36 :: if( PORTB.B0==1)
+    65  0021  1C00'              	btfss	PORTB,0
+    66  0022  282C               	goto	L_main3
+    67                           
+    68                           ;PIR interface with pic.c,38 :: PORTD.B0=1;
+    69  0023  1400'              	bsf	PORTD,0
+    70                           
+    71                           ;PIR interface with pic.c,39 :: Lcd_Out(2,1,"MOTION DETECTED" );
+    72  0024  3002               	movlw	2
+    73  0025  0080'              	movwf	FARG_Lcd_Out_row
+    74  0026  3001               	movlw	1
+    75  0027  0080'              	movwf	FARG_Lcd_Out_column
+    76  0028  3000'              	movlw	?lstr2_PIR_32interface_32with_32pic
+    77  0029  0080'              	movwf	FARG_Lcd_Out_text
+    78  002A  2000'              	call	_Lcd_Out
+    79                           
+    80                           ;PIR interface with pic.c,40 :: }
+    81  002B  2834               	goto	L_main4
+    82  002C                     L_main3:
+    83                           
+    84                           ;PIR interface with pic.c,43 :: PORTD.B0=0;
+    85  002C  1000'              	bcf	PORTD,0
+    86                           
+    87                           ;PIR interface with pic.c,44 :: Lcd_Out(2,1,"NO MOTION      " );
+    88  002D  3002               	movlw	2
+    89  002E  0080'              	movwf	FARG_Lcd_Out_row
+    90  002F  3001               	movlw	1
+    91  0030  0080'              	movwf	FARG_Lcd_Out_column
+    92  0031  3000'              	movlw	?lstr3_PIR_32interface_32with_32pic
+    93  0032  0080'              	movwf	FARG_Lcd_Out_text
+    94  0033  2000'              	call	_Lcd_Out
+    95  0034                     L_main4:	
+    96                           ;PIR interface with pic.c,45 :: }
+    97                           
+    98                           
+    99                           ;PIR interface with pic.c,46 :: }
+   100  0034  2821               	goto	L_main1
+   101  0035                     L_end_main:	
+   102                           ;PIR interface with pic.c,48 :: }
+   103                           
+   104  0035  2800'              	goto	$
+
+
+Microchip Technology PIC Macro Assembler V2.50 build 20240725155939 
+Symbol Table                                                                                               Thu Nov 28 11:19:37 2024
+
+                                R11 0000*                                 R12 0000*                                 R13 0000* 
+                              PORTB 0000*                               PORTD 0000*                               TRISB 0000* 
+                              TRISD 0000*                               _main 0000  ?lstr1_PIR_32interface_32with_32pic 0000* 
+                            L_main0 0015                              L_main1 0021                              L_main3 002C  
+                            L_main4 0034                    FARG_Lcd_Out_text 0000*                            _Lcd_Cmd 0000* 
+                           _Lcd_Out 0000*                          L_end_main 0035                     FARG_Lcd_Out_row 0000* 
+              FARG_Lcd_Cmd_out_char 0000*                           _ADC_Init 0000*                           _Lcd_Init 0000* 
+                FARG_Lcd_Out_column 0000* ?lstr3_PIR_32interface_32with_32pic 0000* ?lstr2_PIR_32interface_32with_32pic 0000* 

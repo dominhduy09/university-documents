@@ -1,0 +1,39 @@
+Data Structures
+Array:
+
+The basic data structure used throughout the code is an array. Arrays store a fixed-size sequence of elements of the same type.
+Examples include long[] arr and Person[] a in the ClassDataArray class.
+Classes:
+
+Person: A class representing an individual with attributes such as last name, first name, and age. It encapsulates data and provides methods to interact with that data.
+ClassDataArray: A class that holds an array of Person objects, allowing for operations like insertion, deletion, and searching.
+HighArray, LowArray, and OrderedArray: These classes implement variations of array data structures with different functionalities, like ordered insertion and efficient searching.
+
+Algorithms
+Searching:
+
+Linear Search: In several instances (e.g., finding elements in Array, HighArray, ClassDataArray), a linear search algorithm is used. This algorithm iterates through the array sequentially until it finds the desired element or reaches the end of the array.
+Time Complexity: O(n) in the worst case, where n is the number of elements in the array.
+Binary Search: The OrderedArray class uses a binary search algorithm to find elements. This method divides the search interval in half repeatedly to locate the element.
+Time Complexity: O(log n) since it reduces the search space by half each time.
+Insertion:
+
+Insertion methods in classes like OrderedArray involve locating the appropriate index to insert a new element, then shifting elements as necessary to maintain order.
+Time Complexity: O(n) for ordered insertion (shifting elements).
+Deletion:
+
+Similar to insertion, deletion involves finding the element, and then shifting elements to fill the gap left by the removed element.
+Time Complexity: O(n) for shifting elements after deletion.
+Display:
+
+The display method iterates over the array and prints its elements.
+Time Complexity: O(n) since it needs to visit each element once.
+
+Summary of Time Complexities
+Operation	Time Complexity
+Linear Search	O(n)
+Binary Search	O(log n)
+Insertion (unordered)	O(n)
+Insertion (ordered)	O(n)
+Deletion	O(n)
+Display	O(n)

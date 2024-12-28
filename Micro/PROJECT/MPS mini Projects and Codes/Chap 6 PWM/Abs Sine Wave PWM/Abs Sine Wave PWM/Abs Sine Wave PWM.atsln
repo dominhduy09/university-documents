@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "Abs Sine Wave PWM", "Abs Sine Wave PWM\Abs Sine Wave PWM.cproj", "{7F6BB7CD-7231-45AC-B424-9070990F65DC}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{7F6BB7CD-7231-45AC-B424-9070990F65DC}.Debug|AVR.ActiveCfg = Debug|AVR
+		{7F6BB7CD-7231-45AC-B424-9070990F65DC}.Debug|AVR.Build.0 = Debug|AVR
+		{7F6BB7CD-7231-45AC-B424-9070990F65DC}.Release|AVR.ActiveCfg = Release|AVR
+		{7F6BB7CD-7231-45AC-B424-9070990F65DC}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

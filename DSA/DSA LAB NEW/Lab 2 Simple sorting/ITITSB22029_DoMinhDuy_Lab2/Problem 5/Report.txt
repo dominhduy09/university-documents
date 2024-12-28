@@ -1,0 +1,6 @@
+Data Structure: 
+The primary data structure used is an array of Person objects, encapsulated in the ArrayInOb class. 
+
+Algorithms: Insertion Sort is employed for sorting the array based on last name, first name, or age. 
+
+Time Complexity: Insertion of elements is 𝑂 ( 1 ) O(1). Sorting using Insertion Sort is 𝑂 ( 𝑛 2 ) O(n 2 ) on average and in the worst case, and 𝑂 ( 𝑛 ) O(n) in the best case.

@@ -1,0 +1,12 @@
+Data Structure: Stack (LIFO)
+
+Algorithms:
+Decimal to Octal Conversion (based on repeated division by 8)
+Stack Concatenation (using addAll())
+Stack Comparison (using equals())
+
+Time Complexity:
+push(): O(1) for each element.
+Decimal to Octal Conversion: O(log n), where n is the decimal number.
+Stack Concatenation (addAll()): O(m), where m is the number of elements in stack2.
+Stack Comparison (equals()): O(n), where n is the number of elements in the stacks being compared.

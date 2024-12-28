@@ -1,0 +1,54 @@
+
+
+Microchip MPLAB XC8 Assembler V2.50 build 20240725155939 
+                                                                                                           Wed Nov 27 22:02:58 2024
+
+
+     1                           	processor	16F877A
+     2                           	pagewidth 132
+     3                           	psect	pa_nodes0,global,class=CODE,space=0,delta=2
+     4  0000                     _main:
+     5                           
+     6                           ;lcd interface.c,20 :: void main()
+     7                           ;lcd interface.c,22 :: Lcd_Init();
+     8  0000  2000'              	call	_Lcd_Init
+     9                           
+    10                           ;lcd interface.c,23 :: Lcd_Cmd(_LCD_CLEAR);
+    11  0001  3001               	movlw	1
+    12  0002  0080'              	movwf	FARG_Lcd_Cmd_out_char
+    13  0003  2000'              	call	_Lcd_Cmd
+    14                           
+    15                           ;lcd interface.c,24 :: Lcd_Cmd(_LCD_CURSOR_OFF);
+    16  0004  300C               	movlw	12
+    17  0005  0080'              	movwf	FARG_Lcd_Cmd_out_char
+    18  0006  2000'              	call	_Lcd_Cmd
+    19                           
+    20                           ;lcd interface.c,25 :: Lcd_Out(1,1,"Do Minh DUy");
+    21  0007  3001               	movlw	1
+    22  0008  0080'              	movwf	FARG_Lcd_Out_row
+    23  0009  3001               	movlw	1
+    24  000A  0080'              	movwf	FARG_Lcd_Out_column
+    25  000B  3000'              	movlw	?lstr1_lcd_32interface
+    26  000C  0080'              	movwf	FARG_Lcd_Out_text
+    27  000D  2000'              	call	_Lcd_Out
+    28                           
+    29                           ;lcd interface.c,26 :: Lcd_Out(2,1,"I'am Frank M");
+    30  000E  3002               	movlw	2
+    31  000F  0080'              	movwf	FARG_Lcd_Out_row
+    32  0010  3001               	movlw	1
+    33  0011  0080'              	movwf	FARG_Lcd_Out_column
+    34  0012  3000'              	movlw	?lstr2_lcd_32interface
+    35  0013  0080'              	movwf	FARG_Lcd_Out_text
+    36  0014  2000'              	call	_Lcd_Out
+    37  0015                     L_end_main:	
+    38                           ;lcd interface.c,27 :: }
+    39                           
+    40  0015  2800'              	goto	$
+
+
+Microchip Technology PIC Macro Assembler V2.50 build 20240725155939 
+Symbol Table                                                                                               Wed Nov 27 22:02:58 2024
+
+                 _main 0000       FARG_Lcd_Out_text 0000*               _Lcd_Cmd 0000*               _Lcd_Out 0000* 
+            L_end_main 0015        FARG_Lcd_Out_row 0000*  FARG_Lcd_Cmd_out_char 0000*              _Lcd_Init 0000* 
+   FARG_Lcd_Out_column 0000* ?lstr1_lcd_32interface 0000* ?lstr2_lcd_32interface 0000* 

@@ -1,0 +1,5 @@
+Data Structures: The code utilizes a simple integer array to store the values and perform calculations. 
+
+Algorithms: The input algorithm initializes the array and invokes the method to compute the minimum gap. The minimum gap calculation algorithm checks for edge cases and calculates the minimum gap between adjacent elements. 
+
+Time Complexity: The overall time complexity of the program is 𝑂 ( 𝑛 ) O(n) due to the single linear pass through the array to calculate the minimum gap.

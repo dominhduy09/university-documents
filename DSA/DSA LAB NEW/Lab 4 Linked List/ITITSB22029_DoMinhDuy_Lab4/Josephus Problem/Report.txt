@@ -1,0 +1,5 @@
+Data Structure: Circular Linked List.
+
+Algorithm: We use a circular linked list to simulate the Josephus problem, where people are eliminated in steps. The algorithm traverses the list to count and eliminate every k-th person.
+
+Time Complexity: O(N^2)

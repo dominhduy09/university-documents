@@ -1,0 +1,25 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega32</DEVICE>
+ <WORKING_DIR>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\first</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\first\first.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m32def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\first\first.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\first\first.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\first\first.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <RESET><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\first\first.asm</FILE><LINE>6</LINE></RESET>
+  <LOOP><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\first\first.asm</FILE><LINE>11</LINE></LOOP>
+ </LABELS>
+</ASSEMBLER_INFO>

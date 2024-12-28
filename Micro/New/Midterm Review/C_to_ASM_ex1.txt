@@ -1,0 +1,26 @@
+#include <avr/io.h>		//standard AVR header
+
+int main(void)
+{
+	unsigned char z;
+	DDRB  =  0xFF;	 //PORTB is output
+	for (z = 0; z < 255; z++)
+		PORTB = z;
+	return 0;
+}
+
+.include "M32def.inc"
+
+
+#define z = R16
+
+	ldi	r20,0xff  ;Set Port B as output
+	out	ddrb,r20
+        ldi     z,0        
+loop:
+	out portb,z	;Port b<-R16
+        inc z;
+	cpi z,255
+        brcs loop
+here:  jmp here
+	

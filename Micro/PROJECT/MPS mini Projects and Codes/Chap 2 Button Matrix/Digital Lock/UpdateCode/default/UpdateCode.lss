@@ -1,0 +1,1342 @@
+
+UpdateCode.elf:     file format elf32-avr
+
+Sections:
+Idx Name          Size      VMA       LMA       File off  Algn
+  0 .text         0000067c  00000000  00000000  00000094  2**1
+                  CONTENTS, ALLOC, LOAD, READONLY, CODE
+  1 .data         0000008c  00800060  0000067c  00000710  2**0
+                  CONTENTS, ALLOC, LOAD, DATA
+  2 .bss          00000009  008000ec  008000ec  0000079c  2**0
+                  ALLOC
+  3 .debug_aranges 00000060  00000000  00000000  0000079c  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  4 .debug_pubnames 000001df  00000000  00000000  000007fc  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  5 .debug_info   00000c00  00000000  00000000  000009db  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  6 .debug_abbrev 00000449  00000000  00000000  000015db  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  7 .debug_line   00000a2a  00000000  00000000  00001a24  2**0
+                  CONTENTS, READONLY, DEBUGGING
+  8 .debug_frame  00000140  00000000  00000000  00002450  2**2
+                  CONTENTS, READONLY, DEBUGGING
+  9 .debug_str    00000231  00000000  00000000  00002590  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 10 .debug_loc    0000046d  00000000  00000000  000027c1  2**0
+                  CONTENTS, READONLY, DEBUGGING
+ 11 .debug_ranges 00000120  00000000  00000000  00002c2e  2**0
+                  CONTENTS, READONLY, DEBUGGING
+
+Disassembly of section .text:
+
+00000000 <__vectors>:
+   0:	0c 94 2a 00 	jmp	0x54	; 0x54 <__ctors_end>
+   4:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+   8:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+   c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  10:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  14:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  18:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  1c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  20:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  24:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  28:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  2c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  30:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  34:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  38:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  3c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  40:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  44:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  48:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  4c:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+  50:	0c 94 47 00 	jmp	0x8e	; 0x8e <__bad_interrupt>
+
+00000054 <__ctors_end>:
+  54:	11 24       	eor	r1, r1
+  56:	1f be       	out	0x3f, r1	; 63
+  58:	cf e5       	ldi	r28, 0x5F	; 95
+  5a:	d8 e0       	ldi	r29, 0x08	; 8
+  5c:	de bf       	out	0x3e, r29	; 62
+  5e:	cd bf       	out	0x3d, r28	; 61
+
+00000060 <__do_copy_data>:
+  60:	10 e0       	ldi	r17, 0x00	; 0
+  62:	a0 e6       	ldi	r26, 0x60	; 96
+  64:	b0 e0       	ldi	r27, 0x00	; 0
+  66:	ec e7       	ldi	r30, 0x7C	; 124
+  68:	f6 e0       	ldi	r31, 0x06	; 6
+  6a:	02 c0       	rjmp	.+4      	; 0x70 <.do_copy_data_start>
+
+0000006c <.do_copy_data_loop>:
+  6c:	05 90       	lpm	r0, Z+
+  6e:	0d 92       	st	X+, r0
+
+00000070 <.do_copy_data_start>:
+  70:	ac 3e       	cpi	r26, 0xEC	; 236
+  72:	b1 07       	cpc	r27, r17
+  74:	d9 f7       	brne	.-10     	; 0x6c <.do_copy_data_loop>
+
+00000076 <__do_clear_bss>:
+  76:	10 e0       	ldi	r17, 0x00	; 0
+  78:	ac ee       	ldi	r26, 0xEC	; 236
+  7a:	b0 e0       	ldi	r27, 0x00	; 0
+  7c:	01 c0       	rjmp	.+2      	; 0x80 <.do_clear_bss_start>
+
+0000007e <.do_clear_bss_loop>:
+  7e:	1d 92       	st	X+, r1
+
+00000080 <.do_clear_bss_start>:
+  80:	a5 3f       	cpi	r26, 0xF5	; 245
+  82:	b1 07       	cpc	r27, r17
+  84:	e1 f7       	brne	.-8      	; 0x7e <.do_clear_bss_loop>
+  86:	0e 94 7e 01 	call	0x2fc	; 0x2fc <main>
+  8a:	0c 94 3c 03 	jmp	0x678	; 0x678 <_exit>
+
+0000008e <__bad_interrupt>:
+  8e:	0c 94 00 00 	jmp	0	; 0x0 <__vectors>
+
+00000092 <Sleep>:
+    Display_LCD();
+}
+
+// Function to turn off the system and enter low-power mode
+void Sleep() {
+    PORTB = 0;
+  92:	18 ba       	out	0x18, r1	; 24
+    PORTD = 0;
+  94:	12 ba       	out	0x12, r1	; 18
+    DDRB = 0;
+  96:	17 ba       	out	0x17, r1	; 23
+    DDRD = 0;
+  98:	11 ba       	out	0x11, r1	; 17
+    _RET = 1;
+  9a:	81 e0       	ldi	r24, 0x01	; 1
+  9c:	80 93 ed 00 	sts	0x00ED, r24
+}
+  a0:	08 95       	ret
+
+000000a2 <Shift_Keys>:
+    LCD_WriteString("Locked Forever!");
+    Sleep(); // Enter sleep mode after locking
+}
+
+// Function to shift keys in the pressed_keys array
+char Shift_Keys(uint8_t _temp) {
+  a2:	28 2f       	mov	r18, r24
+  a4:	90 e0       	ldi	r25, 0x00	; 0
+  a6:	07 c0       	rjmp	.+14     	; 0xb6 <Shift_Keys+0x14>
+    for (i = 0; i <= 4; i++) pressed_keys[i] = pressed_keys[i + 1];
+  a8:	e9 2f       	mov	r30, r25
+  aa:	f0 e0       	ldi	r31, 0x00	; 0
+  ac:	ea 52       	subi	r30, 0x2A	; 42
+  ae:	ff 4f       	sbci	r31, 0xFF	; 255
+  b0:	81 81       	ldd	r24, Z+1	; 0x01
+  b2:	80 83       	st	Z, r24
+  b4:	9f 5f       	subi	r25, 0xFF	; 255
+  b6:	95 30       	cpi	r25, 0x05	; 5
+  b8:	b8 f3       	brcs	.-18     	; 0xa8 <Shift_Keys+0x6>
+  ba:	90 93 f4 00 	sts	0x00F4, r25
+  be:	e2 2f       	mov	r30, r18
+  c0:	f0 e0       	ldi	r31, 0x00	; 0
+  c2:	ea 53       	subi	r30, 0x3A	; 58
+  c4:	ff 4f       	sbci	r31, 0xFF	; 255
+    return key_pad[_temp];
+}
+  c6:	80 81       	ld	r24, Z
+  c8:	08 95       	ret
+
+000000ca <Reset_System>:
+    return Check_key(); // Assuming Check_key() is implemented in the bt_m.h library
+}
+
+// Function to reset the system if locked for too long
+void Reset_System() {
+    locked = 1;
+  ca:	81 e0       	ldi	r24, 0x01	; 1
+  cc:	80 93 e3 00 	sts	0x00E3, r24
+    wrong_time = 0;
+  d0:	10 92 ec 00 	sts	0x00EC, r1
+    lock_timer = 0;
+  d4:	10 92 f0 00 	sts	0x00F0, r1
+  d8:	10 92 ef 00 	sts	0x00EF, r1
+    PORTC |= (1 << LOCKED_LED_PIN); // Turn on LED to indicate system is locked
+  dc:	a8 9a       	sbi	0x15, 0	; 21
+}
+  de:	08 95       	ret
+
+000000e0 <Check_Pass>:
+        Sleep(); // Enter sleep mode after unlocking
+    }
+}
+
+// Function to check the entered password
+void Check_Pass() {
+  e0:	1f 93       	push	r17
+  e2:	cf 93       	push	r28
+  e4:	df 93       	push	r29
+  e6:	c0 e0       	ldi	r28, 0x00	; 0
+  e8:	d0 e0       	ldi	r29, 0x00	; 0
+  ea:	1c 2f       	mov	r17, r28
+    uint8_t _i;
+    for (_i = 0; _i < 6; _i++) {
+        LCD_GotoXY(1, 1);
+  ec:	81 e0       	ldi	r24, 0x01	; 1
+  ee:	61 e0       	ldi	r22, 0x01	; 1
+  f0:	0e 94 03 03 	call	0x606	; 0x606 <LCD_GotoXY>
+        LCD_WriteString("Checking...");
+  f4:	80 e6       	ldi	r24, 0x60	; 96
+  f6:	90 e0       	ldi	r25, 0x00	; 0
+  f8:	0e 94 97 02 	call	0x52e	; 0x52e <LCD_WriteString>
+        if (pass_word[_i] != pressed_keys[_i]) {
+  fc:	fe 01       	movw	r30, r28
+  fe:	e4 52       	subi	r30, 0x24	; 36
+ 100:	ff 4f       	sbci	r31, 0xFF	; 255
+ 102:	de 01       	movw	r26, r28
+ 104:	aa 52       	subi	r26, 0x2A	; 42
+ 106:	bf 4f       	sbci	r27, 0xFF	; 255
+ 108:	90 81       	ld	r25, Z
+ 10a:	8c 91       	ld	r24, X
+ 10c:	98 17       	cp	r25, r24
+ 10e:	31 f0       	breq	.+12     	; 0x11c <Check_Pass+0x3c>
+            wrong_time++;
+ 110:	80 91 ec 00 	lds	r24, 0x00EC
+ 114:	8f 5f       	subi	r24, 0xFF	; 255
+ 116:	80 93 ec 00 	sts	0x00EC, r24
+ 11a:	05 c0       	rjmp	.+10     	; 0x126 <Check_Pass+0x46>
+            break;
+ 11c:	1f 5f       	subi	r17, 0xFF	; 255
+ 11e:	21 96       	adiw	r28, 0x01	; 1
+}
+
+// Function to check the entered password
+void Check_Pass() {
+    uint8_t _i;
+    for (_i = 0; _i < 6; _i++) {
+ 120:	c6 30       	cpi	r28, 0x06	; 6
+ 122:	d1 05       	cpc	r29, r1
+ 124:	11 f7       	brne	.-60     	; 0xea <Check_Pass+0xa>
+        if (pass_word[_i] != pressed_keys[_i]) {
+            wrong_time++;
+            break;
+        }
+    }
+    if (_i == 6) {
+ 126:	16 30       	cpi	r17, 0x06	; 6
+ 128:	11 f4       	brne	.+4      	; 0x12e <Check_Pass+0x4e>
+        locked = 0; // Unlock system if password is correct
+ 12a:	10 92 e3 00 	sts	0x00E3, r1
+    }
+}
+ 12e:	df 91       	pop	r29
+ 130:	cf 91       	pop	r28
+ 132:	1f 91       	pop	r17
+ 134:	08 95       	ret
+
+00000136 <Lock_Timer>:
+    PORTC |= (1 << LOCKED_LED_PIN); // Turn on LED to indicate system is locked
+}
+
+// Function to manage the timeout for locking
+void Lock_Timer() {
+    if (locked == 1) {
+ 136:	20 91 e3 00 	lds	r18, 0x00E3
+ 13a:	21 30       	cpi	r18, 0x01	; 1
+ 13c:	51 f5       	brne	.+84     	; 0x192 <Lock_Timer+0x5c>
+        if (lock_timer < 30) {  // Timeout duration (e.g., 30 seconds)
+ 13e:	80 91 ef 00 	lds	r24, 0x00EF
+ 142:	90 91 f0 00 	lds	r25, 0x00F0
+ 146:	8e 31       	cpi	r24, 0x1E	; 30
+ 148:	91 05       	cpc	r25, r1
+ 14a:	d0 f4       	brcc	.+52     	; 0x180 <Lock_Timer+0x4a>
+            lock_timer++;
+ 14c:	01 96       	adiw	r24, 0x01	; 1
+ 14e:	90 93 f0 00 	sts	0x00F0, r25
+ 152:	80 93 ef 00 	sts	0x00EF, r24
+            LCD_GotoXY(0, 1);
+ 156:	80 e0       	ldi	r24, 0x00	; 0
+ 158:	61 e0       	ldi	r22, 0x01	; 1
+ 15a:	0e 94 03 03 	call	0x606	; 0x606 <LCD_GotoXY>
+            LCD_WriteString("Locking in: ");
+ 15e:	8c e6       	ldi	r24, 0x6C	; 108
+ 160:	90 e0       	ldi	r25, 0x00	; 0
+ 162:	0e 94 97 02 	call	0x52e	; 0x52e <LCD_WriteString>
+            LCD_WriteInt(30 - lock_timer, 2);
+ 166:	20 91 ef 00 	lds	r18, 0x00EF
+ 16a:	30 91 f0 00 	lds	r19, 0x00F0
+ 16e:	8e e1       	ldi	r24, 0x1E	; 30
+ 170:	90 e0       	ldi	r25, 0x00	; 0
+ 172:	82 1b       	sub	r24, r18
+ 174:	93 0b       	sbc	r25, r19
+ 176:	62 e0       	ldi	r22, 0x02	; 2
+ 178:	70 e0       	ldi	r23, 0x00	; 0
+ 17a:	0e 94 a5 02 	call	0x54a	; 0x54a <LCD_WriteInt>
+ 17e:	08 95       	ret
+    return Check_key(); // Assuming Check_key() is implemented in the bt_m.h library
+}
+
+// Function to reset the system if locked for too long
+void Reset_System() {
+    locked = 1;
+ 180:	20 93 e3 00 	sts	0x00E3, r18
+    wrong_time = 0;
+ 184:	10 92 ec 00 	sts	0x00EC, r1
+    lock_timer = 0;
+ 188:	10 92 f0 00 	sts	0x00F0, r1
+ 18c:	10 92 ef 00 	sts	0x00EF, r1
+    PORTC |= (1 << LOCKED_LED_PIN); // Turn on LED to indicate system is locked
+ 190:	a8 9a       	sbi	0x15, 0	; 21
+ 192:	08 95       	ret
+
+00000194 <Check_Keypad>:
+    return key_pad[_temp];
+}
+
+// Function to check if the user input is a key press
+uint8_t Check_Keypad() {
+    return Check_key(); // Assuming Check_key() is implemented in the bt_m.h library
+ 194:	0e 94 cb 01 	call	0x396	; 0x396 <Check_key>
+}
+ 198:	08 95       	ret
+
+0000019a <Locked_Forever>:
+        locked = 0; // Unlock system if password is correct
+    }
+}
+
+// Function to lock the system forever after 3 wrong attempts
+void Locked_Forever() {
+ 19a:	0f 93       	push	r16
+ 19c:	1f 93       	push	r17
+ 19e:	cf 93       	push	r28
+ 1a0:	df 93       	push	r29
+    for (i = 0; i <= 2; i++) {
+ 1a2:	10 92 f4 00 	sts	0x00F4, r1
+        LCD_GotoXY(0, 0);
+        LCD_WriteString("Locked Forever!");
+        LCD_GotoXY(0, 1);
+        LCD_WriteString("Try again in:");
+        LCD_GotoXY(6, 1);
+        LCD_WriteInt((2 - i), 1);
+ 1a6:	02 e0       	ldi	r16, 0x02	; 2
+ 1a8:	10 e0       	ldi	r17, 0x00	; 0
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+ 1aa:	c0 e9       	ldi	r28, 0x90	; 144
+ 1ac:	d1 e0       	ldi	r29, 0x01	; 1
+ 1ae:	2e c0       	rjmp	.+92     	; 0x20c <Locked_Forever+0x72>
+}
+
+// Function to lock the system forever after 3 wrong attempts
+void Locked_Forever() {
+    for (i = 0; i <= 2; i++) {
+        LCD_Clear();
+ 1b0:	81 e0       	ldi	r24, 0x01	; 1
+ 1b2:	60 e0       	ldi	r22, 0x00	; 0
+ 1b4:	0e 94 3f 02 	call	0x47e	; 0x47e <LCD_Byte>
+        LCD_GotoXY(0, 0);
+ 1b8:	80 e0       	ldi	r24, 0x00	; 0
+ 1ba:	60 e0       	ldi	r22, 0x00	; 0
+ 1bc:	0e 94 03 03 	call	0x606	; 0x606 <LCD_GotoXY>
+        LCD_WriteString("Locked Forever!");
+ 1c0:	89 e7       	ldi	r24, 0x79	; 121
+ 1c2:	90 e0       	ldi	r25, 0x00	; 0
+ 1c4:	0e 94 97 02 	call	0x52e	; 0x52e <LCD_WriteString>
+        LCD_GotoXY(0, 1);
+ 1c8:	80 e0       	ldi	r24, 0x00	; 0
+ 1ca:	61 e0       	ldi	r22, 0x01	; 1
+ 1cc:	0e 94 03 03 	call	0x606	; 0x606 <LCD_GotoXY>
+        LCD_WriteString("Try again in:");
+ 1d0:	89 e8       	ldi	r24, 0x89	; 137
+ 1d2:	90 e0       	ldi	r25, 0x00	; 0
+ 1d4:	0e 94 97 02 	call	0x52e	; 0x52e <LCD_WriteString>
+        LCD_GotoXY(6, 1);
+ 1d8:	86 e0       	ldi	r24, 0x06	; 6
+ 1da:	61 e0       	ldi	r22, 0x01	; 1
+ 1dc:	0e 94 03 03 	call	0x606	; 0x606 <LCD_GotoXY>
+        LCD_WriteInt((2 - i), 1);
+ 1e0:	80 91 f4 00 	lds	r24, 0x00F4
+ 1e4:	98 01       	movw	r18, r16
+ 1e6:	28 1b       	sub	r18, r24
+ 1e8:	31 09       	sbc	r19, r1
+ 1ea:	c9 01       	movw	r24, r18
+ 1ec:	61 e0       	ldi	r22, 0x01	; 1
+ 1ee:	70 e0       	ldi	r23, 0x00	; 0
+ 1f0:	0e 94 a5 02 	call	0x54a	; 0x54a <LCD_WriteInt>
+ 1f4:	80 e1       	ldi	r24, 0x10	; 16
+ 1f6:	97 e2       	ldi	r25, 0x27	; 39
+ 1f8:	fe 01       	movw	r30, r28
+ 1fa:	31 97       	sbiw	r30, 0x01	; 1
+ 1fc:	f1 f7       	brne	.-4      	; 0x1fa <Locked_Forever+0x60>
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 1fe:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 200:	d9 f7       	brne	.-10     	; 0x1f8 <Locked_Forever+0x5e>
+    }
+}
+
+// Function to lock the system forever after 3 wrong attempts
+void Locked_Forever() {
+    for (i = 0; i <= 2; i++) {
+ 202:	80 91 f4 00 	lds	r24, 0x00F4
+ 206:	8f 5f       	subi	r24, 0xFF	; 255
+ 208:	80 93 f4 00 	sts	0x00F4, r24
+ 20c:	80 91 f4 00 	lds	r24, 0x00F4
+ 210:	83 30       	cpi	r24, 0x03	; 3
+ 212:	70 f2       	brcs	.-100    	; 0x1b0 <Locked_Forever+0x16>
+        LCD_WriteString("Try again in:");
+        LCD_GotoXY(6, 1);
+        LCD_WriteInt((2 - i), 1);
+        _delay_ms(1000);
+    }
+    LCD_Clear();
+ 214:	81 e0       	ldi	r24, 0x01	; 1
+ 216:	60 e0       	ldi	r22, 0x00	; 0
+ 218:	0e 94 3f 02 	call	0x47e	; 0x47e <LCD_Byte>
+    LCD_GotoXY(0, 0);
+ 21c:	80 e0       	ldi	r24, 0x00	; 0
+ 21e:	60 e0       	ldi	r22, 0x00	; 0
+ 220:	0e 94 03 03 	call	0x606	; 0x606 <LCD_GotoXY>
+    LCD_WriteString("Locked Forever!");
+ 224:	89 e7       	ldi	r24, 0x79	; 121
+ 226:	90 e0       	ldi	r25, 0x00	; 0
+ 228:	0e 94 97 02 	call	0x52e	; 0x52e <LCD_WriteString>
+    Display_LCD();
+}
+
+// Function to turn off the system and enter low-power mode
+void Sleep() {
+    PORTB = 0;
+ 22c:	18 ba       	out	0x18, r1	; 24
+    PORTD = 0;
+ 22e:	12 ba       	out	0x12, r1	; 18
+    DDRB = 0;
+ 230:	17 ba       	out	0x17, r1	; 23
+    DDRD = 0;
+ 232:	11 ba       	out	0x11, r1	; 17
+    _RET = 1;
+ 234:	81 e0       	ldi	r24, 0x01	; 1
+ 236:	80 93 ed 00 	sts	0x00ED, r24
+    }
+    LCD_Clear();
+    LCD_GotoXY(0, 0);
+    LCD_WriteString("Locked Forever!");
+    Sleep(); // Enter sleep mode after locking
+}
+ 23a:	df 91       	pop	r29
+ 23c:	cf 91       	pop	r28
+ 23e:	1f 91       	pop	r17
+ 240:	0f 91       	pop	r16
+ 242:	08 95       	ret
+
+00000244 <Display_LCD>:
+    _RET = 1;
+}
+
+// Function to display information on LCD
+void Display_LCD() {
+    LCD_Clear();
+ 244:	81 e0       	ldi	r24, 0x01	; 1
+ 246:	60 e0       	ldi	r22, 0x00	; 0
+ 248:	0e 94 3f 02 	call	0x47e	; 0x47e <LCD_Byte>
+    LCD_GotoXY(1, 0);
+ 24c:	81 e0       	ldi	r24, 0x01	; 1
+ 24e:	60 e0       	ldi	r22, 0x00	; 0
+ 250:	0e 94 03 03 	call	0x606	; 0x606 <LCD_GotoXY>
+    LCD_WriteString("Key: ");
+ 254:	87 e9       	ldi	r24, 0x97	; 151
+ 256:	90 e0       	ldi	r25, 0x00	; 0
+ 258:	0e 94 97 02 	call	0x52e	; 0x52e <LCD_WriteString>
+    LCD_GotoXY(5, 0);
+ 25c:	85 e0       	ldi	r24, 0x05	; 5
+ 25e:	60 e0       	ldi	r22, 0x00	; 0
+ 260:	0e 94 03 03 	call	0x606	; 0x606 <LCD_GotoXY>
+    LCD_WriteString("_      _");
+ 264:	8d e9       	ldi	r24, 0x9D	; 157
+ 266:	90 e0       	ldi	r25, 0x00	; 0
+ 268:	0e 94 97 02 	call	0x52e	; 0x52e <LCD_WriteString>
+    LCD_GotoXY(6, 0);
+ 26c:	86 e0       	ldi	r24, 0x06	; 6
+ 26e:	60 e0       	ldi	r22, 0x00	; 0
+ 270:	0e 94 03 03 	call	0x606	; 0x606 <LCD_GotoXY>
+    LCD_WriteString(pressed_keys);
+ 274:	86 ed       	ldi	r24, 0xD6	; 214
+ 276:	90 e0       	ldi	r25, 0x00	; 0
+ 278:	0e 94 97 02 	call	0x52e	; 0x52e <LCD_WriteString>
+    if (wrong_time >= 1) {
+ 27c:	80 91 ec 00 	lds	r24, 0x00EC
+ 280:	88 23       	and	r24, r24
+ 282:	99 f0       	breq	.+38     	; 0x2aa <Display_LCD+0x66>
+        LCD_GotoXY(0, 1);
+ 284:	80 e0       	ldi	r24, 0x00	; 0
+ 286:	61 e0       	ldi	r22, 0x01	; 1
+ 288:	0e 94 03 03 	call	0x606	; 0x606 <LCD_GotoXY>
+        LCD_WriteString("Wrong Password");
+ 28c:	86 ea       	ldi	r24, 0xA6	; 166
+ 28e:	90 e0       	ldi	r25, 0x00	; 0
+ 290:	0e 94 97 02 	call	0x52e	; 0x52e <LCD_WriteString>
+        LCD_GotoXY(15, 1);
+ 294:	8f e0       	ldi	r24, 0x0F	; 15
+ 296:	61 e0       	ldi	r22, 0x01	; 1
+ 298:	0e 94 03 03 	call	0x606	; 0x606 <LCD_GotoXY>
+        LCD_WriteInt(wrong_time, 1);
+ 29c:	80 91 ec 00 	lds	r24, 0x00EC
+ 2a0:	90 e0       	ldi	r25, 0x00	; 0
+ 2a2:	61 e0       	ldi	r22, 0x01	; 1
+ 2a4:	70 e0       	ldi	r23, 0x00	; 0
+ 2a6:	0e 94 a5 02 	call	0x54a	; 0x54a <LCD_WriteInt>
+    }
+    if (locked == 0) {
+ 2aa:	80 91 e3 00 	lds	r24, 0x00E3
+ 2ae:	88 23       	and	r24, r24
+ 2b0:	a1 f4       	brne	.+40     	; 0x2da <Display_LCD+0x96>
+        LCD_Clear();
+ 2b2:	81 e0       	ldi	r24, 0x01	; 1
+ 2b4:	60 e0       	ldi	r22, 0x00	; 0
+ 2b6:	0e 94 3f 02 	call	0x47e	; 0x47e <LCD_Byte>
+        LCD_GotoXY(0, 0);
+ 2ba:	80 e0       	ldi	r24, 0x00	; 0
+ 2bc:	60 e0       	ldi	r22, 0x00	; 0
+ 2be:	0e 94 03 03 	call	0x606	; 0x606 <LCD_GotoXY>
+        LCD_WriteString("Unlocked System!");
+ 2c2:	85 eb       	ldi	r24, 0xB5	; 181
+ 2c4:	90 e0       	ldi	r25, 0x00	; 0
+ 2c6:	0e 94 97 02 	call	0x52e	; 0x52e <LCD_WriteString>
+        PORTC &= ~(1 << LOCKED_LED_PIN); // Turn off LED to indicate system is unlocked
+ 2ca:	a8 98       	cbi	0x15, 0	; 21
+    Display_LCD();
+}
+
+// Function to turn off the system and enter low-power mode
+void Sleep() {
+    PORTB = 0;
+ 2cc:	18 ba       	out	0x18, r1	; 24
+    PORTD = 0;
+ 2ce:	12 ba       	out	0x12, r1	; 18
+    DDRB = 0;
+ 2d0:	17 ba       	out	0x17, r1	; 23
+    DDRD = 0;
+ 2d2:	11 ba       	out	0x11, r1	; 17
+    _RET = 1;
+ 2d4:	81 e0       	ldi	r24, 0x01	; 1
+ 2d6:	80 93 ed 00 	sts	0x00ED, r24
+ 2da:	08 95       	ret
+
+000002dc <Initialize_System>:
+// Pin configuration for feedback (LED for lock/unlock indication)
+#define LOCKED_LED_PIN  PC0
+
+// Function to initialize the system
+void Initialize_System() {
+    LCD_Init(LS_NONE);
+ 2dc:	80 e0       	ldi	r24, 0x00	; 0
+ 2de:	0e 94 67 02 	call	0x4ce	; 0x4ce <LCD_Init>
+    LCD_Clear();
+ 2e2:	81 e0       	ldi	r24, 0x01	; 1
+ 2e4:	60 e0       	ldi	r22, 0x00	; 0
+ 2e6:	0e 94 3f 02 	call	0x47e	; 0x47e <LCD_Byte>
+ 2ea:	80 e4       	ldi	r24, 0x40	; 64
+ 2ec:	9f e1       	ldi	r25, 0x1F	; 31
+ 2ee:	01 97       	sbiw	r24, 0x01	; 1
+ 2f0:	f1 f7       	brne	.-4      	; 0x2ee <Initialize_System+0x12>
+    _delay_ms(2);
+    DDRC |= (1 << LOCKED_LED_PIN);  // Set LED pin as output
+ 2f2:	a0 9a       	sbi	0x14, 0	; 20
+    PORTC |= (1 << LOCKED_LED_PIN); // Turn on LED to indicate system is locked
+ 2f4:	a8 9a       	sbi	0x15, 0	; 21
+    Display_LCD();
+ 2f6:	0e 94 22 01 	call	0x244	; 0x244 <Display_LCD>
+}
+ 2fa:	08 95       	ret
+
+000002fc <main>:
+            Reset_System(); // Reset the system after timeout
+        }
+    }
+}
+
+int main(void) {
+ 2fc:	1f 93       	push	r17
+ 2fe:	cf 93       	push	r28
+ 300:	df 93       	push	r29
+    Initialize_System();
+ 302:	0e 94 6e 01 	call	0x2dc	; 0x2dc <Initialize_System>
+        PORTA = 0;
+        temp = Check_Keypad();
+
+        if ((temp != l_temp) && (temp < 16)) {
+            if (temp == 11) {  // Clear input
+                for (i = 0; i < 6; i++) pressed_keys[i] = '-';
+ 306:	1d e2       	ldi	r17, 0x2D	; 45
+ 308:	c0 e9       	ldi	r28, 0x90	; 144
+ 30a:	d1 e0       	ldi	r29, 0x01	; 1
+
+int main(void) {
+    Initialize_System();
+
+    while (1) {
+        PORTA = 0;
+ 30c:	1b ba       	out	0x1b, r1	; 27
+    return key_pad[_temp];
+}
+
+// Function to check if the user input is a key press
+uint8_t Check_Keypad() {
+    return Check_key(); // Assuming Check_key() is implemented in the bt_m.h library
+ 30e:	0e 94 cb 01 	call	0x396	; 0x396 <Check_key>
+ 312:	98 2f       	mov	r25, r24
+int main(void) {
+    Initialize_System();
+
+    while (1) {
+        PORTA = 0;
+        temp = Check_Keypad();
+ 314:	80 93 f2 00 	sts	0x00F2, r24
+
+        if ((temp != l_temp) && (temp < 16)) {
+ 318:	80 91 f3 00 	lds	r24, 0x00F3
+ 31c:	98 17       	cp	r25, r24
+ 31e:	19 f1       	breq	.+70     	; 0x366 <main+0x6a>
+ 320:	90 31       	cpi	r25, 0x10	; 16
+ 322:	08 f5       	brcc	.+66     	; 0x366 <main+0x6a>
+            if (temp == 11) {  // Clear input
+ 324:	9b 30       	cpi	r25, 0x0B	; 11
+ 326:	69 f4       	brne	.+26     	; 0x342 <main+0x46>
+                for (i = 0; i < 6; i++) pressed_keys[i] = '-';
+ 328:	80 e0       	ldi	r24, 0x00	; 0
+ 32a:	06 c0       	rjmp	.+12     	; 0x338 <main+0x3c>
+ 32c:	e8 2f       	mov	r30, r24
+ 32e:	f0 e0       	ldi	r31, 0x00	; 0
+ 330:	ea 52       	subi	r30, 0x2A	; 42
+ 332:	ff 4f       	sbci	r31, 0xFF	; 255
+ 334:	10 83       	st	Z, r17
+ 336:	8f 5f       	subi	r24, 0xFF	; 255
+ 338:	86 30       	cpi	r24, 0x06	; 6
+ 33a:	c0 f3       	brcs	.-16     	; 0x32c <main+0x30>
+ 33c:	80 93 f4 00 	sts	0x00F4, r24
+ 340:	0a c0       	rjmp	.+20     	; 0x356 <main+0x5a>
+            } else if (temp == 15) {  // Enter password
+ 342:	9f 30       	cpi	r25, 0x0F	; 15
+ 344:	19 f4       	brne	.+6      	; 0x34c <main+0x50>
+                Check_Pass();
+ 346:	0e 94 70 00 	call	0xe0	; 0xe0 <Check_Pass>
+ 34a:	05 c0       	rjmp	.+10     	; 0x356 <main+0x5a>
+            } else {
+                pressed_keys[5] = Shift_Keys(temp); // Add new key
+ 34c:	89 2f       	mov	r24, r25
+ 34e:	0e 94 51 00 	call	0xa2	; 0xa2 <Shift_Keys>
+ 352:	80 93 db 00 	sts	0x00DB, r24
+            }
+
+            if (wrong_time == 3) {
+ 356:	80 91 ec 00 	lds	r24, 0x00EC
+ 35a:	83 30       	cpi	r24, 0x03	; 3
+ 35c:	11 f4       	brne	.+4      	; 0x362 <main+0x66>
+                Locked_Forever(); // Lock the system after 3 wrong attempts
+ 35e:	0e 94 cd 00 	call	0x19a	; 0x19a <Locked_Forever>
+            }
+
+            Display_LCD(); // Update LCD display
+ 362:	0e 94 22 01 	call	0x244	; 0x244 <Display_LCD>
+        }
+
+        l_temp = temp;
+ 366:	80 91 f2 00 	lds	r24, 0x00F2
+ 36a:	80 93 f3 00 	sts	0x00F3, r24
+
+        // Lock timeout handling
+        Lock_Timer();
+ 36e:	0e 94 9b 00 	call	0x136	; 0x136 <Lock_Timer>
+ 372:	84 ef       	ldi	r24, 0xF4	; 244
+ 374:	91 e0       	ldi	r25, 0x01	; 1
+ 376:	fe 01       	movw	r30, r28
+ 378:	31 97       	sbiw	r30, 0x01	; 1
+ 37a:	f1 f7       	brne	.-4      	; 0x378 <main+0x7c>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 37c:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 37e:	d9 f7       	brne	.-10     	; 0x376 <main+0x7a>
+
+        // Wait for debounce
+        _delay_ms(50);
+
+        if (_RET == 1) break;  // Exit when system is in sleep mode
+ 380:	80 91 ed 00 	lds	r24, 0x00ED
+ 384:	81 30       	cpi	r24, 0x01	; 1
+ 386:	09 f0       	breq	.+2      	; 0x38a <main+0x8e>
+ 388:	c1 cf       	rjmp	.-126    	; 0x30c <main+0x10>
+    }
+
+    return 0;
+}
+ 38a:	80 e0       	ldi	r24, 0x00	; 0
+ 38c:	90 e0       	ldi	r25, 0x00	; 0
+ 38e:	df 91       	pop	r29
+ 390:	cf 91       	pop	r28
+ 392:	1f 91       	pop	r17
+ 394:	08 95       	ret
+
+00000396 <Check_key>:
+uint8_t R_add[NOR] = {R0, R1, R2, R3};
+uint8_t C_add[NOC] = {C0, C1, C2, C3};
+	
+uint8_t Check_key(){
+	uint8_t __i,__j,__temp;
+	_DDR(B_PORT) = (1<<(_PIN(B_PORT),C0)) | (1<<(_PIN(B_PORT),C1)) | (1<<(_PIN(B_PORT),C2)) | (1<<(_PIN(B_PORT),C3));
+ 396:	89 b3       	in	r24, 0x19	; 25
+ 398:	89 b3       	in	r24, 0x19	; 25
+ 39a:	89 b3       	in	r24, 0x19	; 25
+ 39c:	89 b3       	in	r24, 0x19	; 25
+ 39e:	8f e0       	ldi	r24, 0x0F	; 15
+ 3a0:	8a bb       	out	0x1a, r24	; 26
+	_PORT(B_PORT) = (1<<(_PIN(B_PORT),C0)) | (1<<(_PIN(B_PORT),C1)) | (1<<(_PIN(B_PORT),C2)) | (1<<(_PIN(B_PORT),C3));
+ 3a2:	99 b3       	in	r25, 0x19	; 25
+ 3a4:	99 b3       	in	r25, 0x19	; 25
+ 3a6:	99 b3       	in	r25, 0x19	; 25
+ 3a8:	99 b3       	in	r25, 0x19	; 25
+ 3aa:	8b bb       	out	0x1b, r24	; 27
+    can be achieved.
+*/
+void
+_delay_loop_1(uint8_t __count)
+{
+	__asm__ volatile (
+ 3ac:	82 e0       	ldi	r24, 0x02	; 2
+ 3ae:	8a 95       	dec	r24
+ 3b0:	f1 f7       	brne	.-4      	; 0x3ae <Check_key+0x18>
+	_delay_us(0.5);												//Wait for PINB is synchronized before read
+	__temp = _PIN(B_PORT);
+ 3b2:	89 b3       	in	r24, 0x19	; 25
+ 3b4:	e4 ee       	ldi	r30, 0xE4	; 228
+ 3b6:	f0 e0       	ldi	r31, 0x00	; 0
+ 3b8:	60 e0       	ldi	r22, 0x00	; 0
+	for(__i=0; __i<NOR; __i++) 
+		if((__temp >> R_add[__i])&1) break;
+ 3ba:	28 2f       	mov	r18, r24
+ 3bc:	30 e0       	ldi	r19, 0x00	; 0
+ 3be:	c9 01       	movw	r24, r18
+ 3c0:	00 80       	ld	r0, Z
+ 3c2:	02 c0       	rjmp	.+4      	; 0x3c8 <Check_key+0x32>
+ 3c4:	95 95       	asr	r25
+ 3c6:	87 95       	ror	r24
+ 3c8:	0a 94       	dec	r0
+ 3ca:	e2 f7       	brpl	.-8      	; 0x3c4 <Check_key+0x2e>
+ 3cc:	80 ff       	sbrs	r24, 0
+ 3ce:	15 c0       	rjmp	.+42     	; 0x3fa <Check_key+0x64>
+	if(__i == NOR) return -1;
+	
+	_DDR(B_PORT) = (1<<(_PIN(B_PORT),R0)) | (1<<(_PIN(B_PORT),R1)) | (1<<(_PIN(B_PORT),R2)) | (1<<(_PIN(B_PORT),R3));
+ 3d0:	89 b3       	in	r24, 0x19	; 25
+ 3d2:	89 b3       	in	r24, 0x19	; 25
+ 3d4:	89 b3       	in	r24, 0x19	; 25
+ 3d6:	89 b3       	in	r24, 0x19	; 25
+ 3d8:	80 ef       	ldi	r24, 0xF0	; 240
+ 3da:	8a bb       	out	0x1a, r24	; 26
+	_PORT(B_PORT) = (1<<(_PIN(B_PORT),R0)) | (1<<(_PIN(B_PORT),R1)) | (1<<(_PIN(B_PORT),R2)) | (1<<(_PIN(B_PORT),R3));
+ 3dc:	99 b3       	in	r25, 0x19	; 25
+ 3de:	99 b3       	in	r25, 0x19	; 25
+ 3e0:	99 b3       	in	r25, 0x19	; 25
+ 3e2:	99 b3       	in	r25, 0x19	; 25
+ 3e4:	8b bb       	out	0x1b, r24	; 27
+ 3e6:	82 e0       	ldi	r24, 0x02	; 2
+ 3e8:	8a 95       	dec	r24
+ 3ea:	f1 f7       	brne	.-4      	; 0x3e8 <Check_key+0x52>
+	_delay_us(0.5);												//Wait for PINB is synchronized before read
+	__temp = _PIN(B_PORT);
+ 3ec:	89 b3       	in	r24, 0x19	; 25
+ 3ee:	e8 ee       	ldi	r30, 0xE8	; 232
+ 3f0:	f0 e0       	ldi	r31, 0x00	; 0
+ 3f2:	20 e0       	ldi	r18, 0x00	; 0
+	for(__j=0; __j<NOC; __j++)
+		if((__temp >> C_add[__j])&1) break;
+ 3f4:	48 2f       	mov	r20, r24
+ 3f6:	50 e0       	ldi	r21, 0x00	; 0
+ 3f8:	06 c0       	rjmp	.+12     	; 0x406 <Check_key+0x70>
+	uint8_t __i,__j,__temp;
+	_DDR(B_PORT) = (1<<(_PIN(B_PORT),C0)) | (1<<(_PIN(B_PORT),C1)) | (1<<(_PIN(B_PORT),C2)) | (1<<(_PIN(B_PORT),C3));
+	_PORT(B_PORT) = (1<<(_PIN(B_PORT),C0)) | (1<<(_PIN(B_PORT),C1)) | (1<<(_PIN(B_PORT),C2)) | (1<<(_PIN(B_PORT),C3));
+	_delay_us(0.5);												//Wait for PINB is synchronized before read
+	__temp = _PIN(B_PORT);
+	for(__i=0; __i<NOR; __i++) 
+ 3fa:	6f 5f       	subi	r22, 0xFF	; 255
+ 3fc:	31 96       	adiw	r30, 0x01	; 1
+ 3fe:	64 30       	cpi	r22, 0x04	; 4
+ 400:	f1 f6       	brne	.-68     	; 0x3be <Check_key+0x28>
+ 402:	8f ef       	ldi	r24, 0xFF	; 255
+ 404:	08 95       	ret
+	_DDR(B_PORT) = (1<<(_PIN(B_PORT),R0)) | (1<<(_PIN(B_PORT),R1)) | (1<<(_PIN(B_PORT),R2)) | (1<<(_PIN(B_PORT),R3));
+	_PORT(B_PORT) = (1<<(_PIN(B_PORT),R0)) | (1<<(_PIN(B_PORT),R1)) | (1<<(_PIN(B_PORT),R2)) | (1<<(_PIN(B_PORT),R3));
+	_delay_us(0.5);												//Wait for PINB is synchronized before read
+	__temp = _PIN(B_PORT);
+	for(__j=0; __j<NOC; __j++)
+		if((__temp >> C_add[__j])&1) break;
+ 406:	ca 01       	movw	r24, r20
+ 408:	00 80       	ld	r0, Z
+ 40a:	02 c0       	rjmp	.+4      	; 0x410 <Check_key+0x7a>
+ 40c:	95 95       	asr	r25
+ 40e:	87 95       	ror	r24
+ 410:	0a 94       	dec	r0
+ 412:	e2 f7       	brpl	.-8      	; 0x40c <Check_key+0x76>
+ 414:	80 fd       	sbrc	r24, 0
+ 416:	04 c0       	rjmp	.+8      	; 0x420 <Check_key+0x8a>
+	
+	_DDR(B_PORT) = (1<<(_PIN(B_PORT),R0)) | (1<<(_PIN(B_PORT),R1)) | (1<<(_PIN(B_PORT),R2)) | (1<<(_PIN(B_PORT),R3));
+	_PORT(B_PORT) = (1<<(_PIN(B_PORT),R0)) | (1<<(_PIN(B_PORT),R1)) | (1<<(_PIN(B_PORT),R2)) | (1<<(_PIN(B_PORT),R3));
+	_delay_us(0.5);												//Wait for PINB is synchronized before read
+	__temp = _PIN(B_PORT);
+	for(__j=0; __j<NOC; __j++)
+ 418:	2f 5f       	subi	r18, 0xFF	; 255
+ 41a:	31 96       	adiw	r30, 0x01	; 1
+ 41c:	24 30       	cpi	r18, 0x04	; 4
+ 41e:	99 f7       	brne	.-26     	; 0x406 <Check_key+0x70>
+		if((__temp >> C_add[__j])&1) break;
+	
+	return 4*__i+__j;
+ 420:	86 2f       	mov	r24, r22
+ 422:	88 0f       	add	r24, r24
+ 424:	88 0f       	add	r24, r24
+ 426:	82 0f       	add	r24, r18
+ 428:	08 95       	ret
+
+0000042a <LCD_BusyLoop>:
+	/*****************************************************************
+		This function waits till LCD is BUSY
+	*****************************************************************/	
+	uint8_t busy,status=0x00,temp;
+
+	LCD_DATA_DDR&=(~(0x0f<<LCD_DATA_POS));			//Change Port to input type because we are reading data
+ 42a:	81 b3       	in	r24, 0x11	; 17
+ 42c:	8f 70       	andi	r24, 0x0F	; 15
+ 42e:	81 bb       	out	0x11, r24	; 17
+
+	//change LCD mode
+	SET_RW();										//Read mode
+ 430:	91 9a       	sbi	0x12, 1	; 18
+	CLEAR_RS();										//Read status
+ 432:	90 98       	cbi	0x12, 0	; 18
+ 434:	82 e0       	ldi	r24, 0x02	; 2
+ 436:	8a 95       	dec	r24
+ 438:	f1 f7       	brne	.-4      	; 0x436 <LCD_BusyLoop+0xc>
+
+	//Let the RW/RS lines stabilize
+	_delay_us(0.5);									//tAS
+	do{
+		SET_E();
+ 43a:	22 e0       	ldi	r18, 0x02	; 2
+ 43c:	35 e0       	ldi	r19, 0x05	; 5
+ 43e:	92 9a       	sbi	0x12, 2	; 18
+ 440:	82 2f       	mov	r24, r18
+ 442:	8a 95       	dec	r24
+ 444:	f1 f7       	brne	.-4      	; 0x442 <LCD_BusyLoop+0x18>
+		_delay_us(0.5);								//Wait tDA for data to become available
+		status=(LCD_DATA_PIN>>LCD_DATA_POS);
+ 446:	80 b3       	in	r24, 0x10	; 16
+		status=status<<4;
+ 448:	80 7f       	andi	r24, 0xF0	; 240
+ 44a:	92 2f       	mov	r25, r18
+ 44c:	9a 95       	dec	r25
+ 44e:	f1 f7       	brne	.-4      	; 0x44c <LCD_BusyLoop+0x22>
+		_delay_us(0.5);
+
+		CLEAR_E();									//Pull E low
+ 450:	92 98       	cbi	0x12, 2	; 18
+ 452:	93 2f       	mov	r25, r19
+ 454:	9a 95       	dec	r25
+ 456:	f1 f7       	brne	.-4      	; 0x454 <LCD_BusyLoop+0x2a>
+		_delay_us(1);								//tEL
+		SET_E();
+ 458:	92 9a       	sbi	0x12, 2	; 18
+ 45a:	92 2f       	mov	r25, r18
+ 45c:	9a 95       	dec	r25
+ 45e:	f1 f7       	brne	.-4      	; 0x45c <LCD_BusyLoop+0x32>
+		_delay_us(0.5);
+
+		temp = (LCD_DATA_PIN>>LCD_DATA_POS);
+ 460:	90 b3       	in	r25, 0x10	; 16
+ 462:	92 2f       	mov	r25, r18
+ 464:	9a 95       	dec	r25
+ 466:	f1 f7       	brne	.-4      	; 0x464 <LCD_BusyLoop+0x3a>
+		temp &= 0x0F;
+		status |= temp;
+		busy = status & 0b10000000;
+		_delay_us(0.5);
+		CLEAR_E();
+ 468:	92 98       	cbi	0x12, 2	; 18
+ 46a:	93 2f       	mov	r25, r19
+ 46c:	9a 95       	dec	r25
+ 46e:	f1 f7       	brne	.-4      	; 0x46c <LCD_BusyLoop+0x42>
+		_delay_us(1);								//tEL
+	}while(busy);
+ 470:	87 fd       	sbrc	r24, 7
+ 472:	e5 cf       	rjmp	.-54     	; 0x43e <LCD_BusyLoop+0x14>
+	CLEAR_RW();										//write mode
+ 474:	91 98       	cbi	0x12, 1	; 18
+	
+	LCD_DATA_DDR|=(0x0F<<LCD_DATA_POS);				//Change Port to output
+ 476:	81 b3       	in	r24, 0x11	; 17
+ 478:	80 6f       	ori	r24, 0xF0	; 240
+ 47a:	81 bb       	out	0x11, r24	; 17
+}
+ 47c:	08 95       	ret
+
+0000047e <LCD_Byte>:
+#include "lcd.h"
+
+void LCD_Byte(uint8_t c,uint8_t isdata){
+ 47e:	28 2f       	mov	r18, r24
+	uint8_t temp;
+
+	hn = c>>4;
+	ln = (c & 0x0F);
+
+	if(isdata == 0)
+ 480:	66 23       	and	r22, r22
+ 482:	11 f4       	brne	.+4      	; 0x488 <LCD_Byte+0xa>
+		CLEAR_RS();
+ 484:	90 98       	cbi	0x12, 0	; 18
+ 486:	01 c0       	rjmp	.+2      	; 0x48a <LCD_Byte+0xc>
+	else
+		SET_RS();
+ 488:	90 9a       	sbi	0x12, 0	; 18
+ 48a:	82 e0       	ldi	r24, 0x02	; 2
+ 48c:	8a 95       	dec	r24
+ 48e:	f1 f7       	brne	.-4      	; 0x48c <LCD_Byte+0xe>
+
+	_delay_us(0.500);								//tAS
+
+	SET_E();										//Send high nibble
+ 490:	92 9a       	sbi	0x12, 2	; 18
+	temp = (LCD_DATA_PORT & (~(0X0F<<LCD_DATA_POS)))|((hn<<LCD_DATA_POS));
+ 492:	82 b3       	in	r24, 0x12	; 18
+ 494:	92 2f       	mov	r25, r18
+ 496:	90 7f       	andi	r25, 0xF0	; 240
+ 498:	8f 70       	andi	r24, 0x0F	; 15
+ 49a:	98 2b       	or	r25, r24
+	LCD_DATA_PORT = temp;
+ 49c:	92 bb       	out	0x12, r25	; 18
+ 49e:	95 e0       	ldi	r25, 0x05	; 5
+ 4a0:	89 2f       	mov	r24, r25
+ 4a2:	8a 95       	dec	r24
+ 4a4:	f1 f7       	brne	.-4      	; 0x4a2 <LCD_Byte+0x24>
+	_delay_us(1);									//tEH
+
+	//Now data lines are stable pull E low for transmission
+
+	CLEAR_E();										//Send the lower nibble
+ 4a6:	92 98       	cbi	0x12, 2	; 18
+ 4a8:	89 2f       	mov	r24, r25
+ 4aa:	8a 95       	dec	r24
+ 4ac:	f1 f7       	brne	.-4      	; 0x4aa <LCD_Byte+0x2c>
+	_delay_us(1);
+	SET_E();
+ 4ae:	92 9a       	sbi	0x12, 2	; 18
+	temp = (LCD_DATA_PORT & (~(0X0F<<LCD_DATA_POS)))|((ln<<LCD_DATA_POS));
+ 4b0:	82 b3       	in	r24, 0x12	; 18
+ 4b2:	22 95       	swap	r18
+ 4b4:	20 7f       	andi	r18, 0xF0	; 240
+ 4b6:	8f 70       	andi	r24, 0x0F	; 15
+ 4b8:	82 2b       	or	r24, r18
+	LCD_DATA_PORT = temp;
+ 4ba:	82 bb       	out	0x12, r24	; 18
+ 4bc:	89 2f       	mov	r24, r25
+ 4be:	8a 95       	dec	r24
+ 4c0:	f1 f7       	brne	.-4      	; 0x4be <LCD_Byte+0x40>
+	_delay_us(1);									//tEH	
+
+	CLEAR_E();										//SEND
+ 4c2:	92 98       	cbi	0x12, 2	; 18
+ 4c4:	9a 95       	dec	r25
+ 4c6:	f1 f7       	brne	.-4      	; 0x4c4 <LCD_Byte+0x46>
+
+	_delay_us(1);									//tEL
+	LCD_BusyLoop();
+ 4c8:	0e 94 15 02 	call	0x42a	; 0x42a <LCD_BusyLoop>
+}
+ 4cc:	08 95       	ret
+
+000004ce <LCD_Init>:
+	CLEAR_RW();										//write mode
+	
+	LCD_DATA_DDR|=(0x0F<<LCD_DATA_POS);				//Change Port to output
+}
+
+void LCD_Init(uint8_t style){
+ 4ce:	1f 93       	push	r17
+ 4d0:	18 2f       	mov	r17, r24
+ 4d2:	8c e2       	ldi	r24, 0x2C	; 44
+ 4d4:	91 e0       	ldi	r25, 0x01	; 1
+    milliseconds can be achieved.
+ */
+void
+_delay_loop_2(uint16_t __count)
+{
+	__asm__ volatile (
+ 4d6:	20 e9       	ldi	r18, 0x90	; 144
+ 4d8:	31 e0       	ldi	r19, 0x01	; 1
+ 4da:	f9 01       	movw	r30, r18
+ 4dc:	31 97       	sbiw	r30, 0x01	; 1
+ 4de:	f1 f7       	brne	.-4      	; 0x4dc <LCD_Init+0xe>
+		{
+			// wait 1/10 ms
+			_delay_loop_2(((F_CPU) / 4e3) / 10);
+			__ticks --;
+ 4e0:	01 97       	sbiw	r24, 0x01	; 1
+		__ticks = 1;
+	else if (__tmp > 65535)
+	{
+		//	__ticks = requested delay in 1/10 ms
+		__ticks = (uint16_t) (__ms * 10.0);
+		while(__ticks)
+ 4e2:	d9 f7       	brne	.-10     	; 0x4da <LCD_Init+0xc>
+	
+	//After power on Wait for LCD to Initialize
+	_delay_ms(30);
+	
+	//Set IO Ports
+	LCD_DATA_DDR |= (0x0F<<LCD_DATA_POS);
+ 4e4:	81 b3       	in	r24, 0x11	; 17
+ 4e6:	80 6f       	ori	r24, 0xF0	; 240
+ 4e8:	81 bb       	out	0x11, r24	; 17
+	LCD_E_DDR |= (1<<LCD_E_POS);
+ 4ea:	8a 9a       	sbi	0x11, 2	; 17
+	LCD_RS_DDR |= (1<<LCD_RS_POS);
+ 4ec:	88 9a       	sbi	0x11, 0	; 17
+	LCD_RW_DDR |= (1<<LCD_RW_POS);
+ 4ee:	89 9a       	sbi	0x11, 1	; 17
+
+	LCD_DATA_PORT &= (~(0x0F<<LCD_DATA_POS));
+ 4f0:	82 b3       	in	r24, 0x12	; 18
+ 4f2:	8f 70       	andi	r24, 0x0F	; 15
+ 4f4:	82 bb       	out	0x12, r24	; 18
+	CLEAR_E();
+ 4f6:	92 98       	cbi	0x12, 2	; 18
+	CLEAR_RW();
+ 4f8:	91 98       	cbi	0x12, 1	; 18
+	CLEAR_RS();
+ 4fa:	90 98       	cbi	0x12, 0	; 18
+    can be achieved.
+*/
+void
+_delay_loop_1(uint8_t __count)
+{
+	__asm__ volatile (
+ 4fc:	81 e0       	ldi	r24, 0x01	; 1
+ 4fe:	8a 95       	dec	r24
+ 500:	f1 f7       	brne	.-4      	; 0x4fe <LCD_Init+0x30>
+
+	//Set 4-bit mode
+	_delay_us(0.3);									//tAS
+
+	SET_E();
+ 502:	92 9a       	sbi	0x12, 2	; 18
+	LCD_DATA_PORT |= ((0b00000010)<<LCD_DATA_POS);	//[B] To transfer 0b00100000 i was using LCD_DATA_PORT|=0b00100000
+ 504:	95 9a       	sbi	0x12, 5	; 18
+ 506:	85 e0       	ldi	r24, 0x05	; 5
+ 508:	98 2f       	mov	r25, r24
+ 50a:	9a 95       	dec	r25
+ 50c:	f1 f7       	brne	.-4      	; 0x50a <LCD_Init+0x3c>
+	_delay_us(1);
+	CLEAR_E();
+ 50e:	92 98       	cbi	0x12, 2	; 18
+ 510:	8a 95       	dec	r24
+ 512:	f1 f7       	brne	.-4      	; 0x510 <LCD_Init+0x42>
+	_delay_us(1);
+	
+	//Wait for LCD to execute the Function set Command
+	LCD_BusyLoop();									//[B] Forgot this delay
+ 514:	0e 94 15 02 	call	0x42a	; 0x42a <LCD_BusyLoop>
+	//Now the LCD is in 4-bit mode
+
+	LCD_Cmd(0b00101000);								//function set 4-bit,2 line 5x7 dot format
+ 518:	88 e2       	ldi	r24, 0x28	; 40
+ 51a:	60 e0       	ldi	r22, 0x00	; 0
+ 51c:	0e 94 3f 02 	call	0x47e	; 0x47e <LCD_Byte>
+	LCD_Cmd(0b00001100|style);						//Display On
+ 520:	81 2f       	mov	r24, r17
+ 522:	8c 60       	ori	r24, 0x0C	; 12
+ 524:	60 e0       	ldi	r22, 0x00	; 0
+ 526:	0e 94 3f 02 	call	0x47e	; 0x47e <LCD_Byte>
+	
+}
+ 52a:	1f 91       	pop	r17
+ 52c:	08 95       	ret
+
+0000052e <LCD_WriteString>:
+
+void LCD_WriteString(const char *msg){
+ 52e:	cf 93       	push	r28
+ 530:	df 93       	push	r29
+ 532:	ec 01       	movw	r28, r24
+ 534:	04 c0       	rjmp	.+8      	; 0x53e <LCD_WriteString+0x10>
+	location.
+	Arguments:
+	msg: a null terminated string to print
+	*****************************************************************/
+	while(*msg != '\0'){
+		LCD_Data(*msg);
+ 536:	61 e0       	ldi	r22, 0x01	; 1
+ 538:	0e 94 3f 02 	call	0x47e	; 0x47e <LCD_Byte>
+		msg++;
+ 53c:	21 96       	adiw	r28, 0x01	; 1
+	This function Writes a given string to lcd at the current cursor
+	location.
+	Arguments:
+	msg: a null terminated string to print
+	*****************************************************************/
+	while(*msg != '\0'){
+ 53e:	88 81       	ld	r24, Y
+ 540:	88 23       	and	r24, r24
+ 542:	c9 f7       	brne	.-14     	; 0x536 <LCD_WriteString+0x8>
+		LCD_Data(*msg);
+		msg++;
+	}
+}
+ 544:	df 91       	pop	r29
+ 546:	cf 91       	pop	r28
+ 548:	08 95       	ret
+
+0000054a <LCD_WriteInt>:
+
+void LCD_WriteInt(int val,unsigned int field_length){
+ 54a:	ef 92       	push	r14
+ 54c:	ff 92       	push	r15
+ 54e:	0f 93       	push	r16
+ 550:	1f 93       	push	r17
+ 552:	df 93       	push	r29
+ 554:	cf 93       	push	r28
+ 556:	00 d0       	rcall	.+0      	; 0x558 <LCD_WriteInt+0xe>
+ 558:	00 d0       	rcall	.+0      	; 0x55a <LCD_WriteInt+0x10>
+ 55a:	0f 92       	push	r0
+ 55c:	cd b7       	in	r28, 0x3d	; 61
+ 55e:	de b7       	in	r29, 0x3e	; 62
+ 560:	9c 01       	movw	r18, r24
+ 562:	8b 01       	movw	r16, r22
+	Arguments:
+	1)int val	: Value to print
+	2)unsigned int field_length :total length of field in which the value is printed
+	must be between 1-5 if it is -1 the field length is no of digits in the val
+	****************************************************************/
+	char str[5] = {0,0,0,0,0};
+ 564:	fe 01       	movw	r30, r28
+ 566:	31 96       	adiw	r30, 0x01	; 1
+ 568:	85 e0       	ldi	r24, 0x05	; 5
+ 56a:	df 01       	movw	r26, r30
+ 56c:	1d 92       	st	X+, r1
+ 56e:	8a 95       	dec	r24
+ 570:	e9 f7       	brne	.-6      	; 0x56c <LCD_WriteInt+0x22>
+ 572:	fe 01       	movw	r30, r28
+ 574:	35 96       	adiw	r30, 0x05	; 5
+ 576:	0d c0       	rjmp	.+26     	; 0x592 <LCD_WriteInt+0x48>
+	int i = 4, j = 0;
+	while(val){
+		str[i] = val%10;
+ 578:	c9 01       	movw	r24, r18
+ 57a:	6a e0       	ldi	r22, 0x0A	; 10
+ 57c:	70 e0       	ldi	r23, 0x00	; 0
+ 57e:	0e 94 15 03 	call	0x62a	; 0x62a <__divmodhi4>
+ 582:	80 83       	st	Z, r24
+		val = val/10;
+ 584:	c9 01       	movw	r24, r18
+ 586:	6a e0       	ldi	r22, 0x0A	; 10
+ 588:	70 e0       	ldi	r23, 0x00	; 0
+ 58a:	0e 94 15 03 	call	0x62a	; 0x62a <__divmodhi4>
+ 58e:	9b 01       	movw	r18, r22
+ 590:	31 97       	sbiw	r30, 0x01	; 1
+	2)unsigned int field_length :total length of field in which the value is printed
+	must be between 1-5 if it is -1 the field length is no of digits in the val
+	****************************************************************/
+	char str[5] = {0,0,0,0,0};
+	int i = 4, j = 0;
+	while(val){
+ 592:	21 15       	cp	r18, r1
+ 594:	31 05       	cpc	r19, r1
+ 596:	81 f7       	brne	.-32     	; 0x578 <LCD_WriteInt+0x2e>
+		str[i] = val%10;
+		val = val/10;
+		i--;
+	}
+	if(field_length == -1)
+ 598:	bf ef       	ldi	r27, 0xFF	; 255
+ 59a:	0f 3f       	cpi	r16, 0xFF	; 255
+ 59c:	1b 07       	cpc	r17, r27
+ 59e:	79 f4       	brne	.+30     	; 0x5be <LCD_WriteInt+0x74>
+ 5a0:	20 e0       	ldi	r18, 0x00	; 0
+ 5a2:	30 e0       	ldi	r19, 0x00	; 0
+		while(str[j] == 0) j++;
+ 5a4:	ae 01       	movw	r20, r28
+ 5a6:	4f 5f       	subi	r20, 0xFF	; 255
+ 5a8:	5f 4f       	sbci	r21, 0xFF	; 255
+ 5aa:	02 c0       	rjmp	.+4      	; 0x5b0 <LCD_WriteInt+0x66>
+ 5ac:	2f 5f       	subi	r18, 0xFF	; 255
+ 5ae:	3f 4f       	sbci	r19, 0xFF	; 255
+ 5b0:	fa 01       	movw	r30, r20
+ 5b2:	e2 0f       	add	r30, r18
+ 5b4:	f3 1f       	adc	r31, r19
+ 5b6:	80 81       	ld	r24, Z
+ 5b8:	88 23       	and	r24, r24
+ 5ba:	c1 f3       	breq	.-16     	; 0x5ac <LCD_WriteInt+0x62>
+ 5bc:	04 c0       	rjmp	.+8      	; 0x5c6 <LCD_WriteInt+0x7c>
+	else
+		j = 5 - field_length;
+ 5be:	25 e0       	ldi	r18, 0x05	; 5
+ 5c0:	30 e0       	ldi	r19, 0x00	; 0
+ 5c2:	20 1b       	sub	r18, r16
+ 5c4:	31 0b       	sbc	r19, r17
+ 5c6:	7e 01       	movw	r14, r28
+ 5c8:	08 94       	sec
+ 5ca:	e1 1c       	adc	r14, r1
+ 5cc:	f1 1c       	adc	r15, r1
+ 5ce:	e2 0e       	add	r14, r18
+ 5d0:	f3 1e       	adc	r15, r19
+ 5d2:	89 01       	movw	r16, r18
+ 5d4:	09 c0       	rjmp	.+18     	; 0x5e8 <LCD_WriteInt+0x9e>
+
+	if(val<0) LCD_Data('-');
+	for(i = j; i < 5; i++) LCD_Data(48 + str[i]);
+ 5d6:	f7 01       	movw	r30, r14
+ 5d8:	81 91       	ld	r24, Z+
+ 5da:	7f 01       	movw	r14, r30
+ 5dc:	80 5d       	subi	r24, 0xD0	; 208
+ 5de:	61 e0       	ldi	r22, 0x01	; 1
+ 5e0:	0e 94 3f 02 	call	0x47e	; 0x47e <LCD_Byte>
+ 5e4:	0f 5f       	subi	r16, 0xFF	; 255
+ 5e6:	1f 4f       	sbci	r17, 0xFF	; 255
+ 5e8:	05 30       	cpi	r16, 0x05	; 5
+ 5ea:	11 05       	cpc	r17, r1
+ 5ec:	a4 f3       	brlt	.-24     	; 0x5d6 <LCD_WriteInt+0x8c>
+}
+ 5ee:	0f 90       	pop	r0
+ 5f0:	0f 90       	pop	r0
+ 5f2:	0f 90       	pop	r0
+ 5f4:	0f 90       	pop	r0
+ 5f6:	0f 90       	pop	r0
+ 5f8:	cf 91       	pop	r28
+ 5fa:	df 91       	pop	r29
+ 5fc:	1f 91       	pop	r17
+ 5fe:	0f 91       	pop	r16
+ 600:	ff 90       	pop	r15
+ 602:	ef 90       	pop	r14
+ 604:	08 95       	ret
+
+00000606 <LCD_GotoXY>:
+
+void LCD_GotoXY(uint8_t x,uint8_t y){
+	if(x>=20) return;
+ 606:	84 31       	cpi	r24, 0x14	; 20
+ 608:	78 f4       	brcc	.+30     	; 0x628 <LCD_GotoXY+0x22>
+
+	#if (LCD_TYPE == LCD204 || LCD_TYPE == LCD162 || LCD_TYPE == LCD202)
+	switch(y){
+ 60a:	62 30       	cpi	r22, 0x02	; 2
+ 60c:	31 f0       	breq	.+12     	; 0x61a <LCD_GotoXY+0x14>
+ 60e:	63 30       	cpi	r22, 0x03	; 3
+ 610:	31 f0       	breq	.+12     	; 0x61e <LCD_GotoXY+0x18>
+ 612:	61 30       	cpi	r22, 0x01	; 1
+ 614:	29 f4       	brne	.+10     	; 0x620 <LCD_GotoXY+0x1a>
+		case 0:
+			break;
+		case 1:
+			x|=0b01000000;
+ 616:	80 64       	ori	r24, 0x40	; 64
+ 618:	03 c0       	rjmp	.+6      	; 0x620 <LCD_GotoXY+0x1a>
+			break;
+		case 2:
+			x+=0x14;
+ 61a:	8c 5e       	subi	r24, 0xEC	; 236
+ 61c:	01 c0       	rjmp	.+2      	; 0x620 <LCD_GotoXY+0x1a>
+			break;
+		case 3:
+			x+=0x54;
+ 61e:	8c 5a       	subi	r24, 0xAC	; 172
+			break;
+	}
+	#endif
+
+	x|=0b10000000;
+  	LCD_Cmd(x);
+ 620:	80 68       	ori	r24, 0x80	; 128
+ 622:	60 e0       	ldi	r22, 0x00	; 0
+ 624:	0e 94 3f 02 	call	0x47e	; 0x47e <LCD_Byte>
+ 628:	08 95       	ret
+
+0000062a <__divmodhi4>:
+ 62a:	97 fb       	bst	r25, 7
+ 62c:	09 2e       	mov	r0, r25
+ 62e:	07 26       	eor	r0, r23
+ 630:	0a d0       	rcall	.+20     	; 0x646 <__divmodhi4_neg1>
+ 632:	77 fd       	sbrc	r23, 7
+ 634:	04 d0       	rcall	.+8      	; 0x63e <__divmodhi4_neg2>
+ 636:	0c d0       	rcall	.+24     	; 0x650 <__udivmodhi4>
+ 638:	06 d0       	rcall	.+12     	; 0x646 <__divmodhi4_neg1>
+ 63a:	00 20       	and	r0, r0
+ 63c:	1a f4       	brpl	.+6      	; 0x644 <__divmodhi4_exit>
+
+0000063e <__divmodhi4_neg2>:
+ 63e:	70 95       	com	r23
+ 640:	61 95       	neg	r22
+ 642:	7f 4f       	sbci	r23, 0xFF	; 255
+
+00000644 <__divmodhi4_exit>:
+ 644:	08 95       	ret
+
+00000646 <__divmodhi4_neg1>:
+ 646:	f6 f7       	brtc	.-4      	; 0x644 <__divmodhi4_exit>
+ 648:	90 95       	com	r25
+ 64a:	81 95       	neg	r24
+ 64c:	9f 4f       	sbci	r25, 0xFF	; 255
+ 64e:	08 95       	ret
+
+00000650 <__udivmodhi4>:
+ 650:	aa 1b       	sub	r26, r26
+ 652:	bb 1b       	sub	r27, r27
+ 654:	51 e1       	ldi	r21, 0x11	; 17
+ 656:	07 c0       	rjmp	.+14     	; 0x666 <__udivmodhi4_ep>
+
+00000658 <__udivmodhi4_loop>:
+ 658:	aa 1f       	adc	r26, r26
+ 65a:	bb 1f       	adc	r27, r27
+ 65c:	a6 17       	cp	r26, r22
+ 65e:	b7 07       	cpc	r27, r23
+ 660:	10 f0       	brcs	.+4      	; 0x666 <__udivmodhi4_ep>
+ 662:	a6 1b       	sub	r26, r22
+ 664:	b7 0b       	sbc	r27, r23
+
+00000666 <__udivmodhi4_ep>:
+ 666:	88 1f       	adc	r24, r24
+ 668:	99 1f       	adc	r25, r25
+ 66a:	5a 95       	dec	r21
+ 66c:	a9 f7       	brne	.-22     	; 0x658 <__udivmodhi4_loop>
+ 66e:	80 95       	com	r24
+ 670:	90 95       	com	r25
+ 672:	bc 01       	movw	r22, r24
+ 674:	cd 01       	movw	r24, r26
+ 676:	08 95       	ret
+
+00000678 <_exit>:
+ 678:	f8 94       	cli
+
+0000067a <__stop_program>:
+ 67a:	ff cf       	rjmp	.-2      	; 0x67a <__stop_program>

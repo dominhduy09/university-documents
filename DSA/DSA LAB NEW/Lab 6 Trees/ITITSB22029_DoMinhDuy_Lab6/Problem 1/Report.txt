@@ -1,0 +1,9 @@
+
+•  Data Structure: Array.
+•  Algorithm: Partitioning (used in QuickSort).
+•  Time Complexity:
+•	Best Case: O(n)
+•	Worst Case: O(n^2)	
+•	Average Case: O(n)
+
+

@@ -1,0 +1,7 @@
+Data Structure:
+
+There is no explicit data structure used in this code. The recursion itself creates a stack of function calls.
+
+Algorithm: Recursive multiplication of integers from base to limit.
+
+Time Complexity: O(n), where n = limit - base

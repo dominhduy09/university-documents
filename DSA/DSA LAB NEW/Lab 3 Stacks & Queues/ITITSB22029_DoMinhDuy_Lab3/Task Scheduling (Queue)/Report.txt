@@ -1,0 +1,34 @@
+
+Data Structures
+Queue (LinkedList)
+
+Used to manage regular tasks in the order they arrive (FIFO: First In, First Out).
+In this implementation, Java's LinkedList class is utilized to create a queue for regular tasks.
+Operations: offer() to add a task to the queue and poll() to remove a task from the front.
+Priority Queue
+
+Used to manage high-priority tasks, which should be processed before regular tasks.
+The PriorityQueue in Java automatically orders its elements according to their priority. In this case, high-priority tasks are given precedence over regular tasks.
+It uses a comparator that gives higher priority to tasks marked as high-priority.
+Operations: offer() to add a task and poll() to remove the highest priority task.
+
+
+Algorithms
+Task Addition (add_task method)
+
+Depending on whether a task is marked as high-priority or not, it is either added to the priority queue or the regular queue.
+The insertion into both queues is efficient due to the underlying data structure (linked lists for the regular queue and a binary heap for the priority queue).
+Task Processing (process_task method)
+
+First checks if there are any high-priority tasks and processes them if available.
+If no high-priority tasks are present, it processes the next regular task.
+If neither is available, it outputs a message indicating that no tasks are left to process.
+
+Time Complexity:
+Adding a task:
+Regular Queue: O(1)
+Priority Queue: O(logn)
+
+Processing a task:
+Regular Queue: O(1)
+Priority Queue: O(logn)

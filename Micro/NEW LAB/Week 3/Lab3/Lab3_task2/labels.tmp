@@ -1,0 +1,34 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega32</DEVICE>
+ <WORKING_DIR>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m32def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.asm</FILE><LINE>13</LINE></main>
+  <INT0_ISR><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.asm</FILE><LINE>32</LINE></INT0_ISR>
+  <INT1_ISR><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.asm</FILE><LINE>43</LINE></INT1_ISR>
+  <INT2_ISR><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.asm</FILE><LINE>55</LINE></INT2_ISR>
+  <while_1><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.asm</FILE><LINE>29</LINE></while_1>
+  <delay_1000ms><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.asm</FILE><LINE>67</LINE></delay_1000ms>
+  <For1><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.asm</FILE><LINE>46</LINE></For1>
+  <For2><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.asm</FILE><LINE>58</LINE></For2>
+  <DL3><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.asm</FILE><LINE>69</LINE></DL3>
+  <DL2><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.asm</FILE><LINE>70</LINE></DL2>
+  <DL1><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab3\Lab3_task2\Lab3_task2.asm</FILE><LINE>71</LINE></DL1>
+ </LABELS>
+</ASSEMBLER_INFO>

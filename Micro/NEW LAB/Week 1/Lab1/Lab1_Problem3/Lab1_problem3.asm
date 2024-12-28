@@ -1,0 +1,17 @@
+.include "m32def.inc"
+.ORG 00	 
+
+	LDI  R18,0xFF
+	OUT  DDRC, R18
+	LDI  R16, 15	
+	LDI  R17, 0	
+
+L1: 	
+	ADD  R17, R16	
+	DEC  R16		
+	CPI  R16,0x05
+	BRNE L1	 	
+	STS  0x600,R17
+	OUT  PORTC,R17
+L2: 
+	RJMP L2	

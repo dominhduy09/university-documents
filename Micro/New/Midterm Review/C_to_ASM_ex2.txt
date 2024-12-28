@@ -1,0 +1,40 @@
+#include <avr/io.h>    		 //standard AVR header 	
+int main(void) 			//the code starts from here
+{
+	unsigned char myList[]= "012345ABCD";
+	unsigned char counter ;			 
+	DDRB = 0xFF;    		 //PORTB is output 	
+	for( counter = 0; counter < 10; counter++)	 //repeat 10 times and increment z
+		PORTB = myList[z] ;	 //send the character to PORTB
+
+	while(1);			 //needed if running on a trainer
+	return 0;
+}
+
+.include "M32def.inc"
+
+
+#define counter = R16
+#define temp = R17
+
+.org    0x0000
+    jmp     start  
+
+.org    0x30
+myList:
+.db         "012345ABCD",0
+
+start:
+	ldi	r20,0xff  ;Set Port B as output
+	out	ddrb,r20
+
+        ldi     counter,0        
+        ldi     ZH, high(myList)        ; point to the information that is to be displayed
+        ldi     ZL, low(myList)
+loop:
+        lpm     temp, Z+
+        out     portb,temp      
+        inc counter;
+	cpi counter,10
+        brcc loop        
+here:  jmp here

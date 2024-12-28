@@ -1,0 +1,34 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.1.42</VERSION>
+ <DEVICE>ATmega32</DEVICE>
+ <WORKING_DIR>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes</DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:\Program Files (x86)\Atmel\AVR Tools\AvrAssembler2\Appnotes\m32def.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.map</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <main><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.asm</FILE><LINE>4</LINE></main>
+  <while_1><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.asm</FILE><LINE>14</LINE></while_1>
+  <CHECK_2ND_BUTTON><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.asm</FILE><LINE>22</LINE></CHECK_2ND_BUTTON>
+  <LED_patern_1><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.asm</FILE><LINE>31</LINE></LED_patern_1>
+  <LED_patern_2><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.asm</FILE><LINE>42</LINE></LED_patern_2>
+  <LOOP_P1><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.asm</FILE><LINE>34</LINE></LOOP_P1>
+  <delay_1s><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.asm</FILE><LINE>53</LINE></delay_1s>
+  <LOOP_P2><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.asm</FILE><LINE>45</LINE></LOOP_P2>
+  <DL3><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.asm</FILE><LINE>55</LINE></DL3>
+  <DL2><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.asm</FILE><LINE>56</LINE></DL2>
+  <DL1><FILE>C:\Users\domin\OneDrive - VietNam National University - HCM INTERNATIONAL UNIVERSITY\Documents\AVR Studio 4\Lab1\Lab1_Problem6b\Lab1_Problem6b.asm</FILE><LINE>57</LINE></DL1>
+ </LABELS>
+</ASSEMBLER_INFO>

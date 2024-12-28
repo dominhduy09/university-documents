@@ -1,0 +1,8 @@
+John Smith 90
+Barack Obama 95
+Al Clark 80
+Sue Taylor 55
+Ann Miller 75
+George Bush 58
+John Miller 65
+

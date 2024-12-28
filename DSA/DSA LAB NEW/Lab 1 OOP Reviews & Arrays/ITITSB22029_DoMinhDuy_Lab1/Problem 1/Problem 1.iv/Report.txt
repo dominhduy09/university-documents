@@ -1,0 +1,12 @@
+Handling Decimal Values for Miles: Changing int to double allows us to input decimal values like 20.5 for miles, avoiding the InputMismatchException.
+
+Same Line Input: Using nextDouble() or next() in sequence allows us to handle multiple inputs on the same line, such as miles and gallons separated by a space.
+
+Multiple Car Input: By modifying the program to accept two lines of input for different cars, miles, and gallons, we can compute and display the MPG for each car individually.
+
+
+Data Structures: The code primarily uses primitive data types (double, String) and the Scanner class for input handling. 
+
+Algorithms: The program implements input handling, calculations for MPG, and formatted output. 
+
+Time Complexity: The overall time complexity of the program is 𝑂 ( 1 ) O(1), indicating that the execution time is constant and independent of input size.

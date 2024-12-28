@@ -1,0 +1,20 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# AvrStudio Solution File, Format Version 11.00
+Project("{54F91283-7BC4-4236-8FF9-10F437C3AD48}") = "HSC", "HSC\HSC.cproj", "{5CD23FEC-3C18-4743-B2FE-2ABB04E27A05}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|AVR = Debug|AVR
+		Release|AVR = Release|AVR
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5CD23FEC-3C18-4743-B2FE-2ABB04E27A05}.Debug|AVR.ActiveCfg = Debug|AVR
+		{5CD23FEC-3C18-4743-B2FE-2ABB04E27A05}.Debug|AVR.Build.0 = Debug|AVR
+		{5CD23FEC-3C18-4743-B2FE-2ABB04E27A05}.Release|AVR.ActiveCfg = Release|AVR
+		{5CD23FEC-3C18-4743-B2FE-2ABB04E27A05}.Release|AVR.Build.0 = Release|AVR
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

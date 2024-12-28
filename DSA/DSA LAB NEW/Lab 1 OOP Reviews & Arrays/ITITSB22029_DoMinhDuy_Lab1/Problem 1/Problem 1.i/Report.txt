@@ -1,0 +1,5 @@
+Data Structures: The code uses an integer array to hold the digits of the number. 
+
+Algorithms: The conversion algorithm builds the integer from the array by iterating through it and adjusting the resultant value based on the place value of each digit. 
+
+Time Complexity: The time complexity of the conversion function is 𝑂 ( 𝑛 ) O(n), where 𝑛 n is the number of digits in the array. This is efficient, as the function processes each digit in a linear manner.

@@ -1,0 +1,8 @@
+Data Structures:
+	int[] arrays for triangle vertices.
+	Graphics context (Graphics object) for rendering.
+
+Algorithm:
+	Recursive fractal generation with subdivision into smaller triangles.
+
+Time Complexity: O(3^d), exponential growth with depth.

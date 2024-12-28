@@ -1,0 +1,28 @@
+Data Structure
+	Singly Linked List: Each node (Link) contains data (iData and dData) and a pointer (next) to the next node in the list. The LinkList class keeps a reference to the first node, and all operations are based on this first pointer.
+
+Algorithms and Operations
+	Insert at the Start (insertFirst):
+	Algorithm: A new node is created and linked as the new first node. The previous first node becomes the next node of this new node.
+	Time Complexity: O(1)O(1)O(1) - Inserting at the start only involves modifying a few pointers, which is done in constant time.
+
+2.	Delete the First Node (deleteFirst):
+	Algorithm: The first node is removed by updating the first pointer to point to the next node of the current first.
+	Time Complexity: O(1)O(1)O(1) - Deleting the first element only requires updating the first pointer, which is a constant-time operation.
+
+3.	Get First Element (getFirst):
+	Algorithm: Returns the first node directly.
+	Time Complexity: O(1)O(1)O(1) - Accessing the first node is done in constant time.
+
+4.	Get Last Element (getLast):
+	Algorithm: Traverses the list starting from first until reaching the last node (where next is null).
+	Time Complexity: O(n)O(n)O(n) - Finding the last node requires traversing the entire list, so the time complexity is linear in the number of nodes nnn.
+
+5.	Display List (displayList):
+	Algorithm: Iterates through each node, calling displayLink on each one to print its contents.
+	Time Complexity: O(n)O(n)O(n) - Since each node in the list must be visited to display the entire list, this operation takes linear time.
+
+6.	toString (LinkList.toString):
+	Algorithm: Iterates through each node, appending each node's toString() output to a StringBuilder to create a formatted string of the list.
+	Time Complexity: O(n)O(n)O(n) - Similar to displayList, it requires iterating through all nodes in the list, making it a linear-time operation.
+

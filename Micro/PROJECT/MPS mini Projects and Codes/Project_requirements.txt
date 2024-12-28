@@ -1,0 +1,15 @@
+Student study to review for final exam .
+
+For each Miniproject, student do the following tasks:
+
+step 1 : Analyze the codes, compile and Run the simulation of the project
+
+step 2 : Explain the theory meaning of Related peripheral Registers using in the code of each project,
+
+             Draw the Flow chart for important functions in this project
+
+Step 3:  Improve codes and add more functions for each projects
+
+Submit your report to show all your evidence results in your report ( Word File) and new updated codes.
+
+(All in winrar file with your name and student ID)
